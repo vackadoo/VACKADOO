@@ -45,41 +45,43 @@ const TedxPage = () => {
 
   return (
     <div className="bg-white">
-      <main className="text-center  md:p-8">
-        <h1 className="text-2xl md:text-7xl font-bold text-black">
-          <span className="text-2xl md:text-7xl font-bold text-red-600">
-            TEDx
+      <main className="text-center pt-8  md:pt-8">
+        <h1 className="text-xl md:text-5xl font-bold text-black">
+          <span className="text-xl md:text-5xl font-bold text-red-600">
+            TEDX
           </span>
           SHIVAJICOLLEGE
         </h1>
         <div className=" md:hidden grid grid-cols-3 gap-2 md:gap-4 mt-6 mx-2 md:mx-48">
-          <div className="grid-col-1 py-2 text-[12px] text-white  bg-red-600">
-            Brand Managment
+          <div className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
+            Event Coverage
           </div>
-          <div className="grid-col-1 py-2  text-[12px] text-white  bg-red-600">
-            Photoshoots & Videoshoots
+          <div className="grid-col-1 py-2 px-1 text-[8px] text-white  bg-red-600">
+            Content Production
           </div>
-          <div className="grid-col-1 py-2 text-[12px] text-white  bg-red-600">
-            Email Marketing
+          <div className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
+            Social Media
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 mx-4 md:mx-40 mt-8 md:mt-16">
-          <div className="drop-shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-4  md:mx-40 mt-8 md:mt-10">
+          <div className="drop-shadow-2xl md:mt-4 ml-6 ">
             <img src={tedx1} alt="" className="rounded-xl" />
           </div>
-          <div className="col-span-2 md:p-0 py-7 text-black text-justify text-base md:text-lg">
-            <div className="hidden md:block">
-              <div className="grid grid-cols-3 md:gap-2 text-white mt-6 text-center pb-3 mx-2 ">
-                <div className="grid-col-1 bg-red-600 py-2  ">
+          <div className="col-span-2 md:p-0 py-7 text-black text-justify text-base md:text-xs">
+            <div className="hidden md:block px-4">
+              <div className="grid grid-cols-3 md:gap-2 text-white  text-center pb-3 mx-2 ">
+                <div className="grid-col-1 text-[12px] bg-red-600 py-1  ">
                   Event Coverage
                 </div>
-                <div className="grid-col-1 py-2   bg-red-600">
+                <div className="grid-col-1 py-1 text-[12px]   bg-red-600">
                   Content Production
                 </div>
-                <div className="grid-col-1 py-2 bg-red-600">Social Media</div>
+                <div className="grid-col-1 py-1 text-[12px] bg-red-600">
+                  Social Media
+                </div>
               </div>
             </div>
-            <p className="md:px-3 text-[22px]">
+            <p className=" md:text-[16px] text-xs mx-6 ">
               Vackaoo played a pivotal role in the TEDxShivaji College event by
               providing comprehensive PR support and delivering a diverse range
               of video content including hype and formal videos. This
@@ -95,7 +97,7 @@ const TedxPage = () => {
 
         <div className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative">
           <video
-            className="object-contain rounded-xl h-auto max-h-[400px] md:max-h-[600px]"
+            className="object-contain rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
             muted
             ref={videoRefs[0]}
@@ -107,7 +109,7 @@ const TedxPage = () => {
           </video>
         </div>
 
-        <div className="mt-8 md:mt-12  flex justify-center mx-4 md:mx-52 text-black text-justify text-base md:text-lg">
+        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-44 text-black text-justify text-base md:text-[16px]">
           Vackadoo meticulously captured the event’s most significant moments
           through professional photography and videography, resulting in
           visually captivating content that highlighted the essence and impact
@@ -126,7 +128,7 @@ const TedxPage = () => {
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[400px] md:max-h-[600px]"
+                  className="object-contain rounded-xl max-h-[300px] md:max-h-[300px]"
                   loop
                   muted
                   ref={videoRefs[index + 1]}

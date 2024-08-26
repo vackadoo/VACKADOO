@@ -32,20 +32,7 @@ import vlogo from "../assets/brand/vlogo.png";
 const Footer = () => {
   return (
     <footer className="footer-section bg-white md:bg-black justify-center">
-      <div className="flex items-center justify-center">
-        <a
-          href="/ScheduleCall"
-          className=" hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
-        >
-          SERVICES
-        </a>
-        <a
-          href="/ScheduleCall"
-          className="md:hidden py-2 mt-4 px-6 rounded-full text-white  hover:bg-white bg-[#242424] transform transition-transform duration-300 hover:scale-110"
-        >
-          SERVICES
-        </a>
-      </div>
+      
 
       <div className="flex justify-center items-center ">
         {/* <section className="relative overflow-hidden">

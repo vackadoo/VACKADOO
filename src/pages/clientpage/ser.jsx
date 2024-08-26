@@ -24,11 +24,7 @@ const Service = () => {
   return (
     <div className="relative bg-white">
       <div className="fixed  left-0 h-screen w-auto">
-        <img
-          src={oneleft}
-          className="h-full hidden md:block"
-          alt="Side Image"
-        />
+        <img src={oneleft} className="h-full hidden md:block" alt="Side Image" />
       </div>
       <div className="fixed right-0 h-screen w-auto">
         <img src={one} className="h-full hidden md:block" alt="Side Image" />

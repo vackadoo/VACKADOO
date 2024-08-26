@@ -15,13 +15,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky text-black  top-0 py-4 bg-white border-neutral-600/80 z-40 ">
-      <div className="container  mx-auto relative text-sm">
+    <nav className="sticky text-black  top-0  bg-white  z-40 ">
+      <div className="container  mx-auto relative text-xs">
         <div className="flex items-center justify-between">
-          <div className="flex  flex-shrink-0">
+          <div className="flex md:py-2 md:px-3  flex-shrink-0">
             <a href="./">
-              <img src={rat2} className="h-12 pl-2 md:hidden" />
-              <h1 className="md:block  hidden text-black  text-4xl font-bold">
+              <img src={rat2} className="h-12 pl-2 py-1 md:hidden" />
+              <h1 className="md:block  hidden text-black  text-2xl font-extrabold">
                 VACKADOO
               </h1>
             </a>
@@ -32,13 +32,13 @@ const Navbar = () => {
           <div className="hidden lg:flex space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
-              className="py-2 px-6 text-white  rounded-full hover:bg-[#242424]  bg-zinc-800"
+              className="py-1 px-3 text-[12px] text-white  rounded-full hover:bg-[#242424]  bg-zinc-800"
             >
               Schedule a Call
             </a>
             <span className="h-6 border-r border-black "></span>{" "}
             {/* Vertical line */}
-            <a href="/Info" className="py-2 px-3 text-xl font-semibold">
+            <a href="/Info" className="py-2  text-sm font-semibold">
               Info
             </a>
           </div>

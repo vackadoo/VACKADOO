@@ -1,82 +1,132 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ServicesOffer = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const handleClick = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
   return (
-    <div className="bg-white text-black text-center h-screen flex flex-col items-center justify-center font-extrabold">
-      {/* MEDIA Section */}
-      <div className="relative mb-20 md:text-7xl md:mb-16 group">
-        <h1 className="md:cursor-pointer text-[50px]">MEDIA</h1>
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="flex flex-col items-center justify-center rounded-xl px-12 py-10 bg-black text-white">
-            <h1 className=" md:text-sm mb-6">MEDIA</h1>
-            <div className="flex space-x-2 ">
-              <div className="bg-white text-black font-semibold md:font-bold text-[10px] md:text-sm py-2 px-2 md:py-2 md:px-6 rounded-full">
-                content production
+    <div className="w-[90vw] md:w-[60vw] bg-white mx-auto">
+      <div className="flex flex-col md:grid md:grid-rows-3">
+        {/* MEDIA Section */}
+        <div
+          className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
+            activeSection === "media"
+              ? "bg-black text-white h-[30vh]"
+              : "bg-white hover:bg-black hover:text-white h-[15vh]"
+          }`}
+          onClick={() => handleClick("media")}
+        >
+          <h1
+            className={`text-xl ${
+              activeSection === "media" ? "text-white" : ""
+            }`}
+          >
+            MEDIA
+          </h1>
+          <div
+            className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
+              activeSection === "media"
+                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex flex-wrap justify-center space-x-2 ">
+              <div className="bg-white text-black font-semibold text-[8px] md:text-xs mt-2 pt-2 px-2 rounded-full">
+                CONTENT PRODUCTION
               </div>
-              <div className="bg-white text-black font-semibold md:font-bold text-[10px] md:text-sm py-2 px-2 md:py-2 md:px-6 rounded-full">
-                podcast production
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-2 px-2 mt-2 md:px-6 rounded-full">
+                PODCAST PRODUCTION
               </div>
-
-              <div className="bg-white text-black font-semibold md:font-bold text-[10px] md:text-sm py-2 px-2 md:py-2 md:px-6 rounded-full">
-                event coverage
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+                EVENT COVERAGE
               </div>
-            </div>
-            <div className="flex space-x-4 mt-6">
-              <div className="bg-white text-black font-semibold md:font-bold text-[10px] md:text-sm py-2 px-2 md:py-2 md:px-6 rounded-full">
-                Campaign management
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+                CAMPAIGN MANAGEMENT
               </div>
-
-              <div className="bg-white text-black font-semibold md:font-bold text-[10px] md:text-sm py-2 px-2 md:py-2 md:px-6 rounded-full">
-                photoshoots & videoshoots
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+                PHOTOSHOOTS & VIDEOSHOOTS
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* MANAGEMENT Section */}
-      <div className="relative md:text-7xl md:mb-16 mb-20  group">
-        <h1 className="cursor-pointer text-[50px]">MANAGEMENT</h1>
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="flex flex-col items-center justify-center rounded-xl px-12 py-10 bg-black text-white">
-            <h1 className="md:text-sm mb-8">MANAGEMENT</h1>
-            <div className="flex flex-row space-x-4">
-              <button className="bg-white text-black font-bold text-[12px] md:text-sm md:py-2 md:px-6 px-4 rounded-full">
+        {/* MANAGEMENT Section */}
+        <div
+          className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
+            activeSection === "management"
+              ? "bg-black text-white h-[30vh]"
+              : "bg-white hover:bg-black hover:text-white h-[15vh]"
+          }`}
+          onClick={() => handleClick("management")}
+        >
+          <h1
+            className={`text-xl ${
+              activeSection === "management" ? "text-white" : ""
+            }`}
+          >
+            MANAGEMENT
+          </h1>
+          <div
+            className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
+              activeSection === "management"
+                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex flex-wrap justify-center space-x-2 p-2">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 BRAND
-              </button>
-              <button className="bg-white text-black font-bold text-[12px] md:text-sm md:py-2 md:px-6  px-5 rounded-full">
+              </div>
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 SOCIAL PLATFORM
-              </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* DESIGN Section */}
-      <div className="relative md:text-7xl md:mb-6 mt-4  group">
-        <h1 className="md:cursor-pointer text-[50px]">Design</h1>
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="flex flex-col items-center justify-center rounded-xl px-12 py-10 bg-black text-white">
-            <h1 className=" mb-8">Design</h1>
-            <div className="flex space-x-2">
-              <div className="bg-white text-black font-semibold text-[10px] md:text-[20px] py-1 px-2 md:px-4  rounded-full">
-                MOTION GRAPHIC
+        {/* DESIGN Section */}
+        <div
+          className={`flex flex-col items-center font-bold justify-center text-black cursor-pointer transition-all duration-300 ${
+            activeSection === "design"
+              ? "bg-black text-white h-[30vh]"
+              : "bg-white hover:bg-black hover:text-white h-[15vh]"
+          }`}
+          onClick={() => handleClick("design")}
+        >
+          <h1
+            className={`text-xl ${
+              activeSection === "design" ? "text-white" : ""
+            }`}
+          >
+            DESIGN
+          </h1>
+          <div
+            className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
+              activeSection === "design"
+                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex flex-wrap justify-center space-x-2 p-2">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+                MOTION GRAPHICS
               </div>
-              <div className="bg-white text-black font-semibold text-[10px]  md:text-[20px] py-1 px-2 md:px-4 rounded-full">
-                LOGO WITH BRANDING
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+                LOGOS WITH BRANDING
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-[20px] py-1 px-2 md:px-4 rounded-full">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 ANIMATION
               </div>
-            </div>
-            <div className="flex space-x-4 pt-5">
-              <div className="bg-white text-black font-semibold text-[10px] md:text-[20px] py-1 px-2 md:px-4 rounded-full">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 ILLUSTRATIONS
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-[20px] py-1 px-2 md:px-4 rounded-full">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 WEB DESIGN
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-[20px] py-1 px-2 md:px-4 rounded-full">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                 GRAPHICS
               </div>
             </div>

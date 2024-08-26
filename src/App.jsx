@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -7,7 +5,7 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Navbar for the home page
+import Navbar from "./components/Navbar";
 import Navbarwhite from "./components/NavigationBar"; // Navbar for other pages
 import Home from "./pages/Home"; // Home page component
 import TedxPage from "./pages/clientpage/TedxPage";
@@ -19,9 +17,10 @@ import Service from "./pages/clientpage/Service";
 import JurisDomain from "./pages/clientpage/JurisDomain";
 import Leather from "./pages/clientpage/Leather";
 import ScheduleCall from "./pages/ScheduleCall";
+import Calls from "./pages/clientpage/calls";
 
 const App = () => {
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
 
   return (
     <div>
@@ -31,6 +30,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/tedx" element={<TedxPage />} />
         <Route path="/pauls" element={<Pauls />} />
+
         <Route path="/HorzionStudy" element={<HorizonStudy />} />
         <Route path="/FiemFoundation" element={<FiemFoundation />} />
         <Route path="/Info" element={<Info />} />
@@ -38,6 +38,7 @@ const App = () => {
         <Route path="/JurisDomain" element={<JurisDomain />} />
         <Route path="/Leather" element={<Leather />} />
         <Route path="/ScheduleCall" element={<ScheduleCall />} />
+        <Route path="/calls" element={<Calls />} />
       </Routes>
     </div>
   );

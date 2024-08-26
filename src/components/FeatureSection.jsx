@@ -55,7 +55,6 @@ const FeatureSection = () => {
 
   return (
     <div className=" relative h-[80vh] md:h-[65vh] overflow-hidden flex items-center justify-center">
-      
       <img
         src={horizontal}
         className={`   hidden md:block absolute transition-all duration-[3000ms] ease-in-out transform z-20  ${
@@ -74,7 +73,7 @@ const FeatureSection = () => {
         }`}
         alt="Vertical"
       />
-      
+
       {isMarqueeVisible && (
         <div className=" hidden md:block absolute bottom-0 w-full  overflow-visible z-10">
           {" "}
@@ -114,7 +113,7 @@ const FeatureSection = () => {
                   <img
                     onClick={() => handleClick(item.name)}
                     src={item.image}
-                    className="object-contain rounded-3xl cursor-pointer"
+                    className="object-contain rounded-lg cursor-pointer"
                     alt={item.name}
                     style={{ maxWidth: "100%", maxHeight: "100%" }}
                   />
@@ -124,6 +123,9 @@ const FeatureSection = () => {
           ))}
         </div>
       </div>
+
+
+      
     </div>
   );
 };

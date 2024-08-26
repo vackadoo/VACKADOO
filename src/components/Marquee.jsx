@@ -21,89 +21,59 @@ export default function Marquee() {
     <div className="relative flex flex-col items-center w-full  overflow-hidden">
       <div className="relative flex max-w-full   overflow-hidden mb-20 md:py-5">
         <div className="flex animate-marquee w-full ">
-          <div className="flex-shrink-0 h-full w-[12rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full w-[6rem] md:w-[12rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center ">
                 <img
                   src={picture1}
-                  className=" object-cover grayscale"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxWidth: "6rem",
-                    maxHeight: "6rem",
-                  }}
+                  className="object-cover grayscale w-full h-full max-w-[6rem] max-h-[6rem] sm:max-w-[4rem] sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="jurisDomain"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex-shrink-0 h-full  w-[12rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full w-[6rem]   md:w-[12rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center ">
                 <img
                   src={picture2}
-                  className=" object-cover grayscale"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxWidth: "6rem",
-                    maxHeight: "6rem",
-                  }}
+                  className="object-cover grayscale w-full h-full max-w-[6rem] max-h-[6rem] sm:max-w-[4rem] sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="Pauls"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex-shrink-0 h-full  w-[12rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full w-[9rem]  md:w-[12rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center ">
                 <img
                   src={picture3}
-                  className=" object-cover grayscale pt-10"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxWidth: "6rem",
-                    maxHeight: "6rem",
-                  }}
+                  className="object-cover grayscale w-full h-full max-w-[6rem] max-h-[6rem] sm:max-w-[4rem] mt-6 md:mt-0 sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="AdolfLeather"
                 />
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 h-full w-[12rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full md:w-[12rem] w-[9rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center">
                 <img
                   src={picture4}
-                  className=" object-cover grayscale pt-16 "
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxWidth: "6rem",
-                    maxHeight: "6rem",
-                  }}
+                  className="object-cover grayscale w-full h-full max-w-[6rem] max-h-[6rem] sm:max-w-[4rem] mt-9 md:mt-0 sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="gnixar"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex-shrink-0 h-full w-[12rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full md:w-[12rem] w-[6rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center ">
                 <img
                   src={picture5}
-                  className=" object-cover grayscale pt-10"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxWidth: "6rem",
-                    maxHeight: "6rem",
-                  }}
+                  className="object-cover grayscale w-full h-full max-w-[6rem] max-h-[6rem] sm:max-w-[4rem]  md:mt-0 sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="ric"
                 />
               </div>
@@ -199,6 +169,22 @@ export default function Marquee() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mb-9">
+        <div>
+          <a
+            href="/calls"
+            className=" hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
+          >
+            SERVICES
+          </a>
+        </div>
+        <a
+          href="/calls"
+          className="md:hidden py-2 mt-4 px-6 rounded-full text-white  hover:bg-white bg-[#242424] transform transition-transform duration-300 hover:scale-110"
+        >
+          SERVICES
+        </a>
       </div>
     </div>
   );

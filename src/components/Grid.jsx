@@ -41,7 +41,7 @@ const LandingPage = () => {
   return (
     <div>
       {/* Video Background Section */}
-      <section className="relative h-[40vh] md:h-[90vh] overflow-hidden">
+      <section className="relative h-[50vh] md:h-[90vh] overflow-hidden">
         <div className="absolute md:mx-10">
           <video
             ref={videoRef}
