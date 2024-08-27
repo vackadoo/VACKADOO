@@ -52,15 +52,15 @@ const Footer = () => {
     <img
       src={vlogo}
       alt="Logo"
-      className="mt-12 h-50 my-36 hidden md:block"
+      className="mt-12 h-32 mt-26 mb-6 hidden md:block"
     />
     <img
       src={logo2}
       alt="Logo"
-      className="h-60 md:hidden"
+      className="h-40 md:hidden"
     />
-    <div className="absolute top-0 left-0 w-full h-full flex pt-60 items-center justify-center">
-      <h1 className="text-white text-xl text-center">IT'S THE WAY WE DO IT</h1>
+    <div className="absolute top-0 left-0 w-full h-full flex pt-28 items-center justify-center">
+      <h1 className="text-white md:text-[12px] text-center">IT'S THE WAY WE DO IT</h1>
     </div>
   </div>
 </section>

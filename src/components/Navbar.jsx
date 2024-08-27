@@ -15,13 +15,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky text-black  top-0  bg-white  z-40 ">
+    <nav className="sticky text-black  top-0  bg-white  z-40 "> 
       <div className="container  mx-auto relative text-xs">
         <div className="flex items-center justify-between">
           <div className="flex md:py-2 md:px-3  flex-shrink-0">
             <a href="./">
               <img src={rat2} className="h-12 pl-2 py-1 md:hidden" />
-              <h1 className="md:block  hidden text-black  text-2xl font-extrabold">
+              <h1 className="md:block ml-12  hidden text-black  text-xl font-extrabold">
                 VACKADOO
               </h1>
             </a>
