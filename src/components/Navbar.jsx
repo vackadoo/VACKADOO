@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky text-black  top-0  bg-white  z-40 "> 
+    <nav className="sticky text-black  top-0  bg-white  z-40 ">
       <div className="container  mx-auto relative text-xs">
         <div className="flex items-center justify-between">
           <div className="flex md:py-2 md:px-3  flex-shrink-0">
@@ -29,7 +29,7 @@ const Navbar = () => {
             <span className="text-xl tracking-tight"></span>
           </div>
 
-          <div className="hidden lg:flex space-x-6 items-center ml-auto">
+          <div className="hidden lg:flex pr-10 space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
               className="py-1 px-3 text-[12px] text-white  rounded-full hover:bg-[#242424]  bg-zinc-800"
@@ -38,7 +38,7 @@ const Navbar = () => {
             </a>
             <span className="h-6 border-r border-black "></span>{" "}
             {/* Vertical line */}
-            <a href="/Info" className="py-2  text-sm font-semibold">
+            <a href="/Info" className="py-2   text-sm font-semibold">
               Info
             </a>
           </div>

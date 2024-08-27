@@ -57,12 +57,12 @@
 
 .animate-marquee {
   display: flex;
-  animation: marquee var(--duration, 50s) linear infinite;
+  animation: marquee var(--duration, 10s) linear infinite;
 }
 
 .animate-marquee-reverse {
   display: flex;
-  animation: marqueeReverse var(--duration, 50s) linear infinite;
+  animation: marqueeReverse var(--duration, 10s) linear infinite;
 }
 
 /* :root {
@@ -227,5 +227,3 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 } */
-
-
