@@ -7,12 +7,9 @@ const Info = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col justify-between items-center">
       <main className="text-center max-w-6xl mx-auto">
-        <div className="mt-12 flex justify-center md:mx-40 text-black text-left text-xl">
-          <h1 className=" hidden md:block md:text-4xl font-bold text-black m-3">
-            Welcome to Vackadoo, where creativity meets innovation!
-          </h1>
-          <p className=" md:px-1 mx-3 text-[20px] md:text-xl text-justify text-black md:m-3  md:pt-8">
-            <h1 className="py-2    md:hidden">
+        <div className=" flex justify-center md:mx-40 text-black text-left md:pt-0 pt-9">
+          <p className=" md:px-1  md:font-semibold mx-4  md:text-[20px]   text-[14px] text-justify text-black md:mx-14  md:pt-8">
+            <h1 className="py-2   ">
               {" "}
               Welcome to Vackadoo, where creativity meets innovation!
             </h1>
@@ -24,25 +21,21 @@ const Info = () => {
             the way we do it.
           </p>
         </div>
-        <div className="justify-center grid grid-cols-2 md:ml-28 md:mt-10 mt-8">
-          <div className="grid-cols-1 md:ml-96 md:pl-16 pl-20 ml-8 ">
+        <div className="flex justify-center items-center md:mx-9 md:mt-10 mt-8">
+          <div className="flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="52"
+              width="42"
               height="52"
               viewBox="0 0 24 24"
             >
               <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
             </svg>
           </div>
-          <div className="grid-cols-1 md:mb-50 mb-8">
+          <div className="flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="45"
+              width="35"
               height="45"
               viewBox="0 0 50 50"
             >
@@ -52,18 +45,18 @@ const Info = () => {
         </div>
       </main>
       <div>
-        <img src={footer2} className="pl-5 pb-6 md:pb-0 md:pl-0" />
+        <img src={footer2} className="pl-5 md:h-40 mb-6 md:pb-8 md:pl-0" />
       </div>
 
       <footer className="w-full text-center text-lg bg-black p-6">
-        <div className="px-6 relative flex w-full h-16 md:h-36 md:mb-28">
-          <div className=" hidden md:block absolute right-24 transform -translate-x-1/2 -translate-y-40 w-44 bg-white">
+        <div className="px-6 relative flex w-full h-16 md:h-18 md:mb-28">
+          <div className=" hidden md:block absolute right-24 mr-16 transform -translate-x-1/2 -translate-y-28 w-28 bg-white">
             <img src={Ridhi} />
           </div>
           <div className="md:hidden absolute left-60    transform -translate-x-2/3 -translate-y-20 w-16 bg-white">
             <img src={Ridhi} />
           </div>
-          <div className=" hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-40 w-44  bg-white  ">
+          <div className=" hidden md:block absolute left-72  transform -translate-x-1/2 -translate-y-28 w-28  bg-white  ">
             <img src={Ashu} />
           </div>
           <div className=" md:hidden  absolute left- transform -translate-x-1/2 -translate-y-20 w-16  bg-white  ">
@@ -73,10 +66,12 @@ const Info = () => {
 
         <div className="bg-white h-1 my-8 "></div>
         <div className="grid grid-cols-2 justify-start  md:mb-6">
-          <div className="text-[14px]  md:text-xl mr-12 grid-cols-1 md:mr-44">
-            <p><a ahref='https://forms.gle/JX56Tu8CeSJwj1oP9'>work with us</a></p>
+          <div className="text-[14px]  md:text-xs mr-12 grid-cols-1 md:mr-44">
+            <a ahref="https://forms.gle/JX56Tu8CeSJwj1oP9">
+              <p>work with us</p>
+            </a>
           </div>
-          <div className=" text-[14px]  md:text-xl grid-cols-1 md:ml-44">
+          <div className=" text-[14px]  md:text-xs grid-cols-1 md:ml-44">
             <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
             <p>+91 787683757</p>
           </div>
