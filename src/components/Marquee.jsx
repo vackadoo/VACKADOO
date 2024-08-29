@@ -307,12 +307,7 @@ export default function Marquee() {
         >
           SERVICES
         </a>
-        <a
-          href="/calls"
-          className="md:hidden py-2 mt-4 px-6 rounded-full text-white hover:bg-white bg-[#242424] transform transition-transform duration-300 hover:scale-110"
-        >
-          SERVICES
-        </a>
+        
       </div>
     </div>
   );
