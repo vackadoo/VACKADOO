@@ -538,7 +538,7 @@ const FeatureSection = () => {
 
       <div className="md:hidden w-full text-center">
         <h1 className="text-white text-xl font-bold mb-16">Projects</h1>
-        <div className="relative flex  animate-marquee  whitespace-nowrap marquee2  ">
+        <div className="flex  animate-marquee  ">
           {items2.map((item2, index) => (
             <div
               key={index}
@@ -558,6 +558,7 @@ const FeatureSection = () => {
             </div>
           ))}
         </div>
+        
       </div>
     </div>
   );

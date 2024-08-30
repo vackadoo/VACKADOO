@@ -85,24 +85,24 @@
   animation: marquee 10s linear infinite;
 } */
 
-.animate-marquee-mobile {
+/* .animate-marquee-mobile {
   display: flex;
   white-space: nowrap;
   animation: marquee 8s linear infinite;
-}
+} */
 
 
-
+/* 
 .marquee2 {
   animation: marquee 8s linear infinite
-}
+} */
 
-.animate-marquee-brand {
+/* .animate-marquee-brand {
   display: flex;
   white-space: nowrap;
   animation: marquee 10s linear infinite;
 }
-
+ */
 
 
 

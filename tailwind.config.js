@@ -79,8 +79,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        marquee: 'marquee 25s linear infinite',
-        marquee2: 'marquee2 25s linear infinite',// Maximum speed (0.2 seconds)
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',// Maximum speed (0.2 seconds)
       },
       keyframes: {
         marquee: {
