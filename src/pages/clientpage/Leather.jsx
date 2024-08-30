@@ -42,16 +42,16 @@ const AdroitLeathersSection = () => {
 
   return (
     <section className="bg-white pt-16 md:p-8">
-      <div className="text-3xl md:text-7xl  text-[#4F1D1C] text-center md:text-right md:mx-20 md:pr-16">
+      <div className="text-2xl md:text-7xl  text-[#4F1D1C] text-center md:text-right md:mx-20 md:pr-16">
         <h1 className="font-bold">ADROIT LEATHERS</h1>
-        <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mt-6 md:mx-48">
-          <div className="grid-col-1  text-[8px] px-1 text-white bg-[#B58543]">
+        <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-2 mt-6 md:mx-48">
+          <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
             Brand Managment
           </div>
-          <div className="grid-col-1  text-[8px] px-1  text-white bg-[#B58543]">
+          <div className="grid-col-1  text-[6px]   text-white bg-[#B58543]">
             Photoshoots & Videoshoots
           </div>
-          <div className="grid-col-1  text-[8px] px-1 text-white bg-[#B58543]">
+          <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
             Email Marketing
           </div>
         </div>
@@ -67,7 +67,7 @@ const AdroitLeathersSection = () => {
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[400px] md:max-h-[600px] drop-shadow-2xl "
+                  className="object-contain rounded-xl max-h-[200px] md:max-h-[600px] drop-shadow-2xl "
                   loop
                   muted
                   ref={videoRefs[index + 1]}
@@ -109,7 +109,7 @@ const AdroitLeathersSection = () => {
             </div>
           </div>
 
-          <div className="text-black text-justify text-[22px] md:text-lg md:text-lg  py-7  md:px-16">
+          <div className="text-black text-justify text-xs md:text-lg  py-7  md:px-16">
             Vackadoo manages Adroit Leathers' social media presence across
             multiple platforms, including Facebook, LinkedIn, and Instagram. Our
             approach is to create professional product videos that accurately
@@ -123,7 +123,7 @@ const AdroitLeathersSection = () => {
         </div>
       </div>
 
-      <div className="mt-14 md:mt-6 flex justify-center rounded-xl drop-shadow-xl relative overflow-hidden ">
+      <div className=" mx-2 md:mx-0  md:mt-6 flex justify-center rounded-xl drop-shadow-xl relative overflow-hidden ">
         <img
           src={alposter}
           className="object-contain h-auto rounded-xl max-h-[350px] md:max-h-[700px]"

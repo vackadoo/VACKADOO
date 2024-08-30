@@ -50,9 +50,8 @@ const ScheduleCall = () => {
   return (
     <div className="bg-white h-screen">
       <div
-        className="calendly-inline-widget pt-14"
+        className="calendly-inline-widget pt-14 md:px-0 px-4 min-w-300px h-[800px] md:min-w-[420px] md:h-[700px]"
         data-url="https://calendly.com/vackadoo/30min?background_color=efefef&text_color=111111&primary_color=1d1e1e"
-        style={{ minWidth: "420px", height: "700px" }}
       ></div>
     </div>
   );

@@ -46,7 +46,7 @@ const HeroSection = () => {
             <div className="text-2xl text-center">On your Brand</div>
           </div>
 
-          <div className="h-[50vh]  w-screen md:hidden flex flex-col  bg-gradient-to-b from-black to-gray-100 text-white ">
+          <div className="h-[70vh]  w-screen md:hidden flex flex-col  bg-gradient-to-b from-black to-gray-100 text-white ">
             <h1 className="text-xl px-6 text-left md:text-6xl font-bold ">
               Welcome to Vackadoo,
             </h1>
@@ -60,7 +60,7 @@ const HeroSection = () => {
               A passionate team of dreamers, designers, and digital wizards,
               dedicated to turning your vision into a compelling visual story.
             </p>
-            <div className="flex items-center justify-center animate-bounce mb-32 md:mb-32">
+            <div className="flex items-center justify-center animate-bounce  md:mb-32">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"

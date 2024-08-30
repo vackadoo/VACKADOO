@@ -50,7 +50,7 @@ const Pauls = () => {
       <main className="text-center p-2">
         <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center">
           <h1
-            className="text-2xl md:text-6xl font-bold text-center md:hidden "
+            className="text-xl pt-3 md:text-6xl font-bold text-center md:hidden "
             style={{ color: "#FF8412" }}
           >
             THE PAUL’S BIRYANI
@@ -76,18 +76,18 @@ const Pauls = () => {
             className="rounded-lg shadow-lg h-72 md:h-auto grid-cols-1 "
           /> */}
 
-            <div className=" grid-cols-1 space-y-7 md:flex-row   mt-">
+            <div className=" grid-cols-1 space-y-4 md:flex-row   mt-">
               6
-              <div className="bg-[#FF8412] text-[16px]  rounded py-1 w-full">
+              <div className="bg-[#FF8412] text-[8px]  rounded py-1 w-full">
                 Brand Managment
               </div>
-              <div className="bg-[#FF8412] text-[16px] rounded py-1  w-full">
+              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
                 Podcast Production
               </div>
-              <div className="bg-[#FF8412] text-[16px] rounded py-1  w-full">
+              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
                 Content Production
               </div>
-              <div className="bg-[#FF8412] text-[16px] rounded py-1  w-full">
+              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
                 Product Photoshoots
               </div>
             </div>
@@ -101,7 +101,7 @@ const Pauls = () => {
           /> */}
             <div className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
               <video
-                className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[700px]"
+                className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
                 loop
                 ref={videoRefs[0]}
@@ -116,24 +116,24 @@ const Pauls = () => {
           {/* Right Section: Title, Paragraph, and Buttons */}
           <div className=" md:order-2 md:w-1/2">
             <h1
-              className="text-4xl md:text-6xl font-bold text-center hidden md:block "
+              className="text-4xl md:text-4xl font-bold text-center hidden md:block "
               style={{ color: "#FF8412" }}
             >
               THE PAUL’S BIRYANI
             </h1>
 
-            <div className="hidden md:flex md:justify-center md:mt-10  gap-12">
-              <div class="grid grid-cols-2 gap-8">
-                <div className="bg-[#FF8412] p-2 ">Brand Managment</div>
-                <div className="bg-[#FF8412] p-2">Podcast Production</div>
-                <div className="bg-[#FF8412] p-2 ">Content Production</div>
-                <div className="bg-[#FF8412] p-2 space ">
+            <div className="hidden md:flex md:justify-center md:mt-4  gap-12">
+              <div class="grid grid-cols-2 gap-4">
+                <div className="bg-[#FF8412] text-xs p-2 ">Brand Managment</div>
+                <div className="bg-[#FF8412] text-xs p-2">Podcast Production</div>
+                <div className="bg-[#FF8412] text-xs p-2 ">Content Production</div>
+                <div className="bg-[#FF8412] text-xs p-2 space ">
                   Product Photoshoots
                 </div>
               </div>
             </div>
 
-            <p className=" hidden md:block md:pt-7 mt-6 text-black text-lg text-justify  md:text-justify">
+            <p className=" hidden md:block md:pt-4 mt-6 text-black text-xs text-justify pr-7  md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -147,7 +147,7 @@ const Pauls = () => {
               cohesive brand communication, strengthening its connection and
               relationship with customers.
             </p>
-            <p className=" md:hidden px-2  mt-10 text-black text-[22px] text-justify  md:text-justify">
+            <p className=" md:hidden px-2  mt-10 text-black text-[12px] text-justify  md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -160,7 +160,7 @@ const Pauls = () => {
 
         <Paulsmarquee />
 
-        <p className=" md:hidden px-2  mt-10   md:pt-7 mt-6 text-black  text-justify  md:text-justify">
+        <p className=" md:hidden px-2  mt-10  text-[12px]  md:pt-7  text-black  text-justify  md:text-justify">
           Our team devises monthly strategies aimed at increasing engagement and
           enhancing brand visibility. This includes curating engaging content,
           including posts and reels, that resonate with the target audience. By
@@ -169,7 +169,7 @@ const Pauls = () => {
           strengthening its connection and relationship with customers.
         </p>
         <div className="mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
-          <div className="relative overflow-hidden w-full max-w-[1500px]">
+          <div className="relative overflow-hidden w-full max-w-[1000px]">
             <div
               className="flex space-x-4 transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
@@ -177,7 +177,7 @@ const Pauls = () => {
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[600px] drop-shadow-xl"
+                  className="object-contain rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
                   ref={videoRefs[index + 1]}
@@ -205,13 +205,13 @@ const Pauls = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-center mt-12 ">
+        <div className="flex justify-center md:mt-12 mt-0 ">
           <img
             src={horizontal}
             alt="Footer Image"
-            className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
+            className="w-full max-w-[250px] h-full md:max-w-[700px] object-contain md:hidden"
           />
-          <img src={horizontal2} className="hidden md:block" />
+          <img src={horizontal2} className="hidden md:block md:max-w-[700px]" />
         </div>
       </main>
     </div>

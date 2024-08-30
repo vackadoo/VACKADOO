@@ -112,7 +112,7 @@ const JurisDomain = () => {
             </div>
           </div>
 
-          <p className=" mt-4 text-black text-[10px] md:text-[14px] text-justify md:px-12 px-3 md:text-justify">
+          <p className=" mt-4 text-black text-xs md:text-[14px] text-justify md:px-12 px-3 md:text-justify">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating
             their book launch event and managing all aspects of photography and
@@ -181,7 +181,7 @@ const JurisDomain = () => {
             </video>
           </div>
         </div>
-        <div className=" text-black text-[10px] md:text-[14px] md:text-justify text-justify md:pt-4   md:pr-32 md:mx-auto order-2 md:order-1 px-3 pt-4 md:px-6 ">
+        <div className=" text-black text-xs md:text-[14px] md:text-justify text-justify md:pt-4   md:pr-32 md:mx-auto order-2 md:order-1 px-3 pt-4 md:px-6 ">
           <p>
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating

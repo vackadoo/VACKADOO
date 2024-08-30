@@ -33,7 +33,7 @@ const ServicesOffer = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 ">
+            <div className="flex flex-wrap justify-center space-x-2 mb-6 ">
               <div className="bg-white text-black font-semibold text-[8px] md:text-xs mt-2 pt-2 px-2 rounded-full">
                 CONTENT PRODUCTION
               </div>
@@ -133,6 +133,23 @@ const ServicesOffer = () => {
           </div>
         </div>
       </div>
+      {/* <div class="relative flex overflow-x-hidden text-white">
+      <div class="py-12 animate-marquee whitespace-nowrap">
+        <span class="text-4xl mx-4">Marquee Item 1</span>
+        <span class="text-4xl mx-4">Marquee Item 2</span>
+        <span class="text-4xl mx-4">Marquee Item 3</span>
+        <span class="text-4xl mx-4">Marquee Item 4</span>
+        <span class="text-4xl mx-4">Marquee Item 5</span>
+      </div>
+
+      <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+        <span class="text-4xl mx-4">Marquee Item 1</span>
+        <span class="text-4xl mx-4">Marquee Item 2</span>
+        <span class="text-4xl mx-4">Marquee Item 3</span>
+        <span class="text-4xl mx-4">Marquee Item 4</span>
+        <span class="text-4xl mx-4">Marquee Item 5</span>
+      </div>
+    </div> */}
     </div>
   );
 };

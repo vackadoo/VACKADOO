@@ -66,6 +66,10 @@
 }
  */
 
+
+
+
+ 
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -75,17 +79,36 @@
   }
 }
 
-.animate-marquee {
+/* .animate-marquee {
   display: flex;
   white-space: nowrap;
   animation: marquee 10s linear infinite;
-}
+} */
 
 .animate-marquee-mobile {
   display: flex;
   white-space: nowrap;
   animation: marquee 8s linear infinite;
 }
+
+
+
+.marquee2 {
+  animation: marquee 8s linear infinite
+}
+
+.animate-marquee-brand {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+
+
+
+
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

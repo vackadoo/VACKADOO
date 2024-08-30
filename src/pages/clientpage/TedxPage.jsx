@@ -109,7 +109,7 @@ const TedxPage = () => {
           </video>
         </div>
 
-        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-44 text-black text-justify text-base md:text-[16px]">
+        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-44 text-black text-justify  md:text-[16px]">
           Vackadoo meticulously captured the event’s most significant moments
           through professional photography and videography, resulting in
           visually captivating content that highlighted the essence and impact

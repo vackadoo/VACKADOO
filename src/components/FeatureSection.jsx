@@ -511,9 +511,9 @@ const FeatureSection = () => {
         </div>
       )}
 
-      <div className="md:hidden w-full text-center">
+      {/* <div className="md:hidden w-full text-center">
         <h1 className="text-white text-xl font-bold mb-16">Projects</h1>
-        <div className="flex animate-marquee-mobile">
+        <div className="flex  ">
   {items2.map((item2, index) => (
     <div
       key={index}
@@ -534,6 +534,30 @@ const FeatureSection = () => {
   ))}
 </div>
 
+      </div> */}
+
+      <div className="md:hidden w-full text-center">
+        <h1 className="text-white text-xl font-bold mb-16">Projects</h1>
+        <div className="relative flex  animate-marquee  whitespace-nowrap marquee2  ">
+          {items2.map((item2, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0  w-[8rem] "
+            >
+              <div className="relative  px-5 duration-300 ">
+                <div className="flex flex-col items-center">
+                  <img
+                    onClick={() => handleClick(item2.name)}
+                    src={item2.image}
+                    className="object-contain rounded-lg "
+                    alt={item2.name}
+                    style={{ maxWidth: "100%", maxHeight: "100%" }}
+                  /> 
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

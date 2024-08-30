@@ -45,7 +45,7 @@ const Info = () => {
         </div>
       </main>
       <div>
-        <img src={footer2} className="pl-5 md:h-40 mb-6 md:pb-8 md:pl-0" />
+        <img src={footer2} className="pl-5 md:h-40 mb-8 md:pb-8 md:pl-0" />
       </div>
 
       <footer className="w-full text-center text-lg bg-black p-6">
@@ -53,13 +53,14 @@ const Info = () => {
           <div className=" hidden md:block absolute right-24 mr-16 transform -translate-x-1/2 -translate-y-28 w-28 bg-white">
             <img src={Ridhi} />
           </div>
-          <div className="md:hidden absolute left-60    transform -translate-x-2/3 -translate-y-20 w-16 bg-white">
+          <div className="md:hidden absolute 
+    left-[13rem]   transform -translate-x-2/3 -translate-y-20 pt-2 w-16 bg-white">
             <img src={Ridhi} />
           </div>
           <div className=" hidden md:block absolute left-72  transform -translate-x-1/2 -translate-y-28 w-28  bg-white  ">
             <img src={Ashu} />
           </div>
-          <div className=" md:hidden  absolute left- transform -translate-x-1/2 -translate-y-20 w-16  bg-white  ">
+          <div className=" md:hidden pt-2  absolute left-  transform -translate-x-1/2 -translate-y-20 w-16  bg-white  ">
             <img src={Ashu} />
           </div>
         </div>
@@ -67,8 +68,8 @@ const Info = () => {
         <div className="bg-white h-1 my-8 "></div>
         <div className="grid grid-cols-2 justify-start  md:mb-6">
           <div className="text-[14px]  md:text-xs mr-12 grid-cols-1 md:mr-44">
-            <a ahref="https://forms.gle/JX56Tu8CeSJwj1oP9">
-              <p>work with us</p>
+            <a href="https://forms.gle/JX56Tu8CeSJwj1oP9">
+              work with us
             </a>
           </div>
           <div className=" text-[14px]  md:text-xs grid-cols-1 md:ml-44">

@@ -6,6 +6,7 @@ import ServicesOffer from "../../components/ServicesOffer";
 import one from "../../assets/images/one.gif";
 import oneleft from "../../assets/images/oneleft.gif";
 
+
 const Service = () => {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("next-section");
@@ -75,6 +76,7 @@ const Service = () => {
           className="h-screen flex items-center justify-center bg-white"
         >
           <ServicesOffer />
+          
         </section>
       </div>
     </div>

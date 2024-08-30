@@ -141,7 +141,7 @@
 //         </div>
 //       </div>
 //       <div className="flex items-center justify-center mb-9">
-        
+
 //           <a
 //             href="/calls"
 //             className=" hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
@@ -149,7 +149,7 @@
 //             SERVICES
 //             </div>
 //           </a>
-        
+
 //         <a
 //           href="/calls"
 //           className="md:hidden py-2 mt-4 px-6 rounded-full text-white  hover:bg-white bg-[#242424] transform transition-transform duration-300 hover:scale-110"
@@ -161,7 +161,6 @@
 //     </div>
 //   );
 // }
-
 
 import { useNavigate } from "react-router-dom";
 import React from "react";
@@ -302,12 +301,11 @@ export default function Marquee() {
       </div>
       <div className="flex items-center justify-center mb-9">
         <a
-          href="/calls"
+          href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
         >
           SERVICES
         </a>
-        
       </div>
     </div>
   );

@@ -65,7 +65,7 @@ const HorizonStudy = () => {
 
           <div className="mt-6 md:mt-12 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
             <video
-              className="object-contain h-auto rounded-xl max-h-[300px] md:max-h-[500px]"
+              className="object-contain h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
               muted
               loop
               ref={videoRefs[0]}
@@ -77,7 +77,7 @@ const HorizonStudy = () => {
             </video>
           </div>
 
-          <div className="mt-12 text-[22px] md:mt-12 h-auto flex justify-center mx-2 md:mx-56 text-black text-justify text-base md:text-xl">
+          <div className="mt-12 text-xs md:mt-12 h-auto flex justify-center mx-3 md:mx-56 text-black text-justify  md:text-xl">
             <p>
               Vackadoo played a key role in supporting Horizon Study Circle
               (HSC) at Ambedkar University by meticulously executing various
@@ -102,7 +102,7 @@ const HorizonStudy = () => {
                 {videoUrls.slice(1).map((url, index) => (
                   <video
                     key={index}
-                    className="object-contain rounded-xl max-h-[600px] drop-shadow-xl"
+                    className="object-contain rounded-xl max-h-[300px] md:max-h-[600px]  drop-shadow-xl"
                     loop
                     muted
                     ref={videoRefs[index + 1]}
