@@ -242,7 +242,7 @@ const Info = () => {
                 </div>
               </a>
             </div>
-            <div className="md:hidden absolute left-[13rem] -translate-y-20 pt-6 w-16">
+            <div className="md:hidden absolute left-[12rem]  -translate-y-20 pt-6 w-16">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <img src={Ridhi3} className="pr-0.5" />
                 <div className="bg-white text-black font-bold text-[8px] mx-0.5 pt-0 text-center">
