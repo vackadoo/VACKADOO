@@ -3,6 +3,7 @@ import alposter from "../../assets/images/al/alposter.png";
 
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
+import Videofooter from "../../components/Videofooter";
 
 const AdroitLeathersSection = () => {
   const videoUrls = [
@@ -67,7 +68,7 @@ const AdroitLeathersSection = () => {
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[200px] md:max-h-[600px] drop-shadow-2xl "
+                  className="object-contain rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-2xl "
                   loop
                   muted
                   ref={videoRefs[index + 1]}
@@ -99,17 +100,19 @@ const AdroitLeathersSection = () => {
         <div className="py-4 md:py-8">
           <div className="hidden md:flex md:justify-center md:mt-10  gap-12">
             <div class="grid grid-cols-2 gap-5">
-              <div className="bg-[#B58543]   col-span-2 text-center  p-3 ">
+              <div className="bg-[#B58543] text-[12px]   col-span-2 text-center  p-3 ">
                 Photoshoots & Videoshoots
               </div>
-              <div className="bg-[#B58543] p-3">Brand Managment</div>
-              <div className="bg-[#B58543] p-3 text-center ">
+              <div className="bg-[#B58543] text-[12px] p-3">
+                Brand Managment
+              </div>
+              <div className="bg-[#B58543] text-[12px]  p-3 text-center ">
                 Email Marketing
               </div>
             </div>
           </div>
 
-          <div className="text-black text-justify text-xs md:text-lg  py-7  md:px-16">
+          <div className="text-black text-justify text-[13px] md:text-[15px]  md:py-7   md:px-10">
             Vackadoo manages Adroit Leathers' social media presence across
             multiple platforms, including Facebook, LinkedIn, and Instagram. Our
             approach is to create professional product videos that accurately
@@ -123,20 +126,22 @@ const AdroitLeathersSection = () => {
         </div>
       </div>
 
-      <div className=" mx-2 md:mx-0  md:mt-6 flex justify-center rounded-xl drop-shadow-xl relative overflow-hidden ">
+      <div className=" mx-2 md:mx-0  md:mt-2 flex justify-center rounded-xl drop-shadow-xl relative overflow-hidden ">
         <img
           src={alposter}
-          className="object-contain h-auto rounded-xl max-h-[350px] md:max-h-[700px]"
+          className="object-contain h-auto rounded-xl max-h-[350px] md:max-h-[400px]"
           alt="Adroit Leathers Poster"
         />
       </div>
-      <div className="flex justify-center mt-12 ">
+      <div className="flex justify-center mt-12 md:mt-0 ">
         <img
           src={horizontal}
           alt="Footer Image"
           className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
         />
-        <img src={horizontal2} className="hidden md:block" />
+        <div className="hidden md:block">
+          <Videofooter />
+        </div>
       </div>
     </section>
   );

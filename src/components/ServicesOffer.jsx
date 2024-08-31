@@ -8,7 +8,7 @@ const ServicesOffer = () => {
   };
 
   return (
-    <div className="w-[90vw] md:w-[60vw] bg-white mx-auto">
+    <div className="w-[90vw] md:w-[60vw] bg-white mx-auto z-20">
       <div className="flex flex-col md:grid md:grid-rows-3">
         {/* MEDIA Section */}
         <div

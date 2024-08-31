@@ -43,7 +43,7 @@ const FiemFoundation = () => {
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
-      <main className="text-center p-2 md:pt-8">
+      <main className="text-center pt-12 md:p-2 md:pt-8">
         <div className="md:mx-36">
           <h1 className="md:text-5xl text-3xl md:text-left font-bold text-[#3E8D19]">
             <span className="text-3xl md:text-5xl font-bold text-orange-500">
@@ -59,7 +59,7 @@ const FiemFoundation = () => {
           </div>
         </div>
 
-        <div className="hidden md:block px-1 md:px-0 text-[22px]  mt-8 justify-center md:mx-36 text-black text-justify md:text-[14px]">
+        <div className="hidden md:block px-1  md:px-0 text-[22px]  mt-8 justify-center md:mx-36 text-black text-justify md:text-[14px]">
           Vackadoo made substantial contributions to the Fiem Foundation’s
           initiatives by delivering thorough event coverage and robust digital
           management. Our team excelled in capturing each event through
@@ -114,7 +114,7 @@ const FiemFoundation = () => {
           </div>
         </div>
 
-        <div className="md:hidden px-1 md:px-0 text-xs  mt-8 md:h-64 flex justify-center md:mx-40 text-black text-justify md:text-lg">
+        <div className="md:hidden px-4 md:px-0 text-xs  mt-8 md:h-64 flex justify-center md:mx-40 text-black text-justify md:text-lg">
           Vackadoo made substantial contributions to the Fiem Foundation’s
           initiatives by delivering thorough event coverage and robust digital
           management. Our team excelled in capturing each event through

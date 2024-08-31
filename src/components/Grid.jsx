@@ -10,9 +10,10 @@ import HeroSection from "./HeroSection";
 
 import "../css/LandingPage.css";
 import arrow from "../assets/images/downarraow.png";
+import intro from "../assets/video/intro.mov";
 
 const LandingPage = () => {
-  const intro ="https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+  // const intro ="https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
     // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/intro.mov?alt=media&token=1b55cae2-91bd-432f-8607-7ba8200de5d1";
   const videoRef = useRef(null);
 

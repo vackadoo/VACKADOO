@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import tedx1 from "../../assets/images/tedx/tedx1.png";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
+import Videofooter from "../../components/Videofooter";
 
 const TedxPage = () => {
   const videoUrls = [
@@ -109,7 +110,7 @@ const TedxPage = () => {
           </video>
         </div>
 
-        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-44 text-black text-justify  md:text-[16px]">
+        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-48 text-black text-justify  md:text-[16px]">
           Vackadoo meticulously captured the event’s most significant moments
           through professional photography and videography, resulting in
           visually captivating content that highlighted the essence and impact
@@ -162,7 +163,9 @@ const TedxPage = () => {
             alt="Footer Image"
             className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
           />
-          <img src={horizontal2} className="hidden md:block" />
+          <div className=" hidden md:block">
+            <Videofooter />
+          </div>
         </div>
       </main>
     </div>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@keyframes marquee {
+/* @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
@@ -16,9 +16,9 @@
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
-@keyframes marqueeReverse {
+/* @keyframes marqueeReverse {
   0% {
     transform: translateX(-100%);
   }
@@ -31,8 +31,8 @@
   100% {
     transform: translateX(0%);
   }
-}
-
+} */
+/* 
 .animate-marquee {
   display: flex;
   animation: marquee var(--duration, 50s) linear infinite;
@@ -41,7 +41,7 @@
 .animate-marquee-reverse {
   display: flex;
   animation: marqueeReverse var(--duration, 50s) linear infinite;
-}
+} */
 
 
 
@@ -113,4 +113,4 @@
 
 .read-the-docs {
   color: #888;
-} */ */
+} */ 

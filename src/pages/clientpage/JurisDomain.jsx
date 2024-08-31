@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import juris from "../../assets/images/juris/juris1.png";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
+import Videofooter from "../../components/Videofooter";
 
 const JurisDomain = () => {
   const videoUrls = [
@@ -128,7 +129,7 @@ const JurisDomain = () => {
       </div>
 
       <div className=" flex items-center justify-center drop-shadow-xl relative py-9">
-        <div className="relative overflow-hidden w-full  md:max-w-[1500px] max-w-[350px]">
+        <div className="relative overflow-hidden w-full  md:max-w-[1100px] max-w-[350px]">
           <div
             className="flex space-x-4 transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
@@ -169,7 +170,7 @@ const JurisDomain = () => {
         <div className="order-1 md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain md:ml-28 ml-3 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain md:ml-28 ml-6 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               ref={videoRefs[0]}
@@ -200,7 +201,9 @@ const JurisDomain = () => {
           alt="Footer Image"
           className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
         />
-        <img src={horizontal2} className="hidden md:block md:max-w-[700px]" />
+        <div className="hidden md:block">
+          <Videofooter />
+        </div>
       </div>
     </div>
   );

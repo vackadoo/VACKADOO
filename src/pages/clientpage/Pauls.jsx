@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Paulsmarquee from "../../components/paulsmarquee";
+import Videofooter from "../../components/Videofooter";
 
 const Pauls = () => {
   const videoUrls = [
@@ -125,8 +126,12 @@ const Pauls = () => {
             <div className="hidden md:flex md:justify-center md:mt-4  gap-12">
               <div class="grid grid-cols-2 gap-4">
                 <div className="bg-[#FF8412] text-xs p-2 ">Brand Managment</div>
-                <div className="bg-[#FF8412] text-xs p-2">Podcast Production</div>
-                <div className="bg-[#FF8412] text-xs p-2 ">Content Production</div>
+                <div className="bg-[#FF8412] text-xs p-2">
+                  Podcast Production
+                </div>
+                <div className="bg-[#FF8412] text-xs p-2 ">
+                  Content Production
+                </div>
                 <div className="bg-[#FF8412] text-xs p-2 space ">
                   Product Photoshoots
                 </div>
@@ -147,7 +152,7 @@ const Pauls = () => {
               cohesive brand communication, strengthening its connection and
               relationship with customers.
             </p>
-            <p className=" md:hidden px-2  mt-10 text-black text-[12px] text-justify  md:text-justify">
+            <p className=" md:hidden px-2  mt-10 text-black text-[14px] text-justify  md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -160,7 +165,7 @@ const Pauls = () => {
 
         <Paulsmarquee />
 
-        <p className=" md:hidden px-2  mt-10  text-[12px]  md:pt-7  text-black  text-justify  md:text-justify">
+        <p className=" md:hidden px-2  mt-10  text-[14px]  md:pt-7  text-black  text-justify  md:text-justify">
           Our team devises monthly strategies aimed at increasing engagement and
           enhancing brand visibility. This includes curating engaging content,
           including posts and reels, that resonate with the target audience. By
@@ -211,7 +216,9 @@ const Pauls = () => {
             alt="Footer Image"
             className="w-full max-w-[250px] h-full md:max-w-[700px] object-contain md:hidden"
           />
-          <img src={horizontal2} className="hidden md:block md:max-w-[700px]" />
+          <div className=" hidden md:block">
+            <Videofooter />
+          </div>
         </div>
       </main>
     </div>

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
+import Videofooter from "../../components/Videofooter";
 
 const HorizonStudy = () => {
   const videoUrls = [
@@ -47,18 +48,18 @@ const HorizonStudy = () => {
     <div className="bg-white pt-16 min-h-screen flex flex-col">
       <main className="flex-grow">
         <div className="text-center">
-          <h1 className="text-4xl md:text-7xl font-bold text-yellow-500">
+          <h1 className="text-4xl md:text-5xl font-bold text-yellow-500">
             HORIZON STUDY CIRCLE
           </h1>
 
-          <div className="grid grid-cols-3 text-[8px] md:text-sm gap-2 md:gap-4 mt-6 mx-6  md:mx-48">
-            <div className="grid-col-1 md:py-2  py-1 bg-yellow-500">
+          <div className="grid grid-cols-3 text-[8px]  gap-2 md:gap-4 mt-6 mx-6  md:mx-48">
+            <div className="grid-col-1 md:py-2 md:text-[12px]  py-1 bg-yellow-500">
               Brand Managment
             </div>
-            <div className="grid-col-1 md:py-2   py-1   bg-yellow-500">
+            <div className="grid-col-1 md:py-2 md:text-[12px]   py-1   bg-yellow-500">
               Campaign Managment
             </div>
-            <div className="grid-col-1 md:py-2  py-1  bg-yellow-500">
+            <div className="grid-col-1 md:py-2 md:text-[12px]  py-1  bg-yellow-500">
               Motion Graphic
             </div>
           </div>
@@ -77,7 +78,7 @@ const HorizonStudy = () => {
             </video>
           </div>
 
-          <div className="mt-12 text-xs md:mt-12 h-auto flex justify-center mx-3 md:mx-56 text-black text-justify  md:text-xl">
+          <div className="mt-12 md:text-[15px] text-[14px] md:mt-12 h-auto flex justify-center mx-3 md:mx-56 text-black text-justify  ">
             <p>
               Vackadoo played a key role in supporting Horizon Study Circle
               (HSC) at Ambedkar University by meticulously executing various
@@ -94,7 +95,7 @@ const HorizonStudy = () => {
           </div>
 
           <div className="mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
-            <div className="relative overflow-hidden w-full max-w-[1500px]">
+            <div className="relative overflow-hidden w-full max-w-[1100px] ">
               <div
                 className="flex space-x-4 transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
@@ -102,7 +103,7 @@ const HorizonStudy = () => {
                 {videoUrls.slice(1).map((url, index) => (
                   <video
                     key={index}
-                    className="object-contain rounded-xl max-h-[300px] md:max-h-[600px]  drop-shadow-xl"
+                    className="object-contain rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
                     loop
                     muted
                     ref={videoRefs[index + 1]}
@@ -136,7 +137,8 @@ const HorizonStudy = () => {
               alt="Footer Image"
               className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
             />
-            <img src={horizontal2} className="hidden md:block" />
+            <div className="hidden md:block"><Videofooter /></div>
+
           </div>
         </div>
       </main>
