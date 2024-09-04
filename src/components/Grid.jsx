@@ -169,7 +169,8 @@ import arrow from "../assets/images/downarraow.png";
 
 const LandingPage = () => {
   const intro =
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+    "https://res.cloudinary.com/dlgit add .
+anlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
   const videoRef = useRef(null);
 
   useEffect(() => {
