@@ -46,7 +46,7 @@ const HeroSection = () => {
             <div className="text-2xl text-center">On your Brand</div>
           </div>
 
-          <div className="h-[65vh]  w-screen md:hidden flex flex-col  bg-gradient-to-b from-black to-gray-100 text-white ">
+          <div className="h-[60vh]  w-screen md:hidden flex flex-col  bg-gradient-to-b from-black to-gray-100 text-white ">
             <h1 className="text-xl px-6 text-left md:text-6xl font-bold ">
               Welcome to Vackadoo,
             </h1>
@@ -56,7 +56,7 @@ const HeroSection = () => {
             <h1 className="text-xl px-6 text-left md:text-6xl font-bold ">
               innovation!
             </h1>
-            <p className="pt-6 text-xs px-8 md:text-2xl text-gray-100 mb-8">
+            <p className="pt-6 text-xs px-6 md:text-2xl text-gray-100 mb-8">
               A passionate team of dreamers, designers, and digital wizards,
               dedicated to turning your vision into a compelling visual story.
             </p>

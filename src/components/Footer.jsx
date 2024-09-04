@@ -57,7 +57,7 @@ const Footer = () => {
     <img
       src={logo2}
       alt="Logo"
-      className="h-40 md:hidden"
+      className="h-32 md:hidden"
     />
     <div className="absolute top-0 left-0 w-full h-full flex pt-28 items-center justify-center">
       <h1 className="text-white md:text-[12px] text-center">IT'S THE WAY WE DO IT</h1>
@@ -70,7 +70,7 @@ const Footer = () => {
         <img
           src={horizontal2}
           alt="Footer Image"
-          className="w-full max-w-[500px] h-auto object-contain md:max-w-[700px] md:hidden"
+          className="w-full max-w-[300px] h-auto object-contain md:max-w-[700px] md:hidden"
         />
       </div>
     </footer>
