@@ -104,7 +104,7 @@ const Navbar = () => {
           <div className="hidden lg:flex pr-10 space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
-              className="py-1 px-3 text-[12px] text-white rounded-full hover:bg-[#242424] bg-zinc-800"
+              className="py-2 px-3 text-[12px] text-white rounded-full hover:bg-[#242424] bg-zinc-800"
             >
               Schedule a Call
             </a>

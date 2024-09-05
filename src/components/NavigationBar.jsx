@@ -93,7 +93,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 md:py-2 backdrop-blur-lg z-40 md:m-0 m-1">
+    <nav className="sticky top-0 md:py-1 backdrop-blur-lg z-40 md:m-0 m-1">
       <div className="container mx-auto relative text-xs">
         <div className="flex items-center justify-between md:px-10">
           <div className="flex flex-shrink-0">
@@ -101,7 +101,7 @@ const Navbar = () => {
             <h1 className="hidden md:block text-xl font-bold pl-6">VACKADOO</h1>
           </div>
 
-          <div className="hidden lg:flex space-x-7 items-center ml-auto">
+          <div className="hidden lg:flex text-[12px] space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
               className="py-2 px-3 rounded-full hover:bg-[#242424] bg-zinc-800"
