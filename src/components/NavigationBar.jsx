@@ -101,7 +101,7 @@ const Navbar = () => {
             <h1 className="hidden md:block text-xl font-bold pl-6">VACKADOO</h1>
           </div>
 
-          <div className="hidden lg:flex text-[12px] space-x-6 items-center ml-auto">
+          <div className="hidden pt-1 lg:flex text-[12px] space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
               className="py-2 px-3 rounded-full hover:bg-[#242424] bg-zinc-800"

@@ -25,11 +25,11 @@ const Info = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-between items-center md:pt-10">
+    <div className="min-h-screen bg-white flex flex-col justify-between items-center md:pt-4">
       <main className="text-center max-w-6xl mx-auto">
         <div className="flex justify-center md:mx-40 text-black text-left md:pt-0 pt-9">
           <p className="md:px-1 px-6 pt-8 md:text-[20px] text-[14px] text-justify text-black md:mx-14 md:pt-8">
-            <h1 className="py-2 font-semibold">
+            <h1 className="py-2 md:pb-4 font-semibold">
               Welcome to Vackadoo, where creativity meets innovation!
             </h1>
             We are a passionate team of dreamers, designers, and digital
@@ -40,7 +40,7 @@ const Info = () => {
             the way we do it.
           </p>
         </div>
-        <div className="flex justify-center items-center md:mx-9 md:mt-10 mt-8">
+        <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8">
           <div className="flex justify-center items-center mr-8">
             <a href="https://www.instagram.com/vackadoo?igsh=NG1vaW1nZGwyMGMz">
               <svg
@@ -67,7 +67,7 @@ const Info = () => {
           </div>
         </div>
       </main> 
-      <div className="flex justify-center bg-white mt-10 z-20">
+      <div className="flex justify-center bg-white md:ml-9 mt-3 z-20">
         <button
           onClick={scrollToNextSection}
           className="text-black text-6xl bouncy-arrow "
@@ -88,7 +88,7 @@ const Info = () => {
           muted
           loop
           playsInline
-          className="pl-7 md:h-72 md:px-0 px-6 md:pl-0 md:mb-2 "
+          className="pl-12 md:h-23 md:px-0 px-6 md:pl-12 md:mb-0 "
         />
       </div>
       <section id="next-section" className="w-full">
@@ -149,7 +149,7 @@ const Info = () => {
             </div>
             <div className="text-[14px] text-left md:text-xs grid-cols-1 md:ml-52">
               <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p>+91 787683757</p>
+              <p className=" pl-12">+91 787683757</p>
             </div>
           </div>
         </footer>

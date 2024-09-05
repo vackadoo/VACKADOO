@@ -28,7 +28,7 @@ const Videofooter = () => {
         muted
         loop
         playsInline
-        className=" md:h-24 md:px-0 px-6 md:pl-0 md:mb-0"
+        className=" md:h-16 md:px-0 px-6 md:pl-0 md:mb-0"
       />
     </div>
   );
