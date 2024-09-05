@@ -86,7 +86,7 @@ const Pauls = () => {
             <div className=" grid-cols-1 space-y-4 md:flex-row mt-">
               <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
                 <div className="bg-[#FF8412] text-[8px]  rounded py-1 w-full">
-                  Brand Managment
+                  Brand Management
                 </div>
               </a>
               <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
@@ -138,7 +138,7 @@ const Pauls = () => {
               <div class="grid grid-cols-2 gap-4">
                 <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
                   <div className="bg-[#FF8412] text-xs p-2 px-8 ">
-                    Brand Managment
+                    Brand Management
                   </div>
                 </a>
                 <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">

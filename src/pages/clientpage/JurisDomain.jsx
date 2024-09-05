@@ -59,25 +59,21 @@ const JurisDomain = () => {
           JURIS DOMAIN
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 md:px-0 gap-2 md:gap-8   mt-8 md:hidden">
+        <div className="grid grid-cols-2 md:grid-cols-2  gap-2 md:gap-8   mt-8 md:hidden">
           <img
             src={juris}
             alt="Juris Domain Instagram"
             className="rounded-lg shadow-lg h-52 md:h-auto grid-cols-1 "
           />
 
-          {/* <div className=" grid-cols-1 space-y-4 md:flex-row md:space-x- mt-20">
-            <div className="bg-[#94866B] rounded p-3 px-20 w-full"></div>
-            <div className="bg-[#94866B] rounded p-3 px-20 w-full"></div>
-          </div> */}
           <div className=" grid-cols-1 space-y-4 md:flex-row  mt-10">
-            <div className="bg-[#94866B] text-center text-[8px] p-2 ">
+            <div className="bg-[#94866B] text-center text-[10px] p-2 ">
               Campaign Managment
             </div>
-            <div className="bg-[#94866B] text-center text-[8px] p-2 ">
+            <div className="bg-[#94866B] text-center text-[10px] p-2 ">
               Podcast Production
             </div>
-            <div className="bg-[#94866B] text-center text-[8px] p-2">
+            <div className="bg-[#94866B] text-center text-[10px] p-2">
               Event Production
             </div>
           </div>
@@ -101,24 +97,24 @@ const JurisDomain = () => {
 
           <div className="hidden md:flex md:ml-16  md:mt-7 ">
             <div class="grid grid-cols-2 gap-2 ">
-              <div className="bg-[#94866B] text-[12px] py-2 col-span-2 text-center px-28">
+              <div className="bg-[#94866B] text-[14px] py-2 col-span-2 text-center px-28">
                 <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                   Campaign Managment{" "}
                 </a>
               </div>
 
               <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
-                <div className="bg-[#94866B] text-[12px] text-center px-2  py-2 ">
+                <div className="bg-[#94866B] text-[14px] text-center px-2  py-2 ">
                   Podcast Production
                 </div>
               </a>
-              <div className="bg-[#94866B] text-[12px] text-center px-2  py-2">
+              <div className="bg-[#94866B] text-[14px] text-center px-2  py-2">
                 Event Production
               </div>
             </div>
           </div>
 
-          <p className=" mt-4 text-black text-xs md:text-[14px] md:mt-8  text-justify md:px-5  px-3 md:text-justify">
+          <p className=" mt-4 text-black text-[12px] md:text-[14px] md:mt-8  text-justify md:px-5  px-6 md:text-justify">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating
             their book launch event and managing all aspects of photography and
@@ -172,10 +168,10 @@ const JurisDomain = () => {
       </div>
 
       <div className="grid grid-cols-1 md:space-x md:grid-cols-2 md:mx md:mt-8 ">
-        <div className="order-1 md:order-1">
+        <div className="order-1 items-center md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain  md:ml-16 ml-6 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain  md:ml-16 ml-2 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               ref={videoRefs[0]}
@@ -187,7 +183,7 @@ const JurisDomain = () => {
             </video>
           </div>
         </div>
-        <div className=" text-black text-xs md:text-[14px]  md:text-justify text-justify md:pt-4    md:mx-auto order-2 md:order-1 px-3 pt-4 md:p ">
+        <div className=" text-black text-[12px] md:text-[14px]  md:text-justify text-justify md:pt-4    md:mx-auto order-2 md:order-1 px-6 pt-4 md:p ">
           <p className=" md:pr-16">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating
@@ -202,7 +198,7 @@ const JurisDomain = () => {
       {/* Footer Image */}
       <div className="flex justify-center mt-8 md:mt-0 ">
         <img
-          src={horizontal}
+          src={horizontal2}
           alt="Footer Image"
           className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
         />

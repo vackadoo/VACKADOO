@@ -44,16 +44,16 @@ const FiemFoundation = () => {
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
-      <main className="text-center pt-12 md: md:pt-8">
+      <main className="text-center pt-6 md: md:pt-8">
         <div className="md:mx-36">
-          <h1 className="md:text-5xl text-3xl md:text-center font-bold text-[#3E8D19]">
-            <span className="text-3xl md:text-5xl font-bold text-orange-500">
+          <h1 className="md:text-5xl text-2xl md:text-center font-bold text-[#3E8D19]">
+            <span className="text-2xl md:text-5xl font-bold text-orange-500">
               FIEM
             </span>{" "}
             FOUNDATION
           </h1>
         </div>
-        <div className=" md:mx-36 mx-12  md:items-center text-[12px] grid grid-cols-2 text-white mt-4  md:mt-9 md gap-4 md:text-xs ">
+        <div className=" md:mx-36 mx-12  md:items-center text-[10px] grid grid-cols-2 text-white mt-4  md:mt-9 md gap-4 md:text-xs ">
           <a href="https://youtu.be/WwWwgq2zswU?si=qPrISZisBf8bZB_A">
             <div className="grid-cols-1 bg-[#3E8D19] py-2">Event Coverage</div>
           </a>
@@ -120,7 +120,7 @@ const FiemFoundation = () => {
           </div>
         </div>
 
-        <div className="md:hidden px-4 md:px-0 text-xs  mt-8 md:h-64 flex justify-center md:mx-40 text-black text-justify md:text-lg">
+        <div className="md:hidden px-6 md:px-0 text-[12px]   md:h-64 flex justify-center md:mx-40 text-black text-justify md:text-lg">
           Vackadoo made substantial contributions to the Fiem Foundation’s
           initiatives by delivering thorough event coverage and robust digital
           management. Our team excelled in capturing each event through
@@ -138,15 +138,15 @@ const FiemFoundation = () => {
         </div>
 
         <div className="flex justify-center mt-8 md:mt-0 ">
-        <img
-          src={horizontal}
-          alt="Footer Image"
-          className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
-        />
-        <div className="hidden md:block md:mt-12">
-          <Videofooter />
+          <img
+            src={horizontal2}
+            alt="Footer Image"
+            className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
+          />
+          <div className="hidden md:block md:mt-12">
+            <Videofooter />
+          </div>
         </div>
-      </div>
       </main>
     </div>
   );

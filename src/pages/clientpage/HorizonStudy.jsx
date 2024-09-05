@@ -67,10 +67,10 @@ const HorizonStudy = () => {
               Brand Managment
             </div>
             </a>
-            <div  onClick={scrollToNextSection}  className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500">
+            <div cursor-pointer  onClick={scrollToNextSection}  className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500">
               Campaign Managment
             </div>
-            <div onClick={scrollToNextSection2}  className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500">
+            <div cursor-pointer onClick={scrollToNextSection2}  className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500">
               Motion Graphic
             </div>
           </div>

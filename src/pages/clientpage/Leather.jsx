@@ -105,15 +105,15 @@ const AdroitLeathersSection = () => {
         <div className="py-4 md:py-0">
           <div className="hidden md:flex md:justify-center md:mt-8  gap-12">
             <div class="grid grid-cols-2 gap-3  ">
-              <div className="bg-[#B58543] text-[12px] py-2   col-span-2 text-center  px-24 ">
+              <div className="bg-[#B58543] text-[14px] py-2   col-span-2 text-center  px-24 ">
                 Photoshoots & Videoshoots
               </div>
               <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
-                <div className="bg-[#B58543] text-[12px] p-2 text-center ">
+                <div className="bg-[#B58543] text-[14px] p-2 text-center ">
                   Brand Managment
                 </div>
               </a>
-              <div className="bg-[#B58543] text-[12px]  p-2 text-center ">
+              <div className="bg-[#B58543] text-[14px]  p-2 text-center ">
                 Email Marketing
               </div>
             </div>
