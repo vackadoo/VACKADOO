@@ -54,7 +54,7 @@ const Pauls = () => {
   return (
     <div className="bg-white">
       {/* Main Content */}
-      <main className="text-center p-2  md:pt-9">
+      <main className="text-center pt-2  md:pt-9">
         <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center md:px-16  ">
           <h1
             className="text-xl pt-3 md:text-6xl font-bold text-center md:hidden "
@@ -231,7 +231,7 @@ const Pauls = () => {
         </div>
         <div className="flex justify-center md:mt-12 mt-0 ">
           <img
-            src={horizontal}
+            src={horizontal2}
             alt="Footer Image"
             className="w-full max-w-[250px] h-full md:max-w-[700px] object-contain md:hidden"
           />
