@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
-import Ashu3 from "../../assets/images/Ashu3.png";
-import Ridhi3 from "../../assets/images/Ridhi3.png";
+import Ashu2 from "../../assets/images/Ashu2.png";
+import Ridhi2 from "../../assets/images/Ridhi2.png";
 import Rf2 from "../../assets/video/Rf2.mp4";
 
 const Info = () => {
@@ -27,7 +27,7 @@ const Info = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col justify-between items-center md:pt-4">
       <main className="text-center max-w-6xl mx-auto">
-        <div className="flex justify-center md:mx-40 text-black text-left md:pt-0 pt-9">
+        <div className="flex justify-center md:mx-40 text-black text-left md:pt-0 pt-2">
           <p className="md:px-1 px-6 pt-8 md:text-[20px] text-[14px] text-justify text-black md:mx-14 md:pt-8">
             <h1 className="py-2 md:pb-4 font-semibold">
               Welcome to Vackadoo, where creativity meets innovation!
@@ -93,63 +93,65 @@ const Info = () => {
       </div>
       <section id="next-section" className="w-full">
         <footer className="w-full text-center text-lg bg-black p-6">
-          <div className="px-6 relative flex w-full h-16 md:h-18 md:mb-28">
-            <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28">
+          <div className="px-6 relative flex w-full h-16 md:h-36 md:mb-28">
+            <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi3} className="h-36 w-28 pt-7 pr-1" />
-                <div className="bg-white text-black font-bold text-[14px] mx-1 text-center">
+                <img src={Ridhi2} className="h-46  w-32 pt-3 pr-1 gap-1" />
+                <div className="bg-white border-white text-black font-bold pl-3 text-[17px] mx-0 text-left">
                   Ridhi Verma
                 </div>
-                <div className="bg-white text-black text-[14px] mx-1 text-center">
-                  Founder
+                <div className="bg-white border-white  text-black text-[14px] mx-0 pl-3 text-left">
+                  Co Founder
                 </div>
               </a>
             </div>
-            <div className="md:hidden absolute left-[12rem]  -translate-y-20 pt-6 w-16">
+            <div className="md:hidden absolute left-[10rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi3} className="pr-0.5" />
-                <div className="bg-white text-black font-bold text-[8px] mx-0.5 pt-0 text-center">
+                <img src={Ridhi2} className="pr- pt-2" />
+                <div className="bg-white text-black font-bold text-[11px]  pl-2 text-left">
                   Ridhi Verma
+                  <div className="bg-white text-black font-semibold text-[9px]  text-left pl-0">
+                  Co Founder
                 </div>
-                <div className="bg-white text-black text-[8px] mx-0.5 text-center">
-                  Founder
+                </div>
+                
+              </a>
+            </div>
+
+            <div className="hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-28 border-4 border-white ">
+              <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src={Ashu2} className="h-22 w-32 pt-0" />
+                <div className="bg-white border-white text-black py-0   font-bold text-[16px] px-1 text-center">
+                  Ashutosh Singh
+                </div>
+                <div className="bg-white border-white text-black text-[14px] px-1 text-left pl-4">
+                  Co Founder
                 </div>
               </a>
             </div>
 
-            <div className="hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-28">
+            <div className="md:hidden  absolute left- transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ashu3} className="h-36 w-28 pt-6" />
-                <div className="bg-white text-black font-bold text-[14px] px-1 text-center">
+                <img src={Ashu2} />
+                <div className="bg-white text-black  font-bold   text-[11px] px- text-center">
                   Ashutosh Singh
+                  <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">
+                  Co Founder
                 </div>
-                <div className="bg-white text-black text-[14px] px-1 text-center">
-                  Founder
                 </div>
-              </a>
-            </div>
-
-            <div className="md:hidden pt-6 absolute left- transform -translate-x-1/2 -translate-y-20 w-16">
-              <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ashu3} />
-                <div className="bg-white text-black font-bold text-[8px] px-1 text-center">
-                  Ashutosh Singh
-                </div>
-                <div className="bg-white text-black text-[8px] px-1 text-center">
-                  Founder
-                </div>
+                
               </a>
             </div>
           </div>
 
-          <div className="bg-white h-0.5 md:my-8 my-16"></div>
+          <div className="bg-white h-[1px] md:my-8  mt-24 mb-3"></div>
           <div className="grid grid-cols-2 justify-start md:mb-6">
             <div className="text-[14px] md:text-xs mr-12 grid-cols-1 md:mr-44">
               <a href="https://forms.gle/JX56Tu8CeSJwj1oP9">work with us</a>
             </div>
-            <div className="text-[14px] text-left md:text-xs grid-cols-1 md:ml-52">
-              <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p className=" pl-12">+91 787683757</p>
+            <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
+              <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a> 
+              <p className=" md:pl-12 ml-10">+91 787683757</p>
             </div>
           </div>
         </footer>
