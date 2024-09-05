@@ -101,7 +101,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="hidden lg:flex pr-10 space-x-6 items-center ml-auto">
+          <div className="hidden lg:flex pr-12 space-x-6 items-center ml-auto">
             <a
               href="/ScheduleCall"
               className="py-2 px-3 text-[12px] text-white rounded-full hover:bg-[#242424] bg-zinc-800"
@@ -109,7 +109,7 @@ const Navbar = () => {
               Schedule a Call
             </a>
             <span className="h-6 border-r border-black"></span>
-            <a href="/Info" className="py-2 text-sm font-semibold">
+            <a href="/Info" className="py-2 text-xs font-semibold">
               Info
             </a>
           </div>
