@@ -66,7 +66,7 @@ const Info = () => {
             </a>
           </div>
         </div>
-      </main>
+      </main> 
       <div className="flex justify-center bg-white mt-10 z-20">
         <button
           onClick={scrollToNextSection}

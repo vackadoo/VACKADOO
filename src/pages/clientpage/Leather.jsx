@@ -10,6 +10,9 @@ const AdroitLeathersSection = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -42,13 +45,15 @@ const AdroitLeathersSection = () => {
   };
 
   return (
-    <section className="bg-white pt-16 md:p-8">
-      <div className="text-2xl md:text-7xl  text-[#4F1D1C] text-center md:text-right md:mx-20 md:pr-16">
+    <section className="bg-white pt-16 md:pt-8">
+      <div className="text-2xl md:text-5xl  text-[#4F1D1C] text-center md:mb-0  md:mx-20 md:pr-16">
         <h1 className="font-bold">ADROIT LEATHERS</h1>
         <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-2 mt-6 md:mx-48">
-          <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
-            Brand Managment
-          </div>
+          <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
+            <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
+              Brand Managment
+            </div>
+          </a>
           <div className="grid-col-1  text-[6px]   text-white bg-[#B58543]">
             Photoshoots & Videoshoots
           </div>
@@ -59,7 +64,7 @@ const AdroitLeathersSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-24 gap-6">
-        <div className="mt-4 md:mt-12 flex items-center justify-center drop-shadow-xl relative py-4 md:py-9">
+        <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-4 md:py-9">
           <div className="relative overflow-hidden w-full max-w-[1500px]">
             <div
               className="flex space-x-2 md:space-x-4 transition-transform duration-500"
@@ -68,7 +73,7 @@ const AdroitLeathersSection = () => {
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-2xl "
+                  className="object-contain rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
                   loop
                   muted
                   ref={videoRefs[index + 1]}
@@ -97,16 +102,18 @@ const AdroitLeathersSection = () => {
           </div>
         </div>
 
-        <div className="py-4 md:py-8">
-          <div className="hidden md:flex md:justify-center md:mt-10  gap-12">
-            <div class="grid grid-cols-2 gap-5">
-              <div className="bg-[#B58543] text-[12px]   col-span-2 text-center  p-3 ">
+        <div className="py-4 md:py-0">
+          <div className="hidden md:flex md:justify-center md:mt-8  gap-12">
+            <div class="grid grid-cols-2 gap-3  ">
+              <div className="bg-[#B58543] text-[12px] py-2   col-span-2 text-center  px-24 ">
                 Photoshoots & Videoshoots
               </div>
-              <div className="bg-[#B58543] text-[12px] p-3">
-                Brand Managment
-              </div>
-              <div className="bg-[#B58543] text-[12px]  p-3 text-center ">
+              <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
+                <div className="bg-[#B58543] text-[12px] p-2 text-center ">
+                  Brand Managment
+                </div>
+              </a>
+              <div className="bg-[#B58543] text-[12px]  p-2 text-center ">
                 Email Marketing
               </div>
             </div>
@@ -139,7 +146,7 @@ const AdroitLeathersSection = () => {
           alt="Footer Image"
           className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
         />
-        <div className="hidden md:block">
+        <div className="hidden md:block mt-8">
           <Videofooter />
         </div>
       </div>

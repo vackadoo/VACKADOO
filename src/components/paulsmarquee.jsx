@@ -12,7 +12,7 @@ import picture9 from "../assets/brand/Pauls/picture9.jpg";
 
 export default function Marquee() {
   return (
-    <div className="relative flex flex-col items-center md:mx-20 md:mt-22 mt-12 overflow-hidden">
+    <div className="relative flex flex-col items-center md:mx-32    md:mt-22 mt-12 overflow-hidden">
       <div className="relative flex max-w-full overflow-hidden py-5">
         <div className="flex animate-marquee w-full">
           <div className="flex-shrink-0 h-full px-2.5 w-[14rem] flex items-center justify-center">
@@ -153,7 +153,7 @@ export default function Marquee() {
             </div>
           </div>
 
-          <div className="flex-shrink-0 h-full px-2.5 w-[14rem] flex items-center justify-center">
+          <div className="flex-shrink-0 h-full px-2.5 w-[12rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-300">
               <div className="flex flex-col items-center gap-4">
                 <img

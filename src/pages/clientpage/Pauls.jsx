@@ -6,6 +6,7 @@ import Videofooter from "../../components/Videofooter";
 
 const Pauls = () => {
   const videoUrls = [
+    ,
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2F1718652608022865.mp4?alt=media&token=0cbbb2be-fd92-4301-a0f0-e2fe067f828f",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_1272%20(1).MP4?alt=media&token=89b79e6a-d4ee-49ce-a9fe-1d4291c3b369",
@@ -44,12 +45,17 @@ const Pauls = () => {
       setCurrentIndex(currentIndex - 1);
     }
   };
+  const scrollToNextSection = () => {
+    
+    const nextSection = document.getElementById("next-section");
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="bg-white">
       {/* Main Content */}
-      <main className="text-center p-2">
-        <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center">
+      <main className="text-center p-2  md:pt-9">
+        <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center md:px-16  ">
           <h1
             className="text-xl pt-3 md:text-6xl font-bold text-center md:hidden "
             style={{ color: "#FF8412" }}
@@ -77,30 +83,35 @@ const Pauls = () => {
             className="rounded-lg shadow-lg h-72 md:h-auto grid-cols-1 "
           /> */}
 
-            <div className=" grid-cols-1 space-y-4 md:flex-row   mt-">
-              6
-              <div className="bg-[#FF8412] text-[8px]  rounded py-1 w-full">
-                Brand Managment
-              </div>
+            <div className=" grid-cols-1 space-y-4 md:flex-row mt-">
+              <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
+                <div className="bg-[#FF8412] text-[8px]  rounded py-1 w-full">
+                  Brand Managment
+                </div>
+              </a>
+              <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
               <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
                 Podcast Production
               </div>
-              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
+              </a>  
+              <div onClick={scrollToNextSection} className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
                 Content Production
               </div>
-              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
-                Product Photoshoots
-              </div>
+              <a href="https://www.behance.net/gallery/207211901/Puals">
+                <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
+                  Product Photoshoots
+                </div>
+              </a>
             </div>
           </div>
 
-          <div className="md:order-1 mt-8 md:w-1/3 hidden md:block">
+          <div className="md:order-1 mt-4 md:w-1/3 hidden md:block">
             {/* <img
             src={juris}
             alt="Juris Domain Instagram"
             className="rounded-lg shadow-lg h-72 md:h-auto   "
           /> */}
-            <div className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
+            <div id="next-section" className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
               <video
                 className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
@@ -123,22 +134,30 @@ const Pauls = () => {
               THE PAUL’S BIRYANI
             </h1>
 
-            <div className="hidden md:flex md:justify-center md:mt-4  gap-12">
+            <div className="hidden md:flex md:justify-center md:mt-6  ">
               <div class="grid grid-cols-2 gap-4">
-                <div className="bg-[#FF8412] text-xs p-2 ">Brand Managment</div>
+                <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
+                  <div className="bg-[#FF8412] text-xs p-2 px-8 ">
+                    Brand Managment
+                  </div>
+                </a>
+                <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
                 <div className="bg-[#FF8412] text-xs p-2">
                   Podcast Production
                 </div>
-                <div className="bg-[#FF8412] text-xs p-2 ">
+                </a>
+                <div onClick={scrollToNextSection} className="bg-[#FF8412] text-xs p-2 ">
                   Content Production
                 </div>
-                <div className="bg-[#FF8412] text-xs p-2 space ">
-                  Product Photoshoots
-                </div>
+                <a href="https://www.behance.net/gallery/207211901/Puals">
+                  <div className="bg-[#FF8412] text-xs p-2 space ">
+                    Product Photoshoots
+                  </div>
+                </a>
               </div>
             </div>
 
-            <p className=" hidden md:block md:pt-4 mt-6 text-black text-xs text-justify pr-7  md:text-justify">
+            <p className=" hidden md:block md:pt-0 mt-6 text-black md:text-[14px] text-justify md:px-4   md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -173,7 +192,7 @@ const Pauls = () => {
           Biryani maintains a dynamic and cohesive brand communication,
           strengthening its connection and relationship with customers.
         </p>
-        <div className="mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
+        <div className="md:mt-6  mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
           <div className="relative overflow-hidden w-full max-w-[1000px]">
             <div
               className="flex space-x-4 transition-transform duration-500"

@@ -7,7 +7,7 @@ import Videofooter from "../../components/Videofooter";
 
 const JurisDomain = () => {
   const videoUrls = [
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2F1716915757048897.MP4?alt=media&token=34d9bcf3-7345-4fcf-9ddc-2a551ab946b7",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
@@ -50,16 +50,16 @@ const JurisDomain = () => {
   };
 
   return (
-    <div className="bg-white pt-6">
-      <div className="flex flex-col md:flex-row md:space-x-6 items-center justify-center">
+    <div className="bg-white pt-6  md:px-16 ">
+      <div className="flex flex-col md:flex-row md:space-x-12 items-center justify-center">
         <h1
-          className="text-3xl md:text-6xl font-bold text-center md:hidden "
+          className="text-3xl md:text-5xl font-bold text-center md:hidden "
           style={{ color: "#94866B" }}
         >
           JURIS DOMAIN
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 md:px-0 gap-2 md:gap-0  px-2 mt-8 md:hidden">
+        <div className="grid grid-cols-2 md:grid-cols-2 md:px-0 gap-2 md:gap-8   mt-8 md:hidden">
           <img
             src={juris}
             alt="Juris Domain Instagram"
@@ -83,11 +83,11 @@ const JurisDomain = () => {
           </div>
         </div>
 
-        <div className="md:order-2 md:w-1/3 hidden md:block">
+        <div className="md:order-2 md:w-1/3 hidden md:block ">
           <img
             src={juris}
             alt="Juris Domain Instagram"
-            className="rounded-lg shadow-lg h-72  "
+            className="rounded-lg shadow-lg h-72 ml-3  "
           />
         </div>
         {/* Right Section: Title, Paragraph, and Buttons */}
@@ -99,21 +99,26 @@ const JurisDomain = () => {
             JURIS DOMAIN
           </h1>
 
-          <div className="hidden md:flex md:justify-center md:mt-2  gap-12">
-            <div class="grid grid-cols-2 gap-2">
-              <div className="bg-[#94866B] text-[12px] py-1   px-0  col-span-2 text-center ">
-                Campaign Managment
+          <div className="hidden md:flex md:ml-16  md:mt-7 ">
+            <div class="grid grid-cols-2 gap-2 ">
+              <div className="bg-[#94866B] text-[12px] py-2 col-span-2 text-center px-28">
+                <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  Campaign Managment{" "}
+                </a>
               </div>
-              <div className="bg-[#94866B] text-[12px] text-center p-2">
-                Podcast Production
-              </div>
-              <div className="bg-[#94866B] text-[12px] text-center p-2 ">
+
+              <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
+                <div className="bg-[#94866B] text-[12px] text-center px-2  py-2 ">
+                  Podcast Production
+                </div>
+              </a>
+              <div className="bg-[#94866B] text-[12px] text-center px-2  py-2">
                 Event Production
               </div>
             </div>
           </div>
 
-          <p className=" mt-4 text-black text-xs md:text-[14px] text-justify md:px-12 px-3 md:text-justify">
+          <p className=" mt-4 text-black text-xs md:text-[14px] md:mt-8  text-justify md:px-5  px-3 md:text-justify">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating
             their book launch event and managing all aspects of photography and
@@ -129,7 +134,7 @@ const JurisDomain = () => {
       </div>
 
       <div className=" flex items-center justify-center drop-shadow-xl relative py-9">
-        <div className="relative overflow-hidden w-full  md:max-w-[1100px] max-w-[350px]">
+        <div className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]">
           <div
             className="flex space-x-4 transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
@@ -166,11 +171,11 @@ const JurisDomain = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:space-x-7 md:grid-cols-2 md:mx-16 ">
+      <div className="grid grid-cols-1 md:space-x md:grid-cols-2 md:mx md:mt-8 ">
         <div className="order-1 md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain md:ml-28 ml-6 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain  md:ml-16 ml-6 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               ref={videoRefs[0]}
@@ -182,8 +187,8 @@ const JurisDomain = () => {
             </video>
           </div>
         </div>
-        <div className=" text-black text-xs md:text-[14px] md:text-justify text-justify md:pt-4   md:pr-32 md:mx-auto order-2 md:order-1 px-3 pt-4 md:px-6 ">
-          <p>
+        <div className=" text-black text-xs md:text-[14px]  md:text-justify text-justify md:pt-4    md:mx-auto order-2 md:order-1 px-3 pt-4 md:p ">
+          <p className=" md:pr-16">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating
             their book launch event and managing all aspects of photography and
@@ -195,13 +200,13 @@ const JurisDomain = () => {
       </div>
 
       {/* Footer Image */}
-      <div className="flex justify-center mt-12 ">
+      <div className="flex justify-center mt-8 md:mt-0 ">
         <img
           src={horizontal}
           alt="Footer Image"
           className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
         />
-        <div className="hidden md:block">
+        <div className="hidden md:block md:mt-12">
           <Videofooter />
         </div>
       </div>

@@ -43,9 +43,18 @@ const HorizonStudy = () => {
       setCurrentIndex(currentIndex - 1);
     }
   };
+  const scrollToNextSection = () => {
+    
+    const nextSection2 = document.getElementById("next-section2");
+    nextSection2.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToNextSection2 = () => {
+  const nextSection = document.getElementById("next-section");
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <div className="bg-white pt-16 min-h-screen flex flex-col">
+    <div className="bg-white pt-10   min-h-screen flex flex-col">
       <main className="flex-grow">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-yellow-500">
@@ -53,18 +62,20 @@ const HorizonStudy = () => {
           </h1>
 
           <div className="grid grid-cols-3 text-[8px]  gap-2 md:gap-4 mt-6 mx-6  md:mx-48">
-            <div className="grid-col-1 md:py-2 md:text-[12px]  py-1 bg-yellow-500">
+            <a href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" >
+            <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 bg-yellow-500">
               Brand Managment
             </div>
-            <div className="grid-col-1 md:py-2 md:text-[12px]   py-1   bg-yellow-500">
+            </a>
+            <div  onClick={scrollToNextSection}  className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500">
               Campaign Managment
             </div>
-            <div className="grid-col-1 md:py-2 md:text-[12px]  py-1  bg-yellow-500">
+            <div onClick={scrollToNextSection2}  className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500">
               Motion Graphic
             </div>
           </div>
 
-          <div className="mt-6 md:mt-12 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
+          <div id="next-section" className=" mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
             <video
               className="object-contain h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
               muted
@@ -78,7 +89,7 @@ const HorizonStudy = () => {
             </video>
           </div>
 
-          <div className="mt-12 md:text-[15px] text-[14px] md:mt-12 h-auto flex justify-center mx-3 md:mx-56 text-black text-justify  ">
+          <div className="mt-12 md:text-[15px] text-[14px] md:mt-12 h-auto flex justify-center mx-3 md:mx-32 text-black text-justify  ">
             <p>
               Vackadoo played a key role in supporting Horizon Study Circle
               (HSC) at Ambedkar University by meticulously executing various
@@ -94,8 +105,8 @@ const HorizonStudy = () => {
             </p>
           </div>
 
-          <div className="mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
-            <div className="relative overflow-hidden w-full max-w-[1100px] ">
+          <div id="next-section2" className="md:mt-0 mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
+            <div className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] ">
               <div
                 className="flex space-x-4 transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}

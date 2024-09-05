@@ -44,6 +44,16 @@ const TedxPage = () => {
     }
   };
 
+  const scrollToNextSection = () => {
+    
+    const nextSection2 = document.getElementById("next-section2");
+    nextSection2.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToNextSection2 = () => {
+  const nextSection = document.getElementById("next-section");
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="bg-white">
       <main className="text-center pt-8  md:pt-8">
@@ -54,35 +64,31 @@ const TedxPage = () => {
           SHIVAJICOLLEGE
         </h1>
         <div className=" md:hidden grid grid-cols-3 gap-2 md:gap-4 mt-6 mx-2 md:mx-48">
-          <div className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
+          <div onClick={scrollToNextSection2} className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
             Event Coverage
           </div>
-          <div className="grid-col-1 py-2 px-1 text-[8px] text-white  bg-red-600">
+          <div onClick={scrollToNextSection} className="grid-col-1 py-2 px-1 text-[8px] text-white  bg-red-600">
             Content Production
           </div>
-          <div className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
-            Social Media
-          </div>
+          
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-4  md:mx-40 mt-8 md:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-4  md:mx-40 mt-8 md:mt-6">
           <div className="drop-shadow-2xl md:mt-4 ml-6 ">
             <img src={tedx1} alt="" className="rounded-xl" />
           </div>
-          <div className="col-span-2 md:p-0 py-7 text-black text-justify text-base md:text-xs">
+          <div className="col-span-2 md:p-0 md:p py-7 text-black text-justify text-base md:text-xs">
             <div className="hidden md:block px-4">
-              <div className="grid grid-cols-3 md:gap-2 text-white  text-center pb-3 mx-2 ">
-                <div className="grid-col-1 text-[12px] bg-red-600 py-1  ">
+              <div className="grid grid-cols-2 md:gap-2 text-white  text-center pb-3 mx-2 ">
+                <div onClick={scrollToNextSection2} className="grid-col-1 text-[14px] bg-red-600 py-2  ">
                   Event Coverage
                 </div>
-                <div className="grid-col-1 py-1 text-[12px]   bg-red-600">
+                <div onClick={scrollToNextSection} className="grid-col-1 py-2 text-[14px]   bg-red-600">
                   Content Production
                 </div>
-                <div className="grid-col-1 py-1 text-[12px] bg-red-600">
-                  Social Media
-                </div>
+              
               </div>
             </div>
-            <p className=" md:text-[16px] text-xs mx-6 ">
+            <p className=" md:text-[14px] text-xs mx-6 ">
               Vackaoo played a pivotal role in the TEDxShivaji College event by
               providing comprehensive PR support and delivering a diverse range
               of video content including hype and formal videos. This
@@ -96,7 +102,7 @@ const TedxPage = () => {
           </div>
         </div>
 
-        <div className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative">
+        <div id="next-section" className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative">
           <video
             className="object-contain rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
@@ -110,7 +116,7 @@ const TedxPage = () => {
           </video>
         </div>
 
-        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-48 text-black text-justify  md:text-[16px]">
+        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-36 text-black text-justify  md:text-[14px]">
           Vackadoo meticulously captured the event’s most significant moments
           through professional photography and videography, resulting in
           visually captivating content that highlighted the essence and impact
@@ -120,8 +126,8 @@ const TedxPage = () => {
           enhancing the event's visibility and appeal.
         </div>
 
-        <div className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative">
-          <div className="relative overflow-hidden w-full max-w-[1200px]">
+        <div id="next-section2" className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative">
+          <div className="relative overflow-hidden w-full max-w-[1000px]">
             <div
               className="flex space-x-2 md:space-x-4 transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}

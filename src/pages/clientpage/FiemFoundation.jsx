@@ -1,15 +1,16 @@
 import React, { useRef, useState } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
+import Videofooter from "../../components/Videofooter";
 
 const FiemFoundation = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FIMG_0557SEEMA%20JAIN%20FULL%20VIDEO.MOV?alt=media&token=7b8eaa8b-8fd3-4550-ab75-d6ddfb9ba76c4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FTimeline%201REEL%20(1).mov?alt=media&token=dc723755-dafd-45dd-81cd-2c951e36a108",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -43,20 +44,25 @@ const FiemFoundation = () => {
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
-      <main className="text-center pt-12 md:p-2 md:pt-8">
+      <main className="text-center pt-12 md: md:pt-8">
         <div className="md:mx-36">
-          <h1 className="md:text-5xl text-3xl md:text-left font-bold text-[#3E8D19]">
+          <h1 className="md:text-5xl text-3xl md:text-center font-bold text-[#3E8D19]">
             <span className="text-3xl md:text-5xl font-bold text-orange-500">
               FIEM
             </span>{" "}
             FOUNDATION
           </h1>
         </div>
-        <div className=" md:mx-36 mx-12 text-[12px] grid grid-cols-2 text-white mt-4  md:mt-12 md:mr-80 gap-4 md:text-xs ">
-          <div className="grid-cols-1 bg-[#3E8D19] py-2">Event Coverage</div>
-          <div className="grid-cols-1 bg-[#3E8D19] py-2">
-            Content Production
-          </div>
+        <div className=" md:mx-36 mx-12  md:items-center text-[12px] grid grid-cols-2 text-white mt-4  md:mt-9 md gap-4 md:text-xs ">
+          <a href="https://youtu.be/WwWwgq2zswU?si=qPrISZisBf8bZB_A">
+            <div className="grid-cols-1 bg-[#3E8D19] py-2">Event Coverage</div>
+          </a>
+
+          <a href="https://www.instagram.com/foundationfiem?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <div className="grid-cols-1 bg-[#3E8D19] py-2">
+              Content Production
+            </div>
+          </a>
         </div>
 
         <div className="hidden md:block px-1  md:px-0 text-[22px]  mt-8 justify-center md:mx-36 text-black text-justify md:text-[14px]">
@@ -77,7 +83,7 @@ const FiemFoundation = () => {
         </div>
 
         <div className="order-1 md:order-2 flex items-center justify-center drop-shadow-xl relative py-9 ">
-          <div className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[800px]">
+          <div className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[950px]">
             <div
               className="flex space-x-4 transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
@@ -131,14 +137,16 @@ const FiemFoundation = () => {
           values.
         </div>
 
-        <div className="flex justify-center mt-12">
-          <img
-            src={horizontal}
-            alt="Footer Image"
-            className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
-          />
-          <img src={horizontal2} className="hidden md:block md:max-w-[700px]" />
+        <div className="flex justify-center mt-8 md:mt-0 ">
+        <img
+          src={horizontal}
+          alt="Footer Image"
+          className="w-full max-w-[300px] h-full md:max-w-[700px] object-contain md:hidden"
+        />
+        <div className="hidden md:block md:mt-12">
+          <Videofooter />
         </div>
+      </div>
       </main>
     </div>
   );
