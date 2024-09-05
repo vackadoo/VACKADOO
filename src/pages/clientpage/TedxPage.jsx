@@ -7,6 +7,23 @@ import Videofooter from "../../components/Videofooter";
 const TedxPage = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/102.MP4?alt=media&token=f4abdfee-06f0-4dbb-97a8-4c434870dcf5",
+
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2F1709699757377963.mp4?alt=media&token=204ab030-21b9-44ea-8bc6-ef2075e95456",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FIMG_5288.MOV?alt=media&token=3b8aa396-c1c5-407e-9a6c-4fc84fba7aa4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.20.00%20PM.mp4?alt=media&token=a1ddff64-aa51-429a-aef2-fe948c96445a",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.27.48%20PM.mp4?alt=media&token=246e9273-5068-4976-a372-d7ef765bae75",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.30.00%20PM%20(1).mp4?alt=media&token=d39282e9-aed1-40ad-9369-efc93a717822",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.31.32%20PM.mp4?alt=media&token=35bd4654-8d2d-4bf1-9b98-dbb550261b2d",
+
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2F1709699757377963.mp4?alt=media&token=204ab030-21b9-44ea-8bc6-ef2075e95456",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FIMG_5288.MOV?alt=media&token=3b8aa396-c1c5-407e-9a6c-4fc84fba7aa4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.20.00%20PM.mp4?alt=media&token=a1ddff64-aa51-429a-aef2-fe948c96445a",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.27.48%20PM.mp4?alt=media&token=246e9273-5068-4976-a372-d7ef765bae75",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.30.00%20PM%20(1).mp4?alt=media&token=d39282e9-aed1-40ad-9369-efc93a717822",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.31.32%20PM.mp4?alt=media&token=35bd4654-8d2d-4bf1-9b98-dbb550261b2d",
+
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2F1709699757377963.mp4?alt=media&token=204ab030-21b9-44ea-8bc6-ef2075e95456",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FIMG_5288.MOV?alt=media&token=3b8aa396-c1c5-407e-9a6c-4fc84fba7aa4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.20.00%20PM.mp4?alt=media&token=a1ddff64-aa51-429a-aef2-fe948c96445a",
@@ -45,12 +62,11 @@ const TedxPage = () => {
   };
 
   const scrollToNextSection = () => {
-    
     const nextSection2 = document.getElementById("next-section2");
     nextSection2.scrollIntoView({ behavior: "smooth" });
   };
   const scrollToNextSection2 = () => {
-  const nextSection = document.getElementById("next-section");
+    const nextSection = document.getElementById("next-section");
     nextSection.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -64,13 +80,18 @@ const TedxPage = () => {
           SHIVAJICOLLEGE
         </h1>
         <div className=" md:hidden grid grid-cols-2 gap-2 md:gap-4 mt-4 mx-2 md:mx-48">
-          <div onClick={scrollToNextSection2} className="grid-col-1 py-2 text-[10px] text-white  bg-red-600">
+          <div
+            onClick={scrollToNextSection2}
+            className="grid-col-1 py-2 text-[10px] text-white  bg-red-600"
+          >
             Event Coverage
           </div>
-          <div onClick={scrollToNextSection} className="grid-col-1 py-2 px-1 text-[10px] text-white  bg-red-600">
+          <div
+            onClick={scrollToNextSection}
+            className="grid-col-1 py-2 px-1 text-[10px] text-white  bg-red-600"
+          >
             Content Production
           </div>
-          
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3  gap-4 md:gap-4  md:mx-40 mt-8 md:mt-6">
           <div className="drop-shadow-2xl md:mt-4 ml-6 ">
@@ -79,13 +100,18 @@ const TedxPage = () => {
           <div className="col-span-2 md:p-0 md:p md:py-7 py-0 text-black text-justify text-[14px] md:text-xs">
             <div className="hidden md:block px-4">
               <div className="grid grid-cols-2 md:gap-2 text-white  text-center pb-3 mx-2 ">
-                <div onClick={scrollToNextSection2} className="grid-col-1 text-[14px] bg-red-600 py-2  ">
+                <div
+                  onClick={scrollToNextSection2}
+                  className="grid-col-1 text-[14px] bg-red-600 py-2  "
+                >
                   Event Coverage
                 </div>
-                <div onClick={scrollToNextSection} className="grid-col-1 py-2 text-[14px]   bg-red-600">
+                <div
+                  onClick={scrollToNextSection}
+                  className="grid-col-1 py-2 text-[14px]   bg-red-600"
+                >
                   Content Production
                 </div>
-              
               </div>
             </div>
             <p className=" mt-4 md:text-[14px] text-[12px] mx-6 ">
@@ -102,11 +128,15 @@ const TedxPage = () => {
           </div>
         </div>
 
-        <div id="next-section" className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative">
+        <div
+          id="next-section"
+          className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative"
+        >
           <video
             className="object-contain rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
             muted
+            playsInline
             ref={videoRefs[0]}
             onMouseOver={() => handleMouseOver(videoRefs[0])}
             onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -126,10 +156,13 @@ const TedxPage = () => {
           enhancing the event's visibility and appeal.
         </div>
 
-        <div id="next-section2" className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative">
+        <div
+          id="next-section2"
+          className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
+        >
           <div className="relative overflow-hidden w-full max-w-[1000px]">
             <div
-              className="flex space-x-2 md:space-x-4 transition-transform duration-500"
+              className="flex space-x-2 md:space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
@@ -138,6 +171,7 @@ const TedxPage = () => {
                   className="object-contain rounded-xl max-h-[300px] md:max-h-[300px]"
                   loop
                   muted
+                  playsInline
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}

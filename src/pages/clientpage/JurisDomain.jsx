@@ -8,6 +8,19 @@ import Videofooter from "../../components/Videofooter";
 const JurisDomain = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
+
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.05.28%20PM.mp4?alt=media&token=21625610-451d-4d50-af49-fdf15362b661",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-17%20at%203.06.03%20PM.mp4?alt=media&token=debb2daf-8a29-4442-b22d-7a4a539e0478",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
@@ -132,7 +145,7 @@ const JurisDomain = () => {
       <div className=" flex items-center justify-center drop-shadow-xl relative py-9">
         <div className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]">
           <div
-            className="flex space-x-4 transition-transform duration-500"
+            className="flex space-x-4 animate-marquee  hover:animate-none  transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {videoUrls.slice(1).map((url, index) => (
@@ -171,7 +184,7 @@ const JurisDomain = () => {
         <div className="order-1 items-center md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain  md:ml-16 ml-2 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               ref={videoRefs[0]}

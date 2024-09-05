@@ -6,6 +6,23 @@ import Videofooter from "../../components/Videofooter";
 const HorizonStudy = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_1999.MP4?alt=media&token=93acf0e2-7973-416f-9edf-84e4ea5e29b4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2002.MP4?alt=media&token=5fcf043b-88fc-40bb-a523-579f1d791096",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2005.MP4?alt=media&token=90c54190-036a-49eb-bab1-510aa530a030",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_1999.MP4?alt=media&token=93acf0e2-7973-416f-9edf-84e4ea5e29b4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2002.MP4?alt=media&token=5fcf043b-88fc-40bb-a523-579f1d791096",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2005.MP4?alt=media&token=90c54190-036a-49eb-bab1-510aa530a030",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_1999.MP4?alt=media&token=93acf0e2-7973-416f-9edf-84e4ea5e29b4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2002.MP4?alt=media&token=5fcf043b-88fc-40bb-a523-579f1d791096",
@@ -44,12 +61,11 @@ const HorizonStudy = () => {
     }
   };
   const scrollToNextSection = () => {
-    
     const nextSection2 = document.getElementById("next-section2");
     nextSection2.scrollIntoView({ behavior: "smooth" });
   };
   const scrollToNextSection2 = () => {
-  const nextSection = document.getElementById("next-section");
+    const nextSection = document.getElementById("next-section");
     nextSection.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -62,24 +78,36 @@ const HorizonStudy = () => {
           </h1>
 
           <div className="grid grid-cols-3 text-[9px] md:text-[8px]  gap-1 md:gap-4 mt-6 mx-2  md:mx-48">
-            <a href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" >
-            <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 bg-yellow-500">
-              Brand Managment
-            </div>
+            <a href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 bg-yellow-500">
+                Brand Managment
+              </div>
             </a>
-            <div cursor-pointer  onClick={scrollToNextSection}  className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500">
+            <div
+              cursor-pointer
+              onClick={scrollToNextSection}
+              className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500"
+            >
               Campaign Managment
             </div>
-            <div cursor-pointer onClick={scrollToNextSection2}  className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500">
+            <div
+              cursor-pointer
+              onClick={scrollToNextSection2}
+              className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500"
+            >
               Motion Graphic
             </div>
           </div>
 
-          <div id="next-section" className=" mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
+          <div
+            id="next-section"
+            className=" mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
+          >
             <video
               className="object-contain h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
               muted
               loop
+              playsInline
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -105,10 +133,13 @@ const HorizonStudy = () => {
             </p>
           </div>
 
-          <div id="next-section2" className="md:mt-0 mt-8 flex items-center justify-center drop-shadow-xl relative py-9">
+          <div
+            id="next-section2"
+            className="md:mt-0 mt-8 flex items-center justify-center drop-shadow-xl relative py-9"
+          >
             <div className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] ">
               <div
-                className="flex space-x-4 transition-transform duration-500"
+                className="flex space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
                 {videoUrls.slice(1).map((url, index) => (
@@ -117,6 +148,7 @@ const HorizonStudy = () => {
                     className="object-contain rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
                     loop
                     muted
+                    playsInline
                     ref={videoRefs[index + 1]}
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                     onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
@@ -148,8 +180,9 @@ const HorizonStudy = () => {
               alt="Footer Image"
               className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
             />
-            <div className="hidden md:block"><Videofooter /></div>
-
+            <div className="hidden md:block">
+              <Videofooter />
+            </div>
           </div>
         </div>
       </main>

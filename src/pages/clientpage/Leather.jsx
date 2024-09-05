@@ -13,6 +13,19 @@ const AdroitLeathersSection = () => {
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
 
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -67,7 +80,7 @@ const AdroitLeathersSection = () => {
         <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
           <div className="relative overflow-hidden w-full max-w-[1500px]">
             <div
-              className="flex space-x-2 md:space-x-4 transition-transform duration-500"
+              className="flex space-x-2 md:space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
@@ -76,6 +89,7 @@ const AdroitLeathersSection = () => {
                   className="object-contain rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
                   loop
                   muted
+                  playsInline
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
