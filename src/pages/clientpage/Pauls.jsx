@@ -83,22 +83,22 @@ const Pauls = () => {
             className="rounded-lg shadow-lg h-72 md:h-auto grid-cols-1 "
           /> */}
 
-            <div className=" grid-cols-1 space-y-4 md:flex-row mt-">
+            <div className=" grid-cols-1  md:flex-row mt-">
               <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
-                <div className="bg-[#FF8412] text-[8px]  rounded py-1 w-full">
+                <div className="bg-[#FF8412] text-[8px] mb-2  py-1 w-full">
                   Brand Management
                 </div>
               </a>
               <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
-              <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
+              <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
                 Podcast Production
               </div>
               </a>  
-              <div onClick={scrollToNextSection} className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
+              <div onClick={scrollToNextSection} className="bg-[#FF8412] text-[8px] mb-2  py-1  w-full">
                 Content Production
               </div>
               <a href="https://www.behance.net/gallery/207211901/Puals">
-                <div className="bg-[#FF8412] text-[8px] rounded py-1  w-full">
+                <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
                   Product Photoshoots
                 </div>
               </a>
@@ -157,7 +157,7 @@ const Pauls = () => {
               </div>
             </div>
 
-            <p className=" hidden md:block md:pt-0 mt-6 text-black md:text-[14px] text-justify md:px-4   md:text-justify">
+            <p className=" hidden md:block md:pt-0 mt-6 text-black   md:text-[14px] text-justify md:px-4   md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -171,7 +171,7 @@ const Pauls = () => {
               cohesive brand communication, strengthening its connection and
               relationship with customers.
             </p>
-            <p className=" md:hidden px-2  mt-10 text-black text-[14px] text-justify  md:text-justify">
+            <p className=" md:hidden px-2  mt-4 text-black text-[12px] text-justify  md:text-justify">
               Vackadoo provides comprehensive brand management for Paul's
               Biryani covering a broad spectrum of activities from brand logo
               design to implementing social media strategies. We oversee the
@@ -184,7 +184,7 @@ const Pauls = () => {
 
         <Paulsmarquee />
 
-        <p className=" md:hidden px-2  mt-10  text-[14px]  md:pt-7  text-black  text-justify  md:text-justify">
+        <p className=" md:hidden px-2  mt-4  text-[12px]  md:pt-7  text-black  text-justify  md:text-justify">
           Our team devises monthly strategies aimed at increasing engagement and
           enhancing brand visibility. This includes curating engaging content,
           including posts and reels, that resonate with the target audience. By
@@ -192,7 +192,7 @@ const Pauls = () => {
           Biryani maintains a dynamic and cohesive brand communication,
           strengthening its connection and relationship with customers.
         </p>
-        <div className="md:mt-6  mt-12 flex items-center justify-center drop-shadow-xl relative py-9">
+        <div className="md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9">
           <div className="relative overflow-hidden w-full max-w-[1000px]">
             <div
               className="flex space-x-4 transition-transform duration-500"

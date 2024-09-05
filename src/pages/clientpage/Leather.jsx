@@ -45,16 +45,16 @@ const AdroitLeathersSection = () => {
   };
 
   return (
-    <section className="bg-white pt-16 md:pt-8">
+    <section className="bg-white pt-4 md:pt-8">
       <div className="text-2xl md:text-5xl  text-[#4F1D1C] text-center md:mb-0  md:mx-20 md:pr-16">
         <h1 className="font-bold">ADROIT LEATHERS</h1>
-        <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-2 mt-6 md:mx-48">
+        <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-1 mt-6 md:mx-48">
           <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
             <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
               Brand Managment
             </div>
           </a>
-          <div className="grid-col-1  text-[6px]   text-white bg-[#B58543]">
+          <div className="grid-col-1  text-[7px] px-1   text-white bg-[#B58543]">
             Photoshoots & Videoshoots
           </div>
           <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
@@ -63,8 +63,8 @@ const AdroitLeathersSection = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-24 gap-6">
-        <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-4 md:py-9">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:mt-0 mt-4 mx-4 md:mx-24 gap-6">
+        <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
           <div className="relative overflow-hidden w-full max-w-[1500px]">
             <div
               className="flex space-x-2 md:space-x-4 transition-transform duration-500"
@@ -119,7 +119,7 @@ const AdroitLeathersSection = () => {
             </div>
           </div>
 
-          <div className="text-black text-justify text-[13px] md:text-[15px]  md:py-7   md:px-10">
+          <div className="text-black text-justify text-[13px] md:text-[15px] px-2  md:py-7  py-0  md:px-10">
             Vackadoo manages Adroit Leathers' social media presence across
             multiple platforms, including Facebook, LinkedIn, and Instagram. Our
             approach is to create professional product videos that accurately
@@ -140,9 +140,9 @@ const AdroitLeathersSection = () => {
           alt="Adroit Leathers Poster"
         />
       </div>
-      <div className="flex justify-center mt-12 md:mt-0 ">
+      <div className="flex justify-center mt-6 md:mt-0 ">
         <img
-          src={horizontal}
+          src={horizontal2}
           alt="Footer Image"
           className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
         />

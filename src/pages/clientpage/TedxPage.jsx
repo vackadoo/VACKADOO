@@ -56,27 +56,27 @@ const TedxPage = () => {
 
   return (
     <div className="bg-white">
-      <main className="text-center pt-8  md:pt-8">
+      <main className="text-center pt-4  md:pt-8">
         <h1 className="text-xl md:text-5xl font-bold text-black">
           <span className="text-xl md:text-5xl font-bold text-red-600">
             TEDX
           </span>
           SHIVAJICOLLEGE
         </h1>
-        <div className=" md:hidden grid grid-cols-3 gap-2 md:gap-4 mt-6 mx-2 md:mx-48">
-          <div onClick={scrollToNextSection2} className="grid-col-1 py-2 text-[8px] text-white  bg-red-600">
+        <div className=" md:hidden grid grid-cols-2 gap-2 md:gap-4 mt-4 mx-2 md:mx-48">
+          <div onClick={scrollToNextSection2} className="grid-col-1 py-2 text-[10px] text-white  bg-red-600">
             Event Coverage
           </div>
-          <div onClick={scrollToNextSection} className="grid-col-1 py-2 px-1 text-[8px] text-white  bg-red-600">
+          <div onClick={scrollToNextSection} className="grid-col-1 py-2 px-1 text-[10px] text-white  bg-red-600">
             Content Production
           </div>
           
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-6 md:gap-4  md:mx-40 mt-8 md:mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4 md:gap-4  md:mx-40 mt-8 md:mt-6">
           <div className="drop-shadow-2xl md:mt-4 ml-6 ">
             <img src={tedx1} alt="" className="rounded-xl" />
           </div>
-          <div className="col-span-2 md:p-0 md:p py-7 text-black text-justify text-base md:text-xs">
+          <div className="col-span-2 md:p-0 md:p md:py-7 py-0 text-black text-justify text-[14px] md:text-xs">
             <div className="hidden md:block px-4">
               <div className="grid grid-cols-2 md:gap-2 text-white  text-center pb-3 mx-2 ">
                 <div onClick={scrollToNextSection2} className="grid-col-1 text-[14px] bg-red-600 py-2  ">
@@ -88,7 +88,7 @@ const TedxPage = () => {
               
               </div>
             </div>
-            <p className=" md:text-[14px] text-xs mx-6 ">
+            <p className=" mt-4 md:text-[14px] text-[12px] mx-6 ">
               Vackaoo played a pivotal role in the TEDxShivaji College event by
               providing comprehensive PR support and delivering a diverse range
               of video content including hype and formal videos. This
@@ -116,7 +116,7 @@ const TedxPage = () => {
           </video>
         </div>
 
-        <div className="mt-8 md:mt-12 text-xs  flex justify-center mx-4 md:mx-36 text-black text-justify  md:text-[14px]">
+        <div className="mt-4 md:mt-12 text-[12px]  flex justify-center mx-4 md:mx-36 text-black text-justify  md:text-[14px]">
           Vackadoo meticulously captured the event’s most significant moments
           through professional photography and videography, resulting in
           visually captivating content that highlighted the essence and impact
@@ -165,7 +165,7 @@ const TedxPage = () => {
         </div>
         <div className="flex justify-center mt-12 ">
           <img
-            src={horizontal}
+            src={horizontal2}
             alt="Footer Image"
             className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
           />
