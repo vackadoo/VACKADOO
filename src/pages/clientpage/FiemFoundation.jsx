@@ -110,6 +110,7 @@ const FiemFoundation = () => {
                   className="object-contain rounded-xl md:max-h-[300px] max-h-[250px]  drop-shadow-xl"
                   loop
                   muted
+                  playsInline // Added playsInline attribute
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
