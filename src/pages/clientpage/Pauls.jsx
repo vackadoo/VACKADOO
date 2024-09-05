@@ -46,7 +46,6 @@ const Pauls = () => {
     }
   };
   const scrollToNextSection = () => {
-    
     const nextSection = document.getElementById("next-section");
     nextSection.scrollIntoView({ behavior: "smooth" });
   };
@@ -54,7 +53,7 @@ const Pauls = () => {
   return (
     <div className="bg-white">
       {/* Main Content */}
-      <main className="text-center pt-2  md:pt-9">
+      <main className="text-center pt-2 px-2  md:pt-9">
         <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center md:px-16  ">
           <h1
             className="text-xl pt-3 md:text-6xl font-bold text-center md:hidden "
@@ -90,11 +89,14 @@ const Pauls = () => {
                 </div>
               </a>
               <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
-              <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
-                Podcast Production
-              </div>
-              </a>  
-              <div onClick={scrollToNextSection} className="bg-[#FF8412] text-[8px] mb-2  py-1  w-full">
+                <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
+                  Podcast Production
+                </div>
+              </a>
+              <div
+                onClick={scrollToNextSection}
+                className="bg-[#FF8412] text-[8px] mb-2  py-1  w-full"
+              >
                 Content Production
               </div>
               <a href="https://www.behance.net/gallery/207211901/Puals">
@@ -111,7 +113,10 @@ const Pauls = () => {
             alt="Juris Domain Instagram"
             className="rounded-lg shadow-lg h-72 md:h-auto   "
           /> */}
-            <div id="next-section" className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
+            <div
+              id="next-section"
+              className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
+            >
               <video
                 className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
@@ -142,11 +147,14 @@ const Pauls = () => {
                   </div>
                 </a>
                 <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
-                <div className="bg-[#FF8412] text-xs p-2">
-                  Podcast Production
-                </div>
+                  <div className="bg-[#FF8412] text-xs p-2">
+                    Podcast Production
+                  </div>
                 </a>
-                <div onClick={scrollToNextSection} className="bg-[#FF8412] text-xs p-2 ">
+                <div
+                  onClick={scrollToNextSection}
+                  className="bg-[#FF8412] text-xs p-2 "
+                >
                   Content Production
                 </div>
                 <a href="https://www.behance.net/gallery/207211901/Puals">
