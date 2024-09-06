@@ -89,7 +89,7 @@ const AdroitLeathersSection = () => {
                   className="object-contain rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
                   loop
                   muted
-                  playsInline
+                  playsInline // Added playsInline attribute
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
