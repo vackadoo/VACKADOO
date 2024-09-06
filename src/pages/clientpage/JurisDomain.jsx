@@ -9,7 +9,6 @@ const JurisDomain = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
 
-
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
@@ -35,6 +34,7 @@ const JurisDomain = () => {
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const marqueeRef = useRef(null);
 
   const handleMouseOver = (videoRef) => {
     if (videoRef.current) {
@@ -60,6 +60,13 @@ const JurisDomain = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     }
+  };
+  const pauseMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "paused";
+  };
+
+  const resumeMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "running";
   };
 
   return (
@@ -143,9 +150,14 @@ const JurisDomain = () => {
       </div>
 
       <div className=" flex items-center justify-center drop-shadow-xl relative py-9">
-        <div className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]">
+        <div
+          onMouseOver={pauseMarquee}
+          onMouseLeave={resumeMarquee}
+          className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
+        >
           <div
-            className="flex space-x-4 animate-marquee  hover:animate-none  transition-transform duration-500"
+            ref={marqueeRef}
+            className="flex space-x-4 animate-marquee   transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {videoUrls.slice(1).map((url, index) => (

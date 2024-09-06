@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState, useRef } from "react";
 import Ashu2 from "../../assets/images/Ashu2.png";
 import Ridhi2 from "../../assets/images/Ridhi2.png";
@@ -66,8 +65,8 @@ const Info = () => {
             </a>
           </div>
         </div>
-      </main> 
-      <div className="flex justify-center bg-white md:ml-9 mt-3 z-20">
+      </main>
+      <div className="flex justify-center bg-white md:ml-9 ml-6 mt-3 z-20">
         <button
           onClick={scrollToNextSection}
           className="text-black text-6xl bouncy-arrow "
@@ -105,16 +104,15 @@ const Info = () => {
                 </div>
               </a>
             </div>
-            <div className="md:hidden absolute left-[10rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
+            <div className="md:hidden absolute left-[9rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi2} className="pr- pt-2" />
+                <img src={Ridhi2} className=" pt-2" />
                 <div className="bg-white text-black font-bold text-[11px]  pl-2 text-left">
-                  Ridhi Verma
+                  <h4>Ridhi Verma</h4>
                   <div className="bg-white text-black font-semibold text-[9px]  text-left pl-0">
-                  Co Founder
+                    Co Founder
+                  </div>
                 </div>
-                </div>
-                
               </a>
             </div>
 
@@ -130,16 +128,15 @@ const Info = () => {
               </a>
             </div>
 
-            <div className="md:hidden  absolute left- transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
+            <div className="md:hidden  absolute left-66 ml-4  transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <img src={Ashu2} />
                 <div className="bg-white text-black  font-bold   text-[11px] px- text-center">
                   Ashutosh Singh
                   <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">
-                  Co Founder
+                    Co Founder
+                  </div>
                 </div>
-                </div>
-                
               </a>
             </div>
           </div>
@@ -150,8 +147,8 @@ const Info = () => {
               <a href="https://forms.gle/JX56Tu8CeSJwj1oP9">work with us</a>
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
-              <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a> 
-              <p className=" md:pl-12 ml-10">+91 787683757</p>
+              <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
+              <p className=" md:pl-2 ml-10">+91 787683757</p>
             </div>
           </div>
         </footer>

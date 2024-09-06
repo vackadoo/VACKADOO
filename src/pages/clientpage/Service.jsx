@@ -8,6 +8,7 @@ import right2 from "../../assets/images/Right2.mp4";
 const Service = () => {
   const [showVertical, setShowVertical] = useState(true);
   const leftVideoRef = useRef(null);
+  const rightVideoRef = useRef(null);
 
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("next-section");
@@ -24,15 +25,27 @@ const Service = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleMouseEnter = () => {
+  const handleMouseEnterLeft = () => {
     if (leftVideoRef.current) {
       leftVideoRef.current.play();
     }
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeaveLeft = () => {
     if (leftVideoRef.current) {
       leftVideoRef.current.pause();
+    }
+  };
+
+  const handleMouseEnterRight = () => {
+    if (rightVideoRef.current) {
+      rightVideoRef.current.play();
+    }
+  };
+
+  const handleMouseLeaveRight = () => {
+    if (rightVideoRef.current) {
+      rightVideoRef.current.pause();
     }
   };
 
@@ -41,8 +54,8 @@ const Service = () => {
       {/* Left Video */}
       <div
         className="fixed left-0 top-0 h-screen w-auto z-10"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleMouseEnterLeft}
+        onMouseLeave={handleMouseLeaveLeft}
       >
         <video
           ref={leftVideoRef}
@@ -55,15 +68,25 @@ const Service = () => {
       </div>
 
       {/* Right Video */}
-      <div className="fixed mt-9 right-0 top-0 h-[90vh] w-auto z-10"
-      onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+      <div
+        className="fixed mt-9 right-0 top-0 h-[90vh] w-auto z-10"
+        onMouseEnter={handleMouseEnterRight}
+        onMouseLeave={handleMouseLeaveRight}
+      >
         <video
+<<<<<<< HEAD
           ref={leftVideoRef}
           loop
           muted
           playsInline // Added playsInline attribute
           src={right2}
+=======
+          ref={rightVideoRef}
+          muted
+          src={right2}
+          loop
+          playsInline
+>>>>>>> ab621e1 (Add new files or update existing filsfsfes)
           className="h-full hidden md:block"
         />
       </div>

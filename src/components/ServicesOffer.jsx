@@ -34,10 +34,10 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 mb-6 ">
-              <div className="bg-white text-black font-semibold text-[8px] md:text-xs mt-2 pt-2 px-2 rounded-full">
+              <div className="bg-white text-black font-semibold text-[8px] md:text-xs mt-3 pt-2 px-2 rounded-full">
                 CONTENT PRODUCTION
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-2 px-2 mt-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-2 px-2 mt-3 md:px-6 rounded-full">
                 PODCAST PRODUCTION
               </div>
               <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">

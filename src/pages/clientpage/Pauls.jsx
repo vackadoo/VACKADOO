@@ -15,7 +15,6 @@ const Pauls = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
 
-
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_1272%20(1).MP4?alt=media&token=89b79e6a-d4ee-49ce-a9fe-1d4291c3b369",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_7291.MOV?alt=media&token=6610cf23-41bc-4b08-8f51-08ea07622698",
@@ -35,6 +34,14 @@ const Pauls = () => {
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const marqueeRef = useRef(null);
+  const pauseMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "paused";
+  };
+
+  const resumeMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "running";
+  };
 
   const handleMouseOver = (videoRefs) => {
     if (videoRefs.current) {
@@ -99,7 +106,7 @@ const Pauls = () => {
             className="rounded-lg shadow-lg h-72 md:h-auto grid-cols-1 "
           /> */}
 
-            <div className=" grid-cols-1  md:flex-row mt-">
+            <div className=" grid-cols-1  md:flex-row mt-10">
               <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
                 <div className="bg-[#FF8412] text-[8px] mb-2  py-1 w-full">
                   Brand Management
@@ -218,9 +225,14 @@ const Pauls = () => {
           strengthening its connection and relationship with customers.
         </p>
         <div className="md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9">
-          <div className="relative overflow-hidden w-full max-w-[1000px]">
+          <div
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-hidden w-full max-w-[1000px]"
+          >
             <div
-              className="flex space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
+              ref={marqueeRef}
+              className="flex space-x-4 animate-marquee  transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (

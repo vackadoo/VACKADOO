@@ -27,10 +27,25 @@ const FiemFoundation = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const marqueeRef = useRef(null);
+  const pauseMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "paused";
+  };
+
+  const resumeMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "running";
+  };
 
   const handleMouseOver = (videoRef) => {
     if (videoRef.current) {
@@ -57,6 +72,7 @@ const FiemFoundation = () => {
       setCurrentIndex(currentIndex - 1);
     }
   };
+ 
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
@@ -99,9 +115,10 @@ const FiemFoundation = () => {
         </div>
 
         <div className="order-1 md:order-2 flex items-center justify-center drop-shadow-xl relative py-9 ">
-          <div className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[950px]">
-            <div
-              className="flex space-x-4 animate-marquee transition-transform duration-500"
+          <div onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}  className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[950px]">
+            <div ref={marqueeRef} 
+              className="flex space-x-4 animate-marquee  transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (

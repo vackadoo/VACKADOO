@@ -34,6 +34,7 @@ const HorizonStudy = () => {
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const marqueeRef = useRef(null);
 
   const handleMouseOver = (videoRefs) => {
     if (videoRefs.current) {
@@ -69,6 +70,13 @@ const HorizonStudy = () => {
     nextSection.scrollIntoView({ behavior: "smooth" });
   };
 
+  const pauseMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "paused";
+  };
+
+  const resumeMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "running";
+  };
   return (
     <div className="bg-white md:pt-10 pt-4   min-h-screen flex flex-col">
       <main className="flex-grow">
@@ -137,9 +145,10 @@ const HorizonStudy = () => {
             id="next-section2"
             className="md:mt-0 mt-8 flex items-center justify-center drop-shadow-xl relative py-9"
           >
-            <div className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] ">
-              <div
-                className="flex space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
+            <div onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee} className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] ">
+              <div ref={marqueeRef} 
+                className="flex space-x-4 animate-marquee  transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
                 {videoUrls.slice(1).map((url, index) => (

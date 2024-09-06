@@ -8,14 +8,12 @@ const TedxPage = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/102.MP4?alt=media&token=f4abdfee-06f0-4dbb-97a8-4c434870dcf5",
 
-
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2F1709699757377963.mp4?alt=media&token=204ab030-21b9-44ea-8bc6-ef2075e95456",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FIMG_5288.MOV?alt=media&token=3b8aa396-c1c5-407e-9a6c-4fc84fba7aa4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.20.00%20PM.mp4?alt=media&token=a1ddff64-aa51-429a-aef2-fe948c96445a",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.27.48%20PM.mp4?alt=media&token=246e9273-5068-4976-a372-d7ef765bae75",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.30.00%20PM%20(1).mp4?alt=media&token=d39282e9-aed1-40ad-9369-efc93a717822",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FWhatsApp%20Video%202024-07-17%20at%201.31.32%20PM.mp4?alt=media&token=35bd4654-8d2d-4bf1-9b98-dbb550261b2d",
-
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2F1709699757377963.mp4?alt=media&token=204ab030-21b9-44ea-8bc6-ef2075e95456",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/TEDX%2FIMG_5288.MOV?alt=media&token=3b8aa396-c1c5-407e-9a6c-4fc84fba7aa4",
@@ -34,6 +32,14 @@ const TedxPage = () => {
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const marqueeRef = useRef(null);
+  const pauseMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "paused";
+  };
+
+  const resumeMarquee = () => {
+    marqueeRef.current.style.animationPlayState = "running";
+  };
 
   const handleMouseOver = (videoRef) => {
     if (videoRef.current) {
@@ -160,8 +166,13 @@ const TedxPage = () => {
           id="next-section2"
           className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
         >
-          <div className="relative overflow-hidden w-full max-w-[1000px]">
+          <div
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-hidden w-full max-w-[1000px]"
+          >
             <div
+              ref={marqueeRef}
               className="flex space-x-2 md:space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
