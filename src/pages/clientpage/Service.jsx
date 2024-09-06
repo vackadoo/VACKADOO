@@ -74,19 +74,11 @@ const Service = () => {
         onMouseLeave={handleMouseLeaveRight}
       >
         <video
-<<<<<<< HEAD
-          ref={leftVideoRef}
-          loop
-          muted
-          playsInline // Added playsInline attribute
-          src={right2}
-=======
           ref={rightVideoRef}
           muted
           src={right2}
           loop
           playsInline
->>>>>>> ab621e1 (Add new files or update existing filsfsfes)
           className="h-full hidden md:block"
         />
       </div>
