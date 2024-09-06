@@ -53,7 +53,7 @@ const Service = () => {
     <div className="relative bg-white">
       {/* Left Video */}
       <div
-        className="fixed left-0 top-0 h-screen w-auto z-10"
+        className="fixed left-0 md:top-0 top-32  h-[50vh] md:h-[90vh] w-auto z-10"
         onMouseEnter={handleMouseEnterLeft}
         onMouseLeave={handleMouseLeaveLeft}
       >
@@ -63,13 +63,13 @@ const Service = () => {
           playsInline // Added playsInline attribute
           src={left2}
           loop
-          className="h-full hidden md:block"
+          className="h-full "
         />
       </div>
 
       {/* Right Video */}
       <div
-        className="fixed mt-9 right-0 top-0 h-[90vh] w-auto z-10"
+        className="fixed md:mt-9 mt-20 right-0 md:top-0 h-[50vh] md:h-[90vh] w-auto z-10"
         onMouseEnter={handleMouseEnterRight}
         onMouseLeave={handleMouseLeaveRight}
       >
@@ -79,24 +79,24 @@ const Service = () => {
           src={right2}
           loop
           playsInline
-          className="h-full hidden md:block"
+          className="h-full"
         />
       </div>
 
       {/* Image Transition */}
-      <div className="flex justify-center items-center h-screen bg-white">
+      <div className="flex justify-center items-center md:h-screen md:pt-0 pt-20  md:bg-white bg-transparent">
         <div className="relative z-20 md:w-full md:max-w-4xl max-w-xl">
           {showVertical ? (
             <img
               src={vertical}
               alt="Vertical"
-              className="h-[60vh] w-full object-contain transition-all duration-[3000ms] ease-in-out"
+              className="h-[60vh] w-full object-contain transition-all duration-[1000ms] ease-in-out"
             />
           ) : (
             <img
               src={horizontal}
               alt="Horizontal"
-              className="h-[60vh] w-full object-contain transition-all duration-[3000ms] ease-in-out"
+              className="md:h-[60vh] h-[40vh] w-full object-contain transition-all duration-[1000ms] ease-in-out"
             />
           )}
         </div>
@@ -106,7 +106,7 @@ const Service = () => {
       <div className="flex justify-center bg-white z-20">
         <button
           onClick={scrollToNextSection}
-          className="text-black text-6xl bouncy-arrow mb-28"
+          className= "text-black text-6xl bouncy-arrow md:ml-0 ml-8 mb-28 z-20"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
             <path d="M12 17.414L3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />

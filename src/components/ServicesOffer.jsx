@@ -8,7 +8,7 @@ const ServicesOffer = () => {
   };
 
   return (
-    <div className="w-[90vw] md:w-[60vw] bg-white mx-auto z-20">
+    <div className="w-[60vw] md:w-[60vw] bg-white mx-auto z-20">
       <div className="flex flex-col md:grid md:grid-rows-3">
         {/* MEDIA Section */}
         <div
@@ -20,7 +20,7 @@ const ServicesOffer = () => {
           onClick={() => handleClick("media")}
         >
           <h1
-            className={`text-xl ${
+            className={`md:text-xl text-sm ${
               activeSection === "media" ? "text-white" : ""
             }`}
           >
@@ -34,19 +34,19 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 mb-6 ">
-              <div className="bg-white text-black font-semibold text-[8px] md:text-xs mt-3 pt-2 px-2 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
                 CONTENT PRODUCTION
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-2 px-2 mt-3 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
                 PODCAST PRODUCTION
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 EVENT COVERAGE
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 CAMPAIGN MANAGEMENT
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 PHOTOSHOOTS & VIDEOSHOOTS
               </div>
             </div>
@@ -63,7 +63,7 @@ const ServicesOffer = () => {
           onClick={() => handleClick("management")}
         >
           <h1
-            className={`text-xl ${
+            className={`md:text-xl text-sm ${
               activeSection === "management" ? "text-white" : ""
             }`}
           >
@@ -77,10 +77,10 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 p-2">
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 BRAND
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 SOCIAL PLATFORM
               </div>
             </div>
@@ -97,7 +97,7 @@ const ServicesOffer = () => {
           onClick={() => handleClick("design")}
         >
           <h1
-            className={`text-xl ${
+            className={`md:text-xl text-sm ${
               activeSection === "design" ? "text-white" : ""
             }`}
           >
@@ -110,23 +110,23 @@ const ServicesOffer = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 p-2">
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+            <div className="flex flex-wrap justify-center space-x-2 md:p-2 ">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 MOTION GRAPHICS
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 LOGOS WITH BRANDING
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 ANIMATION
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 ILLUSTRATIONS
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 WEB DESIGN
               </div>
-              <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 GRAPHICS
               </div>
             </div>
