@@ -111,10 +111,11 @@ const HorizonStudy = () => {
             id="next-section"
             className=" mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
           >
-            <iframe
+            <video
               className="object-contain h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
               muted
               loop
+              autoPlay
               playsInline
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -122,7 +123,7 @@ const HorizonStudy = () => {
             >
               <source src={videoUrls[0]} type="video/mp4" />
               Your browser does not support the video tag.
-            </iframe>
+            </video>
           </div>
 
           <div className="mt-8 md:text-[15px] text-[14px] md:mt-12 h-auto flex justify-center mx-3 md:mx-32 text-black text-justify  ">
@@ -152,11 +153,12 @@ const HorizonStudy = () => {
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
                 {videoUrls.slice(1).map((url, index) => (
-                  <iframe
+                  <video
                     key={index}
                     className="object-contain rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
                     loop
                     muted
+                    autoPlay
                     playsInline
                     ref={videoRefs[index + 1]}
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
@@ -164,7 +166,7 @@ const HorizonStudy = () => {
                   >
                     <source src={url} type="video/mp4" />
                     Your browser does not support the video tag.
-                  </iframe>
+                  </video>
                 ))}
               </div>
               {/* Left Button */}
