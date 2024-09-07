@@ -186,8 +186,7 @@ export default function Marquee() {
 
   return (
     <div className="relative flex flex-col items-center w-full overflow-hidden">
-      
-      <div className="relative flex max-w-full overflow-hidden md:mt-10 mb-20 md:py-5 bg-gray-300">
+      <div className="relative flex max-w-full overflow-hidden md:mt-10 mb-20 md:py-5 bg-black">
         <div className="flex animate-marquee md:max-w-[1300px]">
           <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
