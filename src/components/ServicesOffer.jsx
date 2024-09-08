@@ -14,7 +14,7 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "media"
-              ? "bg-black text-white h-[30vh]"
+              ? "bg-black text-white h-[23vh] md:pt-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("media")}
@@ -29,7 +29,7 @@ const ServicesOffer = () => {
           <div
             className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
               activeSection === "media"
-                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                ? "max-h-[500px] opacity-100 mt-0 bg-black w-full"
                 : "max-h-0 opacity-0"
             }`}
           >
@@ -57,7 +57,7 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "management"
-              ? "bg-black text-white h-[30vh]"
+              ? "bg-black text-white h-[17vh] md:pt-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("management")}
@@ -72,11 +72,11 @@ const ServicesOffer = () => {
           <div
             className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
               activeSection === "management"
-                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                ? "max-h-[500px] opacity-100 md:mt-0 mt-4 bg-black w-full"
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 p-2">
+            <div className="flex flex-wrap justify-center space-x-2 p-2 md:p-2">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 BRAND
               </div>
@@ -91,13 +91,13 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col items-center font-bold justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "design"
-              ? "bg-black text-white h-[30vh]"
+              ? "bg-black text-white h-[24vh] md:pt-1 md:pb-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("design")}
         >
           <h1
-            className={`md:text-xl text-sm ${
+            className={`md:text-xl text-sm    ${
               activeSection === "design" ? "text-white" : ""
             }`}
           >
@@ -106,11 +106,11 @@ const ServicesOffer = () => {
           <div
             className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
               activeSection === "design"
-                ? "max-h-[500px] opacity-100 mt-4 bg-black w-full"
+                ? "max-h-[500px] opacity-100 mt-4 md:mt-0 md:pb-0  bg-black w-full"
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 md:p-2 ">
+            <div className="flex flex-wrap justify-center space-x-2 md:p-0 ">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 MOTION GRAPHICS
               </div>

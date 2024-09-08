@@ -115,7 +115,6 @@ const HorizonStudy = () => {
               className="object-contain h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
               muted
               loop
-              autoPlay
               playsInline
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -146,9 +145,13 @@ const HorizonStudy = () => {
             id="next-section2"
             className="md:mt-0 mt-8 flex items-center justify-center drop-shadow-xl relative py-9"
           >
-            <div onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee} className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] ">
-              <div ref={marqueeRef} 
+            <div
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] "
+            >
+              <div
+                ref={marqueeRef}
                 className="flex space-x-4 animate-marquee  transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
@@ -158,7 +161,6 @@ const HorizonStudy = () => {
                     className="object-contain rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
                     loop
                     muted
-                    autoPlay
                     playsInline
                     ref={videoRefs[index + 1]}
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}

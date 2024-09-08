@@ -206,11 +206,11 @@ const LandingPage = () => {
   return (
     <div>
       {/* Video Background Section */}
-      <section className="relative h-[50vh] md:h-[70vh] flex justify-center items-center overflow-hidden">
-        <div className="absolute inset-0 flex justify-center items-center pt-8">
+      <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
           <video
             ref={videoRef}
-            className="md:max-w-[1000px] md:h-full object-cover"
+            className="md:max-w-[1200px] md:h-full object-cover"
             autoPlay
             loop
             muted
@@ -223,10 +223,10 @@ const LandingPage = () => {
       </section>
 
       {/* Arrow Below the Video */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center md:mt-1 mt-2">
         <button
           onClick={scrollToNextSection}
-          className="hidden md:block text-white text-4xl bouncy-arrow mb-20"
+          className="hidden md:block text-white text-4xl animate-bounce mb-20"
         >
           <img src={arrow} alt="Scroll Down Arrow" />
         </button>

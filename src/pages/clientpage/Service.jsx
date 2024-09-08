@@ -53,7 +53,7 @@ const Service = () => {
     <div className="relative bg-white">
       {/* Left Video */}
       <div
-        className="fixed left-0 md:top-0 top-32  h-[50vh] md:h-[90vh] w-auto z-10"
+        className="fixed left-0 md:top-0 top-32  h-[50vh] md:h-[110vh] w-auto z-10"
         onMouseEnter={handleMouseEnterLeft}
         onMouseLeave={handleMouseLeaveLeft}
       >
@@ -69,7 +69,7 @@ const Service = () => {
 
       {/* Right Video */}
       <div
-        className="fixed md:mt-9 mt-20 right-0 md:top-0 h-[50vh] md:h-[90vh] w-auto z-10"
+        className="fixed md:mt-9 mt-20 right-0 md:top-0 h-[50vh] md:h-[110vh] w-auto z-10"
         onMouseEnter={handleMouseEnterRight}
         onMouseLeave={handleMouseLeaveRight}
       >

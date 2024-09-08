@@ -398,6 +398,22 @@ const items = [
   { name: "JurisDomain", image: JurisDomain },
   { name: "Leather", image: Leather },
   { name: "tedx", image: tedx },
+
+
+
+  { name: "Pauls", image: Pauls },
+  { name: "FiemFoundation", image: FiemFoundation },
+  { name: "HorzionStudy", image: HorzionStudy },
+  { name: "JurisDomain", image: JurisDomain },
+  { name: "Leather", image: Leather },
+  { name: "tedx", image: tedx },
+
+  { name: "Pauls", image: Pauls },
+  { name: "FiemFoundation", image: FiemFoundation },
+  { name: "HorzionStudy", image: HorzionStudy },
+  { name: "JurisDomain", image: JurisDomain },
+  { name: "Leather", image: Leather },
+  { name: "tedx", image: tedx },
 ];
 
 const FeatureSection = () => {
@@ -433,7 +449,7 @@ const FeatureSection = () => {
   }, [isScrolled, isMarqueeVisible]);
 
   return (
-    <div className="relative h-[30vh] md:mb-0 mb-6 md:h-[60vh] overflow-hidden flex items-center justify-center">
+    <div className="relative h-[40vh] md:mb-0 mb-6 md:h-[60vh] overflow-hidden flex items-center justify-center">
       {/* Background Images */}
       <img
         src={horizontal}
@@ -475,8 +491,8 @@ const FeatureSection = () => {
             </div>
           </div>
 
-          <div className="md:hidden max-w-[600px] text-center mb-36 ">
-            <h1 className="text-white text-xl font-bold md:mb-8  mb-10">Projects</h1>
+          <div className="md:hidden max-w-[600px] text-center mb-36  ">
+            <h1 className="text-white text-xl font-bold md:mb-0  mb-10">Projects</h1>
 
             <div className="absolute flex animate-marquee overflow-auto md:mb-8  mb-14">
               {[...items, ...items].map((item, index) => (
