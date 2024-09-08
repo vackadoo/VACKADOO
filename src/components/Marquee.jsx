@@ -27,7 +27,7 @@ export default function Marquee() {
               <div className="flex flex-col items-center">
                 <img
                   src={picture1}
-                  className="object-cover  w-full h-full max-w-[2rem] max-h-[6rem] sm:max-w-[2rem] sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
+                  className="object-cover  w-full h-full max-w-[2rem] max-h-[6rem] sm:max-w-[2rem] sm:max-h-[4rem] md:max-w-[5rem] md:max-h-[4rem]"
                   alt="jurisDomain"
                 />
               </div>
@@ -366,7 +366,7 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center mb-9">
+      <div className="flex items-center justify-center mb-12">
         <a
           href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"

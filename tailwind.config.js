@@ -171,7 +171,7 @@ module.exports = {
     theme: {
       extend: {
         animation: {
-          marquee: 'marquee 24s linear infinite',
+          marquee: 'marquee 25s linear infinite',
         },
         keyframes: {
           marquee: {
