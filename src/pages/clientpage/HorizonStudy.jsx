@@ -14,6 +14,26 @@ const HorizonStudy = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+
+
+
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+
+
+
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -62,7 +82,7 @@ const HorizonStudy = () => {
     marqueeRef.current.style.animationPlayState = "running";
   };
   return (
-    <div className="bg-white md:pt-10 pt-4   min-h-screen flex flex-col">
+    <div className="bg-white md:pt-10 pt-4 md:px-0  px-2  min-h-screen flex flex-col">
       <main className="flex-grow">
         <div className="text-center ">
           <h1 className="text-2xl md:px-0 px-1 md:text-5xl font-bold text-yellow-500">
@@ -136,7 +156,7 @@ const HorizonStudy = () => {
             >
               <div
                 ref={marqueeRef}
-                className="flex space-x-4 animate-marquee2  transition-transform duration-500"
+                className="flex space-x-4 animate-marquee  transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
                 {videoUrls.slice(1).map((url, index) => (

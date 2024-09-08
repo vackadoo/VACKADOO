@@ -173,7 +173,7 @@ const TedxPage = () => {
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-2  md:space-x-4 animate-marquee2 hover:animate-none transition-transform duration-500"
+              className="flex space-x-2  md:space-x-4 animate-marqueemobile hover:animate-none transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (

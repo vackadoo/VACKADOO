@@ -167,24 +167,29 @@ module.exports = {
 
 
 
- 
+
     theme: {
       extend: {
         animation: {
-          marquee: 'marquee  20s linear infinite',
-          marquee2: 'marquee 25s linear infinite',
+          // Default speed for larger screens
+          marquee: 'marquee 15s linear infinite',
+          // Faster speed for mobile screens
+          marqueeMobile: 'marqueeMobile 40s linear infinite',
         },
         keyframes: {
           marquee: {
             '0%': { transform: 'translateX(0)' },
             '100%': { transform: 'translateX(-100%)' },
           },
+          marqueeMobile: {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(-100%)' },
+          },
         },
       },
     },
-
+    plugins: [
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  };
   
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
-};

@@ -114,7 +114,7 @@ const FeatureSection = () => {
           <div className="md:hidden max-w-[600px] text-center mb-36  ">
             <h1 className="text-white text-xl font-bold md:mb-0  mb-10">Projects</h1>
 
-            <div className="absolute flex animate-marquee overflow-auto md:mb-8  mb-14">
+            <div className="absolute flex animate-marqueeMobile overflow-auto md:mb-8  mb-14">
               {[...items, ...items].map((item, index) => (
                 <div
                   key={index}

@@ -176,7 +176,7 @@ const JurisDomain = () => {
         >
           <div
             ref={marqueeRef}
-            className="flex space-x-4 animate-marquee2   transition-transform duration-500"
+            className="flex space-x-4 animate-marquee   transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {videoUrls.slice(1).map((url, index) => (
