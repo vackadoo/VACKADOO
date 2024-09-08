@@ -40,7 +40,7 @@ const Info = () => {
             the way we do it.
           </p>
         </div>
-        <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8">
+        <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8 md:mb-0 mb-20 ">
           <div className="flex justify-center items-center mr-8">
             <a href="https://www.instagram.com/vackadoo?igsh=NG1vaW1nZGwyMGMz">
               <svg
@@ -67,10 +67,10 @@ const Info = () => {
           </div>
         </div>
       </main>
-      <div className="flex justify-center bg-white md:ml-9 ml-6 mt-3 md:mb-20 ">
+      <div className="flex justify-center bg-white md:ml-9 ml-6 mt-3 md:mb-20  ">
         <button
           onClick={scrollToNextSection}
-          className="text-black text-6xl bouncy-arrow "
+          className="text-black text-6xl bouncy-arrow hidden md:block "
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
             <path d="M12 17.414L3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />
@@ -92,38 +92,44 @@ const Info = () => {
         /> */}
       </div>
       <section id="next-section" className="w-full">
-        <footer className="w-full text-center text-lg bg-black p-6">
-          <div className="px-6 relative flex w-full h-16 md:h-36 md:mb-28">
+        <footer className="w-full text-center text-lg bg-black  ">
+          <div className="px-8 relative flex w-full h-16 md:h-36 md:mb-28 ">
             <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi2} className="h-46  w-32 pt-3 pr-1 gap-1  relative z-60" />
-                <div className="bg-white border-white text-black font-bold pl-3 text-[17px] mx-0 text-left">
+                <img
+                  src={Ridhi2}
+                  className="h-46  w-32 pt-3 pr-1 gap-1  relative z-60"
+                />
+                <div className="bg-white md:h-4 border-white text-black font-bold pl-3 text-[17px] mx-0 text-left">
                   Ridhi Verma
                 </div>
-                <div className="bg-white border-white  text-black text-[14px] mx-0 pl-3 md:pl-4 text-left">
+                <div className="bg-white border-white  text-black text-[14px] mx-0 pl-3 md:pl-3 text-left">
                   Co Founder
                 </div>
               </a>
             </div>
-            <div className="md:hidden absolute left-[9rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
+            <div className="md:hidden absolute left-[11rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi2} className=" pt-2" />
-                <div className="bg-white text-black font-bold text-[11px]  pl-2 text-left">
+                <img src={Ridhi2} className=" md:pt-2 pt-1" />
+                <div className="bg-white h-3  text-black font-bold text-[11px]  pl-2 text-left">
                   <h4>Ridhi Verma</h4>
-                  <div className="bg-white text-black font-semibold text-[9px]  text-left pl-0">
-                    Co Founder
-                  </div>
+                </div>
+                <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">
+                  Co Founder
                 </div>
               </a>
             </div>
 
             <div className="hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-28 border-4 border-white ">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ashu4} className="h-22 w-32 pt-0 z-20 relative z-60" />
-                <div className="bg-white border-white text-black py-0   font-bold text-[16px] px-1 text-center">
+                <img
+                  src={Ashu4}
+                  className="h-22 w-32 pt-0 z-20 relative z-60"
+                />
+                <div className="bg-white md:h-4 border-white text-black py-0   font-bold text-[16px] pl-3 text-left">
                   Ashutosh Singh
                 </div>
-                <div className="bg-white border-white text-black text-[14px] px-1 text-left pl-4">
+                <div className="bg-white border-white text-black text-[14px] px-1 text-left pl-3">
                   Co Founder
                 </div>
               </a>
@@ -132,24 +138,24 @@ const Info = () => {
             <div className="md:hidden  absolute left-66 ml-4  transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <img src={Ashu4} />
-                <div className="bg-white text-black  font-bold   text-[11px] px- text-center">
+                <div className="bg-white h-3 text-black  font-bold   text-[11px] px- text-center">
                   Ashutosh Singh
-                  <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">
-                    Co Founder
-                  </div>
+                </div>
+                <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">
+                  Co Founder
                 </div>
               </a>
             </div>
           </div>
 
-          <div className="bg-white h-[1px] md:my-8  mt-24 mb-3"></div>
-          <div className="grid grid-cols-2 justify-start md:mb-6">
+          <div className="bg-white h-[1px] md:my-8  mt-24 mb-3 px-0"></div>
+          <div className="grid grid-cols-2 justify-start md:mb-0">
             <div className="text-[14px] md:text-xs mr-12 grid-cols-1 md:mr-44">
               <a href="https://forms.gle/JX56Tu8CeSJwj1oP9">work with us</a>
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
               <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p className=" md:pl-2 ml-10">+91 787683757</p>
+              <p className=" md:pl-2 ml-9 md:ml-10">+91 787683757</p>
             </div>
           </div>
         </footer>
