@@ -176,7 +176,6 @@
 //   );
 // }
 
-
 import React from "react";
 
 import picture1 from "../assets/brand/Pauls/picture1.png";
@@ -189,7 +188,17 @@ import picture7 from "../assets/brand/Pauls/picture7.jpeg";
 import picture8 from "../assets/brand/Pauls/picture8.jpg";
 import picture9 from "../assets/brand/Pauls/picture9.jpg";
 
-const images = [picture1, picture2, picture3, picture4, picture5, picture6, picture7, picture8, picture9];
+const images = [
+  picture1,
+  picture2,
+  picture3,
+  picture4,
+  picture5,
+  picture6,
+  picture7,
+  picture8,
+  picture9,
+];
 
 export default function Marquee() {
   return (
@@ -197,7 +206,10 @@ export default function Marquee() {
       <div className="relative flex max-w-full overflow-hidden py-5">
         <div className="flex animate-marquee w-full">
           {images.map((image, index) => (
-            <div key={index} className="flex-shrink-0 px-2.5 flex items-center justify-center w-[8rem] md:w-[14rem]">
+            <div
+              key={index}
+              className="flex-shrink-0 px-2.5 flex items-center justify-center w-[8rem] md:w-[14rem]"
+            >
               <img
                 src={image}
                 className="object-cover border-black border-[1px] drop-shadow-md  md:rounded-xl rounded-lg"

@@ -9,26 +9,40 @@ const JurisDomain = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
 
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.05.28%20PM.mp4?alt=media&token=21625610-451d-4d50-af49-fdf15362b661",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-17%20at%203.06.03%20PM.mp4?alt=media&token=debb2daf-8a29-4442-b22d-7a4a539e0478",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
 
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8638.MP4?alt=media&token=48391181-dd3e-4e37-9cd1-ae3ee10e30d0",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8724.MP4?alt=media&token=1b8f189f-ede8-4a29-ba82-69ad08294a72",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.05.28%20PM.mp4?alt=media&token=21625610-451d-4d50-af49-fdf15362b661",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-17%20at%203.06.03%20PM.mp4?alt=media&token=debb2daf-8a29-4442-b22d-7a4a539e0478",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
   ];
 
@@ -175,7 +189,6 @@ const JurisDomain = () => {
               </video>
             ))}
           </div>
-      
         </div>
       </div>
 

@@ -95,9 +95,9 @@ const Info = () => {
       <section id="next-section" className="w-full">
         <footer className="w-full text-center text-lg bg-black  ">
           <div className="px-8 relative flex w-full h-16 md:h-36 md:mb-28  z-10 ">
-          <div className="absolute top-3 h-12 inset-0 z-0 hidden md:block">
-    <Marquee />
-  </div>
+            <div className="absolute top-3 h-12 inset-0 z-0 hidden md:block">
+              <Marquee />
+            </div>
             <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <img
@@ -138,7 +138,6 @@ const Info = () => {
                 </div>
               </a>
             </div>
-            
 
             <div className="md:hidden  absolute left-66 ml-4  transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">

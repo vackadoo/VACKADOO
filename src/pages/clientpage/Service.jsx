@@ -106,7 +106,7 @@ const Service = () => {
       <div className="flex justify-center bg-white z-20">
         <button
           onClick={scrollToNextSection}
-          className= "text-black text-6xl bouncy-arrow md:ml-0 ml-8 mb-28 z-20"
+          className="text-black text-6xl bouncy-arrow md:ml-0 ml-8 mb-28 z-20"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
             <path d="M12 17.414L3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />

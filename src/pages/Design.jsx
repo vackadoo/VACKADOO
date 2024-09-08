@@ -111,48 +111,47 @@ const Design = () => {
       </div>
       <div className=" flex justify-center pt-8 pr-2 gap-28">
         <div>
-        <video
-          className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
-          muted
-          loop
-          playsInline
-          ref={videoRefs[2]}
-          onMouseOver={() => handleMouseOver(videoRefs[2])}
-          onMouseLeave={() => handleMouseLeave(videoRefs[2])}
-        >
-          <source src={videoUrls[2]} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <video
+            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
+            muted
+            loop
+            playsInline
+            ref={videoRefs[2]}
+            onMouseOver={() => handleMouseOver(videoRefs[2])}
+            onMouseLeave={() => handleMouseLeave(videoRefs[2])}
+          >
+            <source src={videoUrls[2]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div>
-        <video
-          className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
-          muted
-          loop
-          playsInline
-          ref={videoRefs[3]}
-          onMouseOver={() => handleMouseOver(videoRefs[3])}
-          onMouseLeave={() => handleMouseLeave(videoRefs[3])}
-        >
-          <source src={videoUrls[3]} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <video
+            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
+            muted
+            loop
+            playsInline
+            ref={videoRefs[3]}
+            onMouseOver={() => handleMouseOver(videoRefs[3])}
+            onMouseLeave={() => handleMouseLeave(videoRefs[3])}
+          >
+            <source src={videoUrls[3]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div>
-        <video
-          className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
-          muted
-          loop
-          playsInline
-          ref={videoRefs[4]}
-          onMouseOver={() => handleMouseOver(videoRefs[4])}
-          onMouseLeave={() => handleMouseLeave(videoRefs[4])}
-        >
-          <source src={videoUrls[4]} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <video
+            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[400px]"
+            muted
+            loop
+            playsInline
+            ref={videoRefs[4]}
+            onMouseOver={() => handleMouseOver(videoRefs[4])}
+            onMouseLeave={() => handleMouseLeave(videoRefs[4])}
+          >
+            <source src={videoUrls[4]} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-
       </div>
       <div className="flex justify-center md:mt-12 mt-0 ">
         <img
@@ -164,7 +163,6 @@ const Design = () => {
           <Videofooter />
         </div>
       </div>
-      
     </div>
   );
 };

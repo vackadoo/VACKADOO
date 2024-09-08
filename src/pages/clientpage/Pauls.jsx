@@ -6,30 +6,34 @@ import Videofooter from "../../components/Videofooter";
 
 const Pauls = () => {
   const videoUrls = [
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2F1718652608022865.mp4?alt=media&token=0cbbb2be-fd92-4301-a0f0-e2fe067f828f",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_1272%20(1).MP4?alt=media&token=89b79e6a-d4ee-49ce-a9fe-1d4291c3b369",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_7291.MOV?alt=media&token=6610cf23-41bc-4b08-8f51-08ea07622698",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_8647.MP4?alt=media&token=76f51cd8-253a-425f-8304-968ca61f572c",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725528549/IMG_4567_yqnvst.mov",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_1272%20(1).MP4?alt=media&token=89b79e6a-d4ee-49ce-a9fe-1d4291c3b369",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_7291.MOV?alt=media&token=6610cf23-41bc-4b08-8f51-08ea07622698",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_8647.MP4?alt=media&token=76f51cd8-253a-425f-8304-968ca61f572c",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792707/IMG_1272_1_pfegun.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792724/IMG_7291_ovmfix.mov",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792739/IMG_8647_v94zsu.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_1272%20(1).MP4?alt=media&token=89b79e6a-d4ee-49ce-a9fe-1d4291c3b369",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_7291.MOV?alt=media&token=6610cf23-41bc-4b08-8f51-08ea07622698",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_8647.MP4?alt=media&token=76f51cd8-253a-425f-8304-968ca61f572c",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792707/IMG_1272_1_pfegun.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792724/IMG_7291_ovmfix.mov",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792739/IMG_8647_v94zsu.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
+
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792707/IMG_1272_1_pfegun.mp4",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792724/IMG_7291_ovmfix.mov",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792739/IMG_8647_v94zsu.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -250,8 +254,6 @@ const Pauls = () => {
                 </video>
               ))}
             </div>
-           
-            
           </div>
         </div>
         <div className="flex justify-center md:mt-12 mt-0 ">
