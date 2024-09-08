@@ -67,7 +67,7 @@ const Info = () => {
           </div>
         </div>
       </main>
-      <div className="flex justify-center bg-white md:ml-9 ml-6 mt-3 z-20">
+      <div className="flex justify-center bg-white md:ml-9 ml-6 mt-3 md:mb-20 ">
         <button
           onClick={scrollToNextSection}
           className="text-black text-6xl bouncy-arrow "
@@ -96,11 +96,11 @@ const Info = () => {
           <div className="px-6 relative flex w-full h-16 md:h-36 md:mb-28">
             <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi2} className="h-56  w-32 pt-3 pr-1 gap-1  relative z-60" />
+                <img src={Ridhi2} className="h-46  w-32 pt-3 pr-1 gap-1  relative z-60" />
                 <div className="bg-white border-white text-black font-bold pl-3 text-[17px] mx-0 text-left">
                   Ridhi Verma
                 </div>
-                <div className="bg-white border-white  text-black text-[14px] mx-0 pl-3 text-left">
+                <div className="bg-white border-white  text-black text-[14px] mx-0 pl-3 md:pl-4 text-left">
                   Co Founder
                 </div>
               </a>
