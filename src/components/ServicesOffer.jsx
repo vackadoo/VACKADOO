@@ -34,21 +34,31 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
-                CONTENT PRODUCTION
-              </div>
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
-                PODCAST PRODUCTION
-              </div>
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
-                EVENT COVERAGE
-              </div>
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
-                CAMPAIGN MANAGEMENT
-              </div>
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
-                PHOTOSHOOTS & VIDEOSHOOTS
-              </div>
+              <a href="/tedx">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
+                  CONTENT PRODUCTION
+                </div>
+              </a>
+              <a href="/JurisDomain">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
+                  PODCAST PRODUCTION
+                </div>
+              </a>
+              <a href="/FiemFoundation">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                  EVENT COVERAGE
+                </div>
+              </a>
+              <a href="/JurisDomain">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                  CAMPAIGN MANAGEMENT
+                </div>
+              </a>
+              <a href="/Leather">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                  PHOTOSHOOTS & VIDEOSHOOTS
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -77,12 +87,16 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 p-0">
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
-                BRAND
-              </div>
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
-                SOCIAL PLATFORM
-              </div>
+              <a href="/Pauls">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                  BRAND
+                </div>
+              </a>
+              <a href="/HorzionStudy">
+                <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                  SOCIAL PLATFORM
+                </div>
+              </a>
             </div>
           </div>
         </div>

@@ -69,14 +69,14 @@ const AdroitLeathersSection = () => {
         <h1 className="font-bold">ADROIT LEATHERS</h1>
         <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-1 mt-6 md:mx-48">
           <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
-            <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
+            <div className="grid-col-1  text-[7px] hover:bg-white hover:text-[#B58543]  text-white bg-[#B58543]">
               Brand Managment
             </div>
           </a>
-          <div className="grid-col-1  text-[7px] px-1   text-white bg-[#B58543]">
+          <div className="grid-col-1  text-[7px] px-1 hover:bg-white hover:text-[#B58543]   text-white bg-[#B58543] ">
             Photoshoots & Videoshoots
           </div>
-          <div className="grid-col-1  text-[7px]  text-white bg-[#B58543]">
+          <div className="grid-col-1  text-[7px] hover:bg-white hover:text-[#B58543]  text-white bg-[#B58543]">
             Email Marketing
           </div>
         </div>
@@ -110,23 +110,21 @@ const AdroitLeathersSection = () => {
                 </video>
               ))}
             </div>
-          
-            
           </div>
         </div>
 
         <div className="py-4 md:py-0">
           <div className="hidden md:flex md:justify-center md:mt-8  gap-12">
             <div class="grid grid-cols-2 gap-3  ">
-              <div className="bg-[#B58543] text-[14px] py-2   col-span-2 text-center  px-24 ">
+              <div className="bg-[#B58543] hover:text-[#B58543] hover:bg-white  text-[14px] py-2   col-span-2 text-center  px-24 ">
                 Photoshoots & Videoshoots
               </div>
               <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
-                <div className="bg-[#B58543] text-[14px] p-2 text-center ">
+                <div className="bg-[#B58543] hover:text-[#B58543] hover:bg-white  text-[14px] p-2 text-center ">
                   Brand Managment
                 </div>
               </a>
-              <div className="bg-[#B58543] text-[14px]  p-2 text-center ">
+              <div className="bg-[#B58543] hover:text-[#B58543] hover:bg-white text-[14px]  p-2 text-center ">
                 Email Marketing
               </div>
             </div>

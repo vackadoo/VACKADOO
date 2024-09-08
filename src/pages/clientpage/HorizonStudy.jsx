@@ -71,21 +71,21 @@ const HorizonStudy = () => {
 
           <div className="grid grid-cols-3 text-[9px] md:text-[8px]  gap-1 md:gap-4 mt-6 mx-2  md:mx-48">
             <a href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-              <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 bg-yellow-500">
+              <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 hover:bg-white hover:text-yellow-500 bg-yellow-500">
                 Brand Managment
               </div>
             </a>
             <div
               cursor-pointer
               onClick={scrollToNextSection}
-              className="grid-col-1 md:py-2 md:text-[15px]   py-1   bg-yellow-500"
+              className="grid-col-1 md:py-2 md:text-[15px]   py-1 hover:bg-white hover:text-yellow-500   bg-yellow-500"
             >
               Campaign Managment
             </div>
             <div
               cursor-pointer
               onClick={scrollToNextSection2}
-              className="grid-col-1 md:py-2 md:text-[15px]  py-1  bg-yellow-500"
+              className="grid-col-1 md:py-2 md:text-[15px]  py-1 hover:bg-white hover:text-yellow-500  bg-yellow-500"
             >
               Motion Graphic
             </div>

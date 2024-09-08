@@ -84,11 +84,11 @@ const FiemFoundation = () => {
         </div>
         <div className=" md:mx-36 mx-12  md:items-center text-[10px] grid grid-cols-2 text-white mt-4  md:mt-9 md gap-4 md:text-xs ">
           <a href="https://youtu.be/WwWwgq2zswU?si=qPrISZisBf8bZB_A">
-            <div className="grid-cols-1 bg-[#3E8D19] py-2">Event Coverage</div>
+            <div className="grid-cols-1 bg-[#3E8D19] hover:bg-white hover:text-[#3E8D19] py-2">Event Coverage</div>
           </a>
 
           <a href="https://www.instagram.com/foundationfiem?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-            <div className="grid-cols-1 bg-[#3E8D19] py-2">
+            <div className="grid-cols-1 bg-[#3E8D19] hover:bg-white hover:text-[#3E8D19] py-2">
               Content Production
             </div>
           </a>

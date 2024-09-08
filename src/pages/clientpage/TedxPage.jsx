@@ -88,13 +88,13 @@ const TedxPage = () => {
         <div className=" md:hidden grid grid-cols-2 gap-2 md:gap-4 mt-4 mx-2 md:mx-48">
           <div
             onClick={scrollToNextSection2}
-            className="grid-col-1 py-2 text-[10px] text-white  bg-red-600"
+            className="grid-col-1 py-2 text-[10px] hover:text-red-600 hover:bg-white text-white  bg-red-600"
           >
             Event Coverage
           </div>
           <div
             onClick={scrollToNextSection}
-            className="grid-col-1 py-2 px-1 text-[10px] text-white  bg-red-600"
+            className="grid-col-1 py-2 px-1 text-[10px] hover:text-red-600 hover:bg-white text-white  bg-red-600"
           >
             Content Production
           </div>
@@ -108,13 +108,13 @@ const TedxPage = () => {
               <div className="grid grid-cols-2 md:gap-2 text-white  text-center pb-3 mx-2 ">
                 <div
                   onClick={scrollToNextSection2}
-                  className="grid-col-1 text-[14px] bg-red-600 py-2  "
+                  className="grid-col-1 text-[14px] hover:text-red-600 hover:bg-white bg-red-600 py-2  "
                 >
                   Event Coverage
                 </div>
                 <div
                   onClick={scrollToNextSection}
-                  className="grid-col-1 py-2 text-[14px]   bg-red-600"
+                  className="grid-col-1 py-2 text-[14px] hover:text-red-600 hover:bg-white   bg-red-600"
                 >
                   Content Production
                 </div>

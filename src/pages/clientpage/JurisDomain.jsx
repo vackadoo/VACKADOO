@@ -101,13 +101,13 @@ const JurisDomain = () => {
           />
 
           <div className=" grid-cols-1 space-y-4 md:flex-row  mt-10">
-            <div className="bg-[#94866B] text-center text-[10px] p-2 ">
+            <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
               Campaign Managment
             </div>
-            <div className="bg-[#94866B] text-center text-[10px] p-2 ">
+            <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
               Podcast Production
             </div>
-            <div className="bg-[#94866B] text-center text-[10px] p-2">
+            <div className="bg-[#94866B]  hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2">
               Event Production
             </div>
           </div>
@@ -131,18 +131,18 @@ const JurisDomain = () => {
 
           <div className="hidden md:flex md:ml-16  md:mt-7 ">
             <div class="grid grid-cols-2 gap-2 ">
-              <div className="bg-[#94866B] text-[14px] py-2 col-span-2 text-center px-28">
+              <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] py-2 col-span-2 text-center px-28">
                 <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                   Campaign Managment{" "}
                 </a>
               </div>
 
               <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
-                <div className="bg-[#94866B] text-[14px] text-center px-2  py-2 ">
+                <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] text-center px-2  py-2 ">
                   Podcast Production
                 </div>
               </a>
-              <div className="bg-[#94866B] text-[14px] text-center px-2  py-2">
+              <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] text-center px-2  py-2">
                 Event Production
               </div>
             </div>

@@ -81,7 +81,7 @@ const Pauls = () => {
     <div className="bg-white">
       {/* Main Content */}
       <main className="text-center pt-2 px-2  md:pt-9">
-        <div className="flex flex-col md:flex-row md:space-x-10 items-center justify-center md:px-16  ">
+        <div className="flex flex-col md:flex-row md:space-x-10  items-center justify-center md:px-16  ">
           <h1
             className="text-xl pt-3 md:text-6xl font-bold text-center md:hidden "
             style={{ color: "#FF8412" }}
@@ -112,7 +112,7 @@ const Pauls = () => {
 
             <div className=" grid-cols-1  md:flex-row mt-10">
               <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
-                <div className="bg-[#FF8412] text-[8px] mb-2  py-1 w-full">
+                <div className="bg-[#FF8412] text-[8px] mb-2 hover:bg-white hover:text-[#FF8412]  py-1 w-full">
                   Brand Management
                 </div>
               </a>
@@ -167,26 +167,26 @@ const Pauls = () => {
               THE PAUL’S BIRYANI
             </h1>
 
-            <div className="hidden md:flex md:justify-center md:mt-6  ">
+            <div className="hidden md:flex md:justify-center md:mt-6   ">
               <div class="grid grid-cols-2 gap-4">
                 <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
-                  <div className="bg-[#FF8412] text-xs p-2 px-8 ">
+                  <div className="bg-[#FF8412] text-xs p-2 px-8 hover:bg-white hover:text-[#FF8412] ">
                     Brand Management
                   </div>
                 </a>
                 <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
-                  <div className="bg-[#FF8412] text-xs p-2">
+                  <div className="bg-[#FF8412] text-xs p-2 hover:bg-white hover:text-[#FF8412]">
                     Podcast Production
                   </div>
                 </a>
                 <div
                   onClick={scrollToNextSection}
-                  className="bg-[#FF8412] text-xs p-2 "
+                  className="bg-[#FF8412] text-xs p-2 hover:bg-white hover:text-[#FF8412] "
                 >
                   Content Production
                 </div>
                 <a href="https://www.behance.net/gallery/207211901/Puals">
-                  <div className="bg-[#FF8412] text-xs p-2 space ">
+                  <div className="bg-[#FF8412] text-xs p-2 space hover:bg-white hover:text-[#FF8412] ">
                     Product Photoshoots
                   </div>
                 </a>
@@ -232,7 +232,7 @@ const Pauls = () => {
           <div
             onMouseOver={pauseMarquee}
             onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full max-w-[1000px]"
+            className="relative overflow-hidden w-full max-w-[1109px]"
           >
             <div
               ref={marqueeRef}
