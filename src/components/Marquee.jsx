@@ -21,7 +21,7 @@ export default function Marquee() {
   return (
     <div className="relative flex flex-col items-center w-full overflow-hidden">
       <div className="relative flex max-w-full overflow-hidden md:mt-10 mb-20 md:py-5 bg-black">
-        <div className="flex animate-marquee md:max-w-[1300px]">
+        <div className="flex animate-marqueeMobile md:max-w-[1300px]">
           <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center">
@@ -60,7 +60,7 @@ export default function Marquee() {
               <div className="flex flex-col items-center">
                 <img
                   src={picture4}
-                  className="object-cover md:pt-5  w-full h-full max-w-[3rem] max-h-[6rem] sm:max-w-[4rem] mt-6 md:mt-0 sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
+                  className="object-cover md:pt-5  w-full h-full max-w-[3rem] max-h-[6rem] sm:max-w-[4rem] mt-4 md:mt-0 sm:max-h-[4rem] md:max-w-[4rem] md:max-h-[4rem]"
                   alt="gnixar"
                 />
               </div>
@@ -366,7 +366,7 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center mb-12">
+      <div className="flex items-center justify-center md:mb-12">
         <a
           href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
