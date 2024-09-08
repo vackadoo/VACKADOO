@@ -172,6 +172,7 @@ module.exports = {
       extend: {
         animation: {
           marquee: 'marquee 25s linear infinite',
+          marquee2: 'marquee 20s linear infinite',
         },
         keyframes: {
           marquee: {

@@ -18,6 +18,7 @@ import JurisDomain from "./pages/clientpage/JurisDomain";
 import Leather from "./pages/clientpage/Leather";
 import ScheduleCall from "./pages/ScheduleCall";
 import Calls from "./pages/clientpage/calls";
+import Design from "./pages/Design";
 
 const App = () => {
   const location = useLocation();
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/Leather" element={<Leather />} />
         <Route path="/ScheduleCall" element={<ScheduleCall />} />
         <Route path="/calls" element={<Calls />} />
+        <Route path="/Design" element={<Design />} />
       </Routes>
     </div>
   );

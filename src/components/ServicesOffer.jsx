@@ -33,9 +33,9 @@ const ServicesOffer = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 mb-6 ">
+            <div className="flex flex-wrap justify-center space-x-2 mb-6 "> 
               <a href ="./tedx">
-              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-3 rounded-full">
                 CONTENT PRODUCTION
               </div>
               </a>

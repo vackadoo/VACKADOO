@@ -200,7 +200,7 @@ export default function Marquee() {
             <div key={index} className="flex-shrink-0 px-2.5 flex items-center justify-center w-[8rem] md:w-[14rem]">
               <img
                 src={image}
-                className="object-cover md:rounded-xl rounded-lg"
+                className="object-cover border-black border-[1px] drop-shadow-md  md:rounded-xl rounded-lg"
                 style={{
                   width: "100%",
                   height: "100%",

@@ -157,13 +157,13 @@ const JurisDomain = () => {
         >
           <div
             ref={marqueeRef}
-            className="flex space-x-4 animate-marquee   transition-transform duration-500"
+            className="flex space-x-4 animate-marquee2   transition-transform duration-500"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {videoUrls.slice(1).map((url, index) => (
               <video
                 key={index}
-                className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
+                className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
                 loop
                 muted
                 ref={videoRefs[index + 1]}
@@ -175,20 +175,7 @@ const JurisDomain = () => {
               </video>
             ))}
           </div>
-          {/* Left Button */}
-          <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-            onClick={handlePrev}
-          >
-            &#8249;
-          </button>
-          {/* Right Button */}
-          <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-            onClick={handleNext}
-          >
-            &#8250;
-          </button>
+      
         </div>
       </div>
 
@@ -196,7 +183,7 @@ const JurisDomain = () => {
         <div className="order-1 items-center md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px]  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               ref={videoRefs[0]}

@@ -91,13 +91,13 @@ const AdroitLeathersSection = () => {
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-2 md:space-x-4 animate-marquee  transition-transform duration-500"
+              className="flex space-x-2 md:space-x-4 animate-marquee2  transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
+                  className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
                   loop
                   muted
                   playsInline // Added playsInline attribute
@@ -110,20 +110,8 @@ const AdroitLeathersSection = () => {
                 </video>
               ))}
             </div>
-            {/* Left Button */}
-            <button
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handlePrev}
-            >
-              &#8249;
-            </button>
-            {/* Right Button */}
-            <button
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handleNext}
-            >
-              &#8250;
-            </button>
+          
+            
           </div>
         </div>
 

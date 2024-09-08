@@ -88,7 +88,7 @@ const Pauls = () => {
           <div className="grid grid-cols-2 md:grid-cols-2 gap-3 mt-8 md:hidden">
             <div className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
               <video
-                className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[400px] md:max-h-[700px]"
+                className="object-contain h-auto border-[1px] border-black  drop-shadow-xl rounded-xl max-h-[400px] md:max-h-[700px]"
                 muted
                 loop
                 playsInline
@@ -142,7 +142,7 @@ const Pauls = () => {
               className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
             >
               <video
-                className="object-contain h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
+                className="object-contain border-[1px] border-black h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
                 loop
                 ref={videoRefs[0]}
@@ -232,13 +232,13 @@ const Pauls = () => {
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-4 animate-marquee  transition-transform duration-500"
+              className="flex space-x-4 animate-marquee2  transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
+                  className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
                   ref={videoRefs[index + 1]}
@@ -250,20 +250,8 @@ const Pauls = () => {
                 </video>
               ))}
             </div>
-            {/* Left Button */}
-            <button
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handlePrev}
-            >
-              &#8249;
-            </button>
-            {/* Right Button */}
-            <button
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handleNext}
-            >
-              &#8250;
-            </button>
+           
+            
           </div>
         </div>
         <div className="flex justify-center md:mt-12 mt-0 ">

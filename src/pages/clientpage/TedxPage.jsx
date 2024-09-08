@@ -139,7 +139,7 @@ const TedxPage = () => {
           className="mt-8 md:mt-12 flex items-center justify-center mx-4 md:mx-40 drop-shadow-xl relative"
         >
           <video
-            className="object-contain rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
+            className="object-contain border-[1px] border-black  rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
             muted
             playsInline
@@ -173,13 +173,13 @@ const TedxPage = () => {
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-2 md:space-x-4 animate-marquee hover:animate-none transition-transform duration-500"
+              className="flex space-x-2  md:space-x-4 animate-marquee2 hover:animate-none transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl max-h-[300px] md:max-h-[300px]"
+                  className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
                   loop
                   muted
                   playsInline
@@ -192,20 +192,8 @@ const TedxPage = () => {
                 </video>
               ))}
             </div>
-            {/* Left Button */}
-            <button
-              className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handlePrev}
-            >
-              &#8249;
-            </button>
-            {/* Right Button */}
-            <button
-              className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-gray-800 text-white rounded-full"
-              onClick={handleNext}
-            >
-              &#8250;
-            </button>
+            
+            
           </div>
         </div>
         <div className="flex justify-center mt-12 ">
