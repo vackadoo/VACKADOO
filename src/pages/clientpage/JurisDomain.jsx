@@ -101,12 +101,19 @@ const JurisDomain = () => {
           />
 
           <div className=" grid-cols-1 space-y-4 md:flex-row  mt-10">
+            <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
+                Campaign Managment
+              </div>
+            </a>
+            
             <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
-              Campaign Managment
-            </div>
-            <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
+              <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
+
               Podcast Production
+              </a>
             </div>
+            
             <div className="bg-[#94866B]  hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2">
               Event Production
             </div>
@@ -132,9 +139,7 @@ const JurisDomain = () => {
           <div className="hidden md:flex md:ml-16  md:mt-7 ">
             <div class="grid grid-cols-2 gap-2 ">
               <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] py-2 col-span-2 text-center px-28">
-                <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                  Campaign Managment{" "}
-                </a>
+                Campaign Managment
               </div>
 
               <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">

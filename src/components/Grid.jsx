@@ -208,15 +208,17 @@ const LandingPage = () => {
       {/* Video Background Section */}
       <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
-          <video
-            ref={videoRef}
-            className="md:max-w-[1200px] md:h-full object-cover"
-            autoPlay
-            loop
-            muted
-          >
-            <source src={intro} type="video/mp4" />
-          </video>
+          <a href="https://youtu.be/X5YmbXSpVoU">
+            <video
+              ref={videoRef}
+              className="md:max-w-[1200px] md:h-full object-cover"
+              autoPlay
+              loop
+              muted
+            >
+              <source src={intro} type="video/mp4" />
+            </video>
+          </a>
         </div>
 
         <div className="absolute inset-0 bg-black opacity-20"></div>
