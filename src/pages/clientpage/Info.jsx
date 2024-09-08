@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Ashu2 from "../../assets/images/Ashu2.png";
+import Ashu4 from "../../assets/images/Ashu4.png";
 import Ridhi2 from "../../assets/images/Ridhi2.png";
 import Rf2 from "../../assets/video/Rf2.mp4";
 
@@ -77,25 +78,25 @@ const Info = () => {
         </button>
       </div>
       <div
-        className="relative  "
+        className="relative z-50  "
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <video
+        {/* <video
           src={Rf2}
           ref={leftVideoRef}
           muted
           loop
           playsInline
-          className="pl-12 md:h-23 md:px-0 px-6 md:pl-12 md:mb-0 "
-        />
+          className="pl-12 md:h-14 md:px-0 px-6 md:pl-12 md:mb-0 "
+        /> */}
       </div>
       <section id="next-section" className="w-full">
         <footer className="w-full text-center text-lg bg-black p-6">
           <div className="px-6 relative flex w-full h-16 md:h-36 md:mb-28">
             <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
               <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ridhi2} className="h-46  w-32 pt-3 pr-1 gap-1" />
+                <img src={Ridhi2} className="h-56  w-32 pt-3 pr-1 gap-1  relative z-60" />
                 <div className="bg-white border-white text-black font-bold pl-3 text-[17px] mx-0 text-left">
                   Ridhi Verma
                 </div>
@@ -118,7 +119,7 @@ const Info = () => {
 
             <div className="hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-28 border-4 border-white ">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ashu2} className="h-22 w-32 pt-0" />
+                <img src={Ashu4} className="h-22 w-32 pt-0 z-20 relative z-60" />
                 <div className="bg-white border-white text-black py-0   font-bold text-[16px] px-1 text-center">
                   Ashutosh Singh
                 </div>
@@ -130,7 +131,7 @@ const Info = () => {
 
             <div className="md:hidden  absolute left-66 ml-4  transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
               <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <img src={Ashu2} />
+                <img src={Ashu4} />
                 <div className="bg-white text-black  font-bold   text-[11px] px- text-center">
                   Ashutosh Singh
                   <div className="bg-white text-black font-semibold text-[9px]  text-left pl-2">

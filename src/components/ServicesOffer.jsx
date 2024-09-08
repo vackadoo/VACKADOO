@@ -14,13 +14,13 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "media"
-              ? "bg-black text-white h-[23vh] md:pt-1"
+              ? "bg-black text-white h-[25vh] md:pt-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("media")}
         >
           <h1
-            className={`md:text-xl text-sm ${
+            className={`md:text-xl text-sm md:mb-2 ${
               activeSection === "media" ? "text-white" : ""
             }`}
           >
@@ -34,21 +34,32 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 mb-6 ">
+              <a href ="./tedx">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
                 CONTENT PRODUCTION
               </div>
+              </a>
+              <a href="/JurisDomain">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
                 PODCAST PRODUCTION
               </div>
+              </a>
+              <a href="/fiemfoundation">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 EVENT COVERAGE
               </div>
+              </a>
+              <a href="/JurisDomain">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 CAMPAIGN MANAGEMENT
               </div>
+              </a>
+              
+              <a href="/leather">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                 PHOTOSHOOTS & VIDEOSHOOTS
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -77,12 +88,16 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 p-2 md:p-2">
+              <a href="./pauls">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 BRAND
               </div>
+              </a>
+              <a href="/HorzionStudy">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 SOCIAL PLATFORM
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -111,9 +126,11 @@ const ServicesOffer = () => {
             }`}
           >
             <div className="flex flex-wrap justify-center space-x-2 md:p-0 ">
+            <a href="/HorzionStudy">
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 MOTION GRAPHICS
               </div>
+              </a>
               <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                 LOGOS WITH BRANDING
               </div>
@@ -132,24 +149,7 @@ const ServicesOffer = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* <div class="relative flex overflow-x-hidden text-white">
-      <div class="py-12 animate-marquee whitespace-nowrap">
-        <span class="text-4xl mx-4">Marquee Item 1</span>
-        <span class="text-4xl mx-4">Marquee Item 2</span>
-        <span class="text-4xl mx-4">Marquee Item 3</span>
-        <span class="text-4xl mx-4">Marquee Item 4</span>
-        <span class="text-4xl mx-4">Marquee Item 5</span>
-      </div>
-
-      <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-        <span class="text-4xl mx-4">Marquee Item 1</span>
-        <span class="text-4xl mx-4">Marquee Item 2</span>
-        <span class="text-4xl mx-4">Marquee Item 3</span>
-        <span class="text-4xl mx-4">Marquee Item 4</span>
-        <span class="text-4xl mx-4">Marquee Item 5</span>
-      </div>
-    </div> */}
+      </div> 
     </div>
   );
 };
