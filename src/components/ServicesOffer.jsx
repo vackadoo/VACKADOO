@@ -14,23 +14,50 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "media"
-              ? "bg-black text-white "
+              ? "bg-black text-white h-[23vh] md:px-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
+          onClick={() => handleClick("media")}
         >
           <h1
-            className={`md:text-xl text-sm md:mb-2 ${
+            className={`md:text-xl text-sm ${
               activeSection === "media" ? "text-white" : ""
             }`}
           >
             MEDIA
           </h1>
+          <div
+            className={`flex flex-col items-center   justify-center overflow-hidden transition-all duration-500 ease-in-out ${
+              activeSection === "media"
+                ? "max-h-[500px] opacity-100 mt-0 bg-black w-full"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
+                CONTENT PRODUCTION
+              </div>
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
+                PODCAST PRODUCTION
+              </div>
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                EVENT COVERAGE
+              </div>
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                CAMPAIGN MANAGEMENT
+              </div>
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                PHOTOSHOOTS & VIDEOSHOOTS
+              </div>
+            </div>
+          </div>
         </div>
+
         {/* MANAGEMENT Section */}
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "management"
-              ? "bg-black text-white "
+              ? "bg-black text-white h-[18vh]"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("management")}
@@ -42,6 +69,22 @@ const ServicesOffer = () => {
           >
             MANAGEMENT
           </h1>
+          <div
+            className={`flex flex-col items-center justify-center overflow-hidden transition-all duration-500 ease-in-out ${
+              activeSection === "management"
+                ? "max-h-[500px] opacity-100 mt-0 bg-black w-full"
+                : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex flex-wrap justify-center space-x-2 p-0">
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                BRAND
+              </div>
+              <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                SOCIAL PLATFORM
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* DESIGN Section */}
@@ -49,13 +92,13 @@ const ServicesOffer = () => {
           <div
             className={`flex flex-col items-center font-bold justify-center text-black cursor-pointer transition-all duration-300 ${
               activeSection === "design"
-                ? "bg-black text-white "
+                ? "bg-black text-white"
                 : "bg-white hover:bg-black hover:text-white h-[15vh]"
             }`}
             onClick={() => handleClick("design")}
           >
             <h1
-              className={`md:text-xl text-sm    ${
+              className={`md:text-xl text-sm ${
                 activeSection === "design" ? "text-white" : ""
               }`}
             >
