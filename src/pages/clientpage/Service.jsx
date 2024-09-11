@@ -94,7 +94,7 @@ const Service = () => {
               className="h-[60vh] w-full object-contain transition-all duration-[1000ms] ease-in-out"
             />
           ) : (
-            <h1 className="text-black text-5xl font-bold text-center transition-all duration-[1000ms] ease-in-out">
+            <h1 className="text-black text-4xl font-bold text-center transition-all duration-[1000ms] ease-in-out">
               Services
             </h1>
           )}

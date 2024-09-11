@@ -198,7 +198,7 @@ const HorizonStudy = () => {
                   className="flex space-x-4 overflow-x-auto  transition-transform duration-500"
                   style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
                 >
-                  {videoUrls.slice(0, 6).map((url, index) => (
+                  {videoUrls.slice(1, 6).map((url, index) => (
                     <video
                       key={index}
                       className="object-contain border-[1px] border-black rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"

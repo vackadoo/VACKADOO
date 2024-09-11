@@ -14,13 +14,13 @@ const ServicesOffer = () => {
         <div
           className={`flex flex-col font-bold items-center justify-center text-black cursor-pointer transition-all duration-300 ${
             activeSection === "media"
-              ? "bg-black text-white h-[23vh] md:px-1"
+              ? "bg-black text-white md:h-[23vh] md:px-1"
               : "bg-white hover:bg-black hover:text-white h-[15vh]"
           }`}
           onClick={() => handleClick("media")}
         >
           <h1
-            className={`md:text-xl text-xl ${
+            className={`md:text-xl text-xl  ${
               activeSection === "media" ? "text-white" : ""
             }`}
           >
