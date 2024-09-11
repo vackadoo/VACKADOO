@@ -102,7 +102,7 @@ const AdroitLeathersSection = () => {
               className="flex space-x-2 md:space-x-4 transition-transform duration-500 md:animate-marquee"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {videoUrls.slice(0, 4).map((url, index) => (
+              {videoUrls.slice(0, 5).map((url, index) => (
                 <video
                   key={index}
                   className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl"

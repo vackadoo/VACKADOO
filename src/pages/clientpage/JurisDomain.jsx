@@ -224,7 +224,7 @@ const JurisDomain = () => {
       </div>
 
       <div className="grid grid-cols-1 md:space-x md:grid-cols-2 md:mx md:mt-8 ">
-        <div className="order-1 items-center md:order-1">
+        <div className="order-2 items-center md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
               className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
@@ -239,7 +239,7 @@ const JurisDomain = () => {
             </video>
           </div>
         </div>
-        <div className=" text-black text-[12px] md:text-[14px]  md:text-justify text-justify md:pt-4    md:mx-auto order-2 md:order-1 px-6 pt-4 md:p ">
+        <div className=" text-black text-[12px] md:text-[14px]  md:text-justify text-justify md:pt-4    md:mx-auto order-1 md:order-1 px-6 pt-4 md:p ">
           <p className=" md:pr-16">
             Vackadoo leads Juris Domain's digital presence and focuses on
             optimizing the Instagram strategy. We were involved in orchestrating

@@ -8,7 +8,7 @@ const ServicesOffer = () => {
   };
 
   return (
-    <div className="w-[85vw] md:w-[60vw] bg-white mx-auto z-20">
+    <div className="w-[100vw] md:w-[60vw] bg-white mx-auto z-20">
       <div className="flex flex-col md:grid md:grid-rows-3">
         {/* MEDIA Section */}
         <div
@@ -35,7 +35,7 @@ const ServicesOffer = () => {
           >
             <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
               <a href="/tedx">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-1 md:pt-2 md:px-3 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 md:py-2 px-1 md:pt-2 md:px-3 rounded-full">
                   CONTENT PRODUCTION
                 </div>
               </a>
