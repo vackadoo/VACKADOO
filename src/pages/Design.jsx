@@ -4,6 +4,14 @@ import Frame1 from "../assets/images/design/Frame1.png";
 import Frame2 from "../assets/images/design/Frame2.png";
 import Videofooter from "../components/Videofooter";
 import horizontal2 from "../assets/images/halffooter.gif";
+import img1 from "../assets/images/design/img1.png";
+import img2 from "../assets/images/design/img2.png";
+import img3 from "../assets/images/design/img3.png";
+import img4 from "../assets/images/design/img4.png";
+import img5 from "../assets/images/design/img5.png";
+import img6 from "../assets/images/design/img6.png";
+import img7 from "../assets/images/design/img7.png";
+import img8 from "../assets/images/design/img8.png";
 
 const videoUrls = [
   "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
@@ -70,22 +78,51 @@ const Design = () => {
       </div>
 
       {/* Centering Frame1 */}
-      <div className="flex justify-center pt-4 md:pt-8">
+      {/* <div className="flex justify-center pt-4 md:pt-8">
         <img
           src={Frame1}
           alt="Frame1"
           className="max-w-full md:max-w-[1200px] border-[1px] border-black"
         />
-      </div>
+      </div> */}
 
+      <div className="flex justify-center md:mx-48 mx-1  pt-4 md:pt-0 border-[1px] border-black  ">
+        <div>
+          <img src={img1} />
+        </div>
+        <div>
+          <img src={img2} />
+        </div>
+        <div>
+          <img src={img3} />
+        </div>
+        <div>
+          <img src={img4} />
+        </div>
+      </div>
       {/* Centering Frame2 */}
-      <div className="flex justify-center pt-4 md:pt-8">
+
+      <div className="flex justify-center md:mx-48  mx-1 mt-4   md:mt-8 border-[1px] border-black  ">
+        <div>
+          <img src={img5} />
+        </div>
+        <div>
+          <img src={img6} />
+        </div>
+        <div>
+          <img src={img7} />
+        </div>
+        <div>
+          <img src={img8} />
+        </div>
+      </div>
+      {/* <div className="flex justify-center pt-4 md:pt-8">
         <img
           src={Frame2}
           alt="Frame2"
           className="max-w-full md:max-w-[1200px] border-[1px] border-black"
         />
-      </div>
+      </div> */}
 
       {/* First video */}
       <div className="mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">

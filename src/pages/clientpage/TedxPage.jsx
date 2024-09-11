@@ -146,6 +146,7 @@ const TedxPage = () => {
             className="object-contain border-[1px] border-black  rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
             muted
+            autoPlay
             playsInline
             ref={videoRefs[0]}
             onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -166,74 +167,40 @@ const TedxPage = () => {
           enhancing the event's visibility and appeal.
         </div>
 
-        <div className="md:block hidden">
+        <div
+          id="next-section2"
+          className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
+        >
           <div
-            id="next-section2"
-            className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-x-auto md:overflow-hidden w-full max-w-[1000px]"
           >
             <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1000px]"
+              ref={marqueeRef}
+              className="flex space-x-2 md:space-x-4 transition-transform duration-500 md:animate-marquee"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              <div
-                ref={marqueeRef}
-                className="flex space-x-2  md:space-x-4 animate-marquee  transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {videoUrls.slice(1).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
-                    loop
-                    muted
-                    playsInline
-                    ref={videoRefs[index + 1]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
-              </div>
+              {videoUrls.slice(1).map((url, index) => (
+                <video
+                  key={index}
+                  className="object-contain border-[1px] border-black rounded-xl max-h-[300px] md:max-h-[300px]"
+                  loop
+                  muted
+                  autoPlay
+                  playsInline
+                  ref={videoRefs[index + 1]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                >
+                  <source src={url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
             </div>
           </div>
         </div>
-        <div className="md:hidden">
-          <div
-            id="next-section2"
-            className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
-          >
-            <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1000px]"
-            >
-              <div
-                ref={marqueeRef}
-                className="flex space-x-2  md:space-x-4 overflow-x-auto transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {videoUrls.slice(1, 7).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
-                    loop
-                    muted
-                    playsInline
-                    ref={videoRefs[index]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>  
+
         <div className="flex justify-center mt-12 ">
           <img
             src={horizontal2}

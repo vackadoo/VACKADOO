@@ -191,6 +191,7 @@ const Info = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
+                cursor
                 href="https://forms.gle/JX56Tu8CeSJwj1oP9"
               >
                 work with us
@@ -198,7 +199,7 @@ const Info = () => {
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
               <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p className=" md:pl-2 ml-9 md:ml-10">+91 787683757</p>
+              <p className=" md:pl-2 ml-9 md:ml-10">+91 7827683757</p>
             </div>
           </div>
         </footer>

@@ -113,23 +113,24 @@ const FiemFoundation = () => {
           values.
         </div>
 
-        <div className="order-1 md:order-2 flex items-center justify-center drop-shadow-xl relative py-9 ">
+        <div className="order-1 md:order-2 flex items-center justify-center drop-shadow-xl relative py-9">
           <div
             onMouseOver={pauseMarquee}
             onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[950px]"
+            className="relative overflow-hidden w-full max-w-[1500px] md:max-w-[950px] overflow-x-auto md:overflow-hidden"
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-4 animate-marquee   transition-transform duration-500"
+              className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
               {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
-                  className="object-contain rounded-xl border-[1px] border-black md:max-h-[300px] max-h-[250px]  drop-shadow-xl"
+                  className="object-contain rounded-xl border-[1px] border-black md:max-h-[300px] max-h-[250px] drop-shadow-xl"
                   loop
                   muted
+                  autoPlay
                   playsInline // Added playsInline attribute
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}

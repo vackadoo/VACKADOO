@@ -68,17 +68,6 @@ const JurisDomain = () => {
     }
   };
 
-  const handleNext = () => {
-    if (currentIndex < videoUrls.length - 3) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
   const pauseMarquee = () => {
     marqueeRef.current.style.animationPlayState = "paused";
   };
@@ -113,7 +102,7 @@ const JurisDomain = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-               href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             >
               <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
                 Campaign Managment
@@ -202,69 +191,34 @@ const JurisDomain = () => {
         </div>
       </div>
 
-      <div className="md:block hidden">
-        <div
-          id="next-section2"
-          className="  flex items-center justify-center drop-shadow-xl relative py-9"
-        >
+      <div
+        id="next-section2"
+        onMouseOver={pauseMarquee}
+        onMouseLeave={resumeMarquee}
+        className="flex items-center justify-center drop-shadow-xl relative py-9"
+      >
+        <div className="relative overflow-x-auto md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px]">
           <div
-            onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
+            ref={marqueeRef}
+            className="flex space-x-4  transition-transform duration-500 md:animate-marquee"
+            style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            <div
-              ref={marqueeRef}
-              className="flex space-x-4 animate-marquee    transition-transform duration-500"
-              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
-            >
-              {videoUrls.slice(1).map((url, index) => (
-                <video
-                  key={index}
-                  className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
-                  loop
-                  muted
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                >
-                  <source src={url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="md:hidden  ">
-        <div
-          id="next-section2"
-          className=" flex items-center justify-center drop-shadow-xl relative py-9"
-        >
-          <div
-            onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
-          >
-            <div
-              ref={marqueeRef}
-              className="flex space-x-4 overflow-x-auto    transition-transform duration-500"
-              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
-            >
-              {videoUrls.slice(1, 11).map((url, index) => (
-                <video
-                  key={index}
-                  className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
-                  loop
-                  muted
-                  ref={videoRefs[index]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
-                >
-                  <source src={url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ))}
-            </div>
+            {videoUrls.slice(1).map((url, index) => (
+              <video
+                key={index}
+                className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
+                loop
+                muted
+                autoPlay
+                playsInline
+                ref={videoRefs[index + 1]}
+                onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+              >
+                <source src={url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ))}
           </div>
         </div>
       </div>

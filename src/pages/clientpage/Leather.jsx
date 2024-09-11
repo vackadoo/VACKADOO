@@ -91,67 +91,33 @@ const AdroitLeathersSection = () => {
       </div>
 
       <div className=" grid grid-cols-1 md:grid-cols-2 md:mt-0 mt-4 mx-4 md:mx-24 gap-6">
-        <div className=" hidden md:block ">
-          <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
+        <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
+          <div
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-x-auto md:overflow-hidden w-full max-w-[350px] md:max-w-[1500px]"
+          >
             <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1500px]"
+              ref={marqueeRef}
+              className="flex space-x-2 md:space-x-4 transition-transform duration-500 md:animate-marquee"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              <div
-                ref={marqueeRef}
-                className="flex space-x-2 md:space-x-4 animate-marquee  transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {videoUrls.slice(0, 4).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
-                    loop
-                    muted
-                    autoPlay
-                    playsInline // Added playsInline attribute
-                    ref={videoRefs[index]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="md:hidden">
-          <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
-            <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1500px]"
-            >
-              <div
-                ref={marqueeRef}
-                className="flex space-x-2 md:space-x-4 overflow-x-auto  transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {videoUrls.slice(1, 8).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
-                    loop
-                    muted
-                    autoPlay
-                    playsInline // Added playsInline attribute
-                    ref={videoRefs[index + 1]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
-              </div>
+              {videoUrls.slice(0, 4).map((url, index) => (
+                <video
+                  key={index}
+                  className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl"
+                  loop
+                  muted
+                  autoPlay
+                  playsInline
+                  ref={videoRefs[index]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                >
+                  <source src={url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
             </div>
           </div>
         </div>

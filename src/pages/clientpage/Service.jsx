@@ -59,7 +59,7 @@ const Service = () => {
         <video
           ref={leftVideoRef}
           muted
-          autoPlay
+          
           playsInline
           src={left2}
           loop
@@ -78,7 +78,7 @@ const Service = () => {
           muted
           src={right2}
           loop
-          autoPlay
+          
           playsInline
           className="h-full"
         />
@@ -95,7 +95,7 @@ const Service = () => {
             />
           ) : (
             <h1 className="text-black text-4xl font-bold text-center transition-all duration-[1000ms] ease-in-out">
-              Services
+              SERVICES
             </h1>
           )}
         </div>

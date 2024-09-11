@@ -163,6 +163,7 @@ const Pauls = () => {
                 className="object-contain border-[1px] border-black h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
                 loop
+                autoPlay
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -254,61 +255,32 @@ const Pauls = () => {
           Biryani maintains a dynamic and cohesive brand communication,
           strengthening its connection and relationship with customers.
         </p>
-        <div className="hidden md:block">
-          <div
-            id="next-section"
-            className="  md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9"
-          >
-            <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1109px]"
-            >
-              <div
-                ref={marqueeRef}
-                className="flex space-x-4 animate-marquee  transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
-              >
-                {videoUrls.slice(1).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
-                    loop
-                    muted
-                    autoPlay
-                    ref={videoRefs[index + 1]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" md:hidden  md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9">
+
+        <div
+          id="next-section"
+          className="md:mt-6 mt-0 flex items-center justify-center drop-shadow-xl relative py-9"
+        >
           <div
             onMouseOver={pauseMarquee}
             onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full max-w-[1109px]"
+            className="relative overflow-x-auto md:overflow-hidden w-full max-w-[350px] md:max-w-[1109px]"
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-4 overflow-x-auto  transition-transform duration-500"
+              className="flex space-x-4 md:space-x-4 transition-transform duration-500 md:animate-marquee"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
-              {videoUrls.slice(1, 8).map((url, index) => (
+              {videoUrls.slice(1).map((url, index) => (
                 <video
                   key={index}
                   className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
                   loop
-                  autoPlay
                   muted
-                  ref={videoRefs[index]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                  autoPlay
+                  playsInline
+                  ref={videoRefs[index + 1]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -317,6 +289,7 @@ const Pauls = () => {
             </div>
           </div>
         </div>
+
         <div className="flex justify-center md:mt-12 mt-0 ">
           <img
             src={horizontal2}

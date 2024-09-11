@@ -35,7 +35,7 @@ const ServicesOffer = () => {
           >
             <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
               <a href="/tedx">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-2 px-1 md:pt-2 md:px-2 rounded-full">
                   CONTENT PRODUCTION
                 </div>
               </a>
