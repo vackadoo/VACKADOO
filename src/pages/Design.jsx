@@ -86,7 +86,7 @@ const Design = () => {
         />
       </div> */}
 
-      <div className="flex justify-center md:mx-48 mx-1  pt-4 md:pt-0 border-[1px] border-black  ">
+      <div className="flex justify-center md:mx-48 mx-1  border-[1px] border-black  ">
         <div>
           <img src={img1} />
         </div>
@@ -130,7 +130,7 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[250px] md:max-h-[500px]"
           muted
           loop
-          
+          autoPlay
           playsInline
           ref={videoRefs[0]}
           onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -147,7 +147,6 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[500px]"
           muted
           loop
-          autoPlay
           playsInline
           ref={videoRefs[1]}
           onMouseOver={() => handleMouseOver(videoRefs[1])}

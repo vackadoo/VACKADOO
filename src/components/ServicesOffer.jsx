@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Videofooter  from "./Videofooter";
+
 
 const ServicesOffer = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -121,6 +123,8 @@ const ServicesOffer = () => {
           </div>
         </a>
       </div>
+      
+      
     </div>
   );
 };

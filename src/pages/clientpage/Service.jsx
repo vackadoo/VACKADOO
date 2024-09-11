@@ -205,6 +205,7 @@ import vertical from "../../assets/images/servic/vertical.png";
 import ServicesOffer from "../../components/ServicesOffer";
 import left2 from "../../assets/images/left2.mp4";
 import right2 from "../../assets/images/Right2.mp4";
+import Videofooter from "../../components/Videofooter";
 
 const Service = () => {
   const [showVertical, setShowVertical] = useState(true);
@@ -325,24 +326,41 @@ const Service = () => {
       </div>
 
       {/* Mobile Layout */}
-      <div className="relative bg-white block md:hidden">
-        <div className="flex flex-col justify-center items-center h-screen bg-transparent">
-          <div className="relative z-20 w-full max-w-xl">
+      <div className="relative bg-white block md:hidden  h-[100h]">
+        <div className="flex flex-col justify-center items-center  h-[100h] bg-transparent bg-white">
+          <div className="relative z-20 w-full max-w-xl bg-white">
             {showVertical ? (
-              <h1 className="text-black text-4xl font-bold text-center transition-all duration-[1000ms] ease-in">
+              <div className="h-[83vh]">
+              <h1 className="text-black mt-40 text-4xl font-bold text-center transition-all duration-[1000ms] ease-in">
                 SERVICES
               </h1>
+              </div>
             ) : (
               <section
                 id="next-section"
-                className="h-[30vh] flex items-center justify-center bg-white duration-[1000ms] ease-in-out"
+                className="h-[83vh] flex items-center justify-center bg-white duration-[1000ms] ease-in-out"
               >
                 <ServicesOffer />
               </section>
             )}
           </div>
+         
+          
+          
+
+
         </div>
+      
+      
+      
+      
+<Videofooter/>
+        
+        
+       
       </div>
+      
+      
     </div>
   );
 };
