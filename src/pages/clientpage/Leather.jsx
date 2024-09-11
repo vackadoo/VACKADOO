@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import alposter from "../../assets/images/al/alposter.png";
 
 import horizontal from "../../assets/images/footer2.gif";
@@ -6,6 +6,10 @@ import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
 const AdroitLeathersSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
@@ -68,7 +72,11 @@ const AdroitLeathersSection = () => {
       <div className="text-2xl md:text-5xl  text-[#4F1D1C] text-center md:mb-0  md:mx-20 md:pr-16">
         <h1 className="font-bold">ADROIT LEATHERS</h1>
         <div className=" md:hidden grid grid-cols-3 gap-1 md:gap-4 mx-1 mt-6 md:mx-48">
-          <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true"
+          >
             <div className="grid-col-1  text-[7px] hover:bg-white hover:text-[#B58543]  text-white bg-[#B58543]">
               Brand Managment
             </div>
@@ -82,33 +90,68 @@ const AdroitLeathersSection = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:mt-0 mt-4 mx-4 md:mx-24 gap-6">
-        <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
-          <div
-            onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full max-w-[1500px]"
-          >
+      <div className=" grid grid-cols-1 md:grid-cols-2 md:mt-0 mt-4 mx-4 md:mx-24 gap-6">
+        <div className=" hidden md:block ">
+          <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
             <div
-              ref={marqueeRef}
-              className="flex space-x-2 md:space-x-4 animate-marquee  transition-transform duration-500"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1500px]"
             >
-              {videoUrls.slice(1).map((url, index) => (
-                <video
-                  key={index}
-                  className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
-                  loop
-                  muted
-                  playsInline // Added playsInline attribute
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                >
-                  <source src={url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ))}
+              <div
+                ref={marqueeRef}
+                className="flex space-x-2 md:space-x-4 animate-marquee  transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {videoUrls.slice(0, 4).map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
+                    loop
+                    muted
+                    autoPlay
+                    playsInline // Added playsInline attribute
+                    ref={videoRefs[index]}
+                    onMouseOver={() => handleMouseOver(videoRefs[index])}
+                    onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="md:hidden">
+          <div className="mt-4 md:mt-0 flex items-center justify-center drop-shadow-xl relative py-0 md:py-9">
+            <div
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1500px]"
+            >
+              <div
+                ref={marqueeRef}
+                className="flex space-x-2 md:space-x-4 overflow-x-auto  transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {videoUrls.slice(1, 8).map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl "
+                    loop
+                    muted
+                    autoPlay
+                    playsInline // Added playsInline attribute
+                    ref={videoRefs[index + 1]}
+                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +162,11 @@ const AdroitLeathersSection = () => {
               <div className="bg-[#B58543] hover:text-[#B58543] hover:bg-white  text-[14px] py-2   col-span-2 text-center  px-24 ">
                 Photoshoots & Videoshoots
               </div>
-              <a href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/adroit-leathers/about/?viewAsMember=true"
+              >
                 <div className="bg-[#B58543] hover:text-[#B58543] hover:bg-white  text-[14px] p-2 text-center ">
                   Brand Managment
                 </div>

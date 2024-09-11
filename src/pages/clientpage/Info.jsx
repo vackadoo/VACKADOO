@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Ashu2 from "../../assets/images/Ashu2.png";
+
 import Ashu4 from "../../assets/images/Ashu4.png";
 import Ridhi2 from "../../assets/images/Ridhi2.png";
 import Rf2 from "../../assets/video/Rf2.mp4";
@@ -42,8 +42,12 @@ const Info = () => {
           </p>
         </div>
         <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8 md:mb-0 mb-20 ">
-          <div className="flex justify-center items-center mr-8">
-            <a href="https://www.instagram.com/vackadoo?igsh=NG1vaW1nZGwyMGMz">
+          <div className="flex justify-center items-center mr-2 md:mr-8">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/vackadoo?igsh=NG1vaW1nZGwyMGMz"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="42"
@@ -54,8 +58,12 @@ const Info = () => {
               </svg>
             </a>
           </div>
-          <a href="https://www.youtube.com/@Vackadoo">
-            <div className=" pr-6 pt-1 flex justify-center items-center">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/@Vackadoo"
+          >
+            <div className=" md:pr-6 pr-2 md:pt-1 flex justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -68,8 +76,12 @@ const Info = () => {
               </svg>
             </div>
           </a>
-          <div className="flex justify-center items-center">
-            <a href="https://www.linkedin.com/company/vackadoo/">
+          <div className="flex justify-center items-center md:pb-0 pb-1">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/vackadoo/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
@@ -96,16 +108,7 @@ const Info = () => {
         className="relative z-50  "
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-      >
-        {/* <video
-          src={Rf2}
-          ref={leftVideoRef}
-          muted
-          loop
-          playsInline
-          className="pl-12 md:h-14 md:px-0 px-6 md:pl-12 md:mb-0 "
-        /> */}
-      </div>
+      ></div>
       <section id="next-section" className="w-full">
         <footer className="w-full text-center text-lg bg-black  ">
           <div className="px-8 relative flex w-full h-16 md:h-36 md:mb-28  z-10 ">
@@ -113,7 +116,11 @@ const Info = () => {
               <Marquee />
             </div>
             <div className="hidden md:block absolute  right-24 mr-16 transform -translate-x-1/2 -translate-y-28 border-4 border-white">
-              <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
                 <img
                   src={Ridhi2}
                   className="h-46  w-32 pt-3 pr-1 gap-1  relative z-60"
@@ -127,7 +134,11 @@ const Info = () => {
               </a>
             </div>
             <div className="md:hidden absolute left-[11rem]  -translate-y-20 pt-0 w-20 border-2 border-white">
-              <a href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ridhi-verma-841752262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
                 <img src={Ridhi2} className=" md:pt-2 pt-1" />
                 <div className="bg-white h-3  text-black font-bold text-[11px]  pl-2 text-left">
                   <h4>Ridhi Verma</h4>
@@ -139,7 +150,11 @@ const Info = () => {
             </div>
 
             <div className="hidden md:block absolute left-72 transform -translate-x-1/2 -translate-y-28 border-4 border-white ">
-              <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
                 <img
                   src={Ashu4}
                   className="h-22 w-32 pt-0 z-20 relative z-60"
@@ -154,7 +169,11 @@ const Info = () => {
             </div>
 
             <div className="md:hidden  absolute left-66 ml-4  transform -translate-x-1/2 -translate-y-20 w-20 border-2 border-white">
-              <a href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ashutoshsingh2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >
                 <img src={Ashu4} />
                 <div className="bg-white h-3 text-black  font-bold   text-[11px] px- text-center">
                   Ashutosh Singh
@@ -169,7 +188,13 @@ const Info = () => {
           <div className="bg-white h-[1px] md:my-8  mt-24 mb-3 px-0"></div>
           <div className="grid grid-cols-2 justify-start md:mb-0">
             <div className="text-[14px] md:text-xs mr-12 grid-cols-1 md:mr-44">
-              <a href="https://forms.gle/JX56Tu8CeSJwj1oP9">work with us</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://forms.gle/JX56Tu8CeSJwj1oP9"
+              >
+                work with us
+              </a>
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
               <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>

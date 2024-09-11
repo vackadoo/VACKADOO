@@ -8,7 +8,7 @@ const ServicesOffer = () => {
   };
 
   return (
-    <div className="w-[60vw] md:w-[60vw] bg-white mx-auto z-20">
+    <div className="w-[85vw] md:w-[60vw] bg-white mx-auto z-20">
       <div className="flex flex-col md:grid md:grid-rows-3">
         {/* MEDIA Section */}
         <div
@@ -20,7 +20,7 @@ const ServicesOffer = () => {
           onClick={() => handleClick("media")}
         >
           <h1
-            className={`md:text-xl text-sm ${
+            className={`md:text-xl text-xl ${
               activeSection === "media" ? "text-white" : ""
             }`}
           >
@@ -35,27 +35,27 @@ const ServicesOffer = () => {
           >
             <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
               <a href="/tedx">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:pt-2 md:px-2 rounded-full">
                   CONTENT PRODUCTION
                 </div>
               </a>
               <a href="/JurisDomain">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
                   PODCAST PRODUCTION
                 </div>
               </a>
               <a href="/FiemFoundation">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                   EVENT COVERAGE
                 </div>
               </a>
               <a href="/JurisDomain">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                   CAMPAIGN MANAGEMENT
                 </div>
               </a>
               <a href="/Leather">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
                   PHOTOSHOOTS & VIDEOSHOOTS
                 </div>
               </a>
@@ -73,7 +73,7 @@ const ServicesOffer = () => {
           onClick={() => handleClick("management")}
         >
           <h1
-            className={`md:text-xl text-sm ${
+            className={`md:text-xl text-xl   ${
               activeSection === "management" ? "text-white" : ""
             }`}
           >
@@ -86,14 +86,14 @@ const ServicesOffer = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="flex flex-wrap justify-center space-x-2 p-0">
+            <div className="flex flex-wrap justify-center space-x-2 p-4">
               <a href="/Pauls">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                   BRAND
                 </div>
               </a>
               <a href="/HorzionStudy">
-                <div className="bg-white text-black font-semibold text-[7px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[10px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
                   SOCIAL PLATFORM
                 </div>
               </a>
@@ -112,7 +112,7 @@ const ServicesOffer = () => {
             onClick={() => handleClick("design")}
           >
             <h1
-              className={`md:text-xl text-sm ${
+              className={`md:text-xl text-xl ${
                 activeSection === "design" ? "text-white" : ""
               }`}
             >

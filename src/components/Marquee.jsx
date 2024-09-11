@@ -20,7 +20,7 @@ export default function Marquee() {
 
   return (
     <div className="relative flex flex-col items-center w-full overflow-hidden">
-      <div className="relative flex max-w-full overflow-hidden md:mt-10 mb-20 md:py-5 bg-black">
+      <div className="relative flex max-w-full overflow-hidden md:mt-10 mb-20 md:py-4 bg-black">
         <div className="flex animate-marqueeMobile md:max-w-[1300px]">
           <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
@@ -366,7 +366,7 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center md:mb-12">
+      <div className="flex items-center justify-center md:mb-12 md:mt-0">
         <a
           href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"

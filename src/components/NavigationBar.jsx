@@ -75,9 +75,7 @@
 
 // export default Navbar;
 
-
 // // black
-
 
 import { useState } from "react";
 import { navItems } from "../constants/index";
@@ -97,7 +95,7 @@ const Navbar = () => {
       <div className="container mx-auto relative text-xs">
         <div className="flex items-center justify-between md:px-10">
           <div className="flex flex-shrink-0">
-            <img src={rat2} href="./" className="h-12 pl-2 md:hidden" />
+            <img src={rat2} href="./" className="h-10 pl-2 md:hidden" />
             <h1 className="hidden md:block text-xl font-bold pl-6">VACKADOO</h1>
           </div>
 
@@ -116,11 +114,11 @@ const Navbar = () => {
               Info
             </a>
           </div>
-          <div className="lg:hidden md:flex-col justify-end pr-4 pb-2">
+          <div className="lg:hidden md:flex-col justify-end pr-4 pb-1">
             <div className="flex flex-row justify-end space-x-4">
               <a
                 href="/ScheduleCall"
-                className="text-[12px] rounded-full hover:bg-[#242424] py-2 px-3 bg-[#252525]"
+                className="text-[12px] rounded-full hover:bg-[#242424] py-1 px-3 bg-[#252525]"
               >
                 Schedule a Call
               </a>

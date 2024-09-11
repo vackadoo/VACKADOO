@@ -1,10 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Paulsmarquee from "../../components/paulsmarquee";
 import Videofooter from "../../components/Videofooter";
 
 const Pauls = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const videoUrls = [
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725528549/IMG_4567_yqnvst.mov",
 
@@ -95,6 +99,7 @@ const Pauls = () => {
                 className="object-contain h-auto border-[1px] border-black  drop-shadow-xl rounded-xl max-h-[400px] md:max-h-[700px]"
                 muted
                 loop
+                autoPlay
                 playsInline
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -111,12 +116,20 @@ const Pauls = () => {
           /> */}
 
             <div className=" grid-cols-1  md:flex-row mt-10">
-              <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg=="
+              >
                 <div className="bg-[#FF8412] text-[8px] mb-2 hover:bg-white hover:text-[#FF8412]  py-1 w-full">
                   Brand Management
                 </div>
               </a>
-              <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl"
+              >
                 <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
                   Podcast Production
                 </div>
@@ -127,7 +140,11 @@ const Pauls = () => {
               >
                 Content Production
               </div>
-              <a href="https://www.behance.net/gallery/207211901/Puals">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.behance.net/gallery/207211901/Puals"
+              >
                 <div className="bg-[#FF8412] text-[8px] mb-2   py-1  w-full">
                   Product Photoshoots
                 </div>
@@ -141,10 +158,7 @@ const Pauls = () => {
             alt="Juris Domain Instagram"
             className="rounded-lg shadow-lg h-72 md:h-auto   "
           /> */}
-            <div
-              id="next-section"
-              className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
-            >
+            <div className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
               <video
                 className="object-contain border-[1px] border-black h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
@@ -169,12 +183,20 @@ const Pauls = () => {
 
             <div className="hidden md:flex md:justify-center md:mt-6   ">
               <div class="grid grid-cols-2 gap-4">
-                <a href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg==">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/thepaulsbiryani?igsh=MXVsajZweG0yazRyeg=="
+                >
                   <div className="bg-[#FF8412] text-xs p-2 px-8 hover:bg-white hover:text-[#FF8412] ">
                     Brand Management
                   </div>
                 </a>
-                <a href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/reel/C97lQviSMML/?igsh=d3cxMW5yem1qMmJl"
+                >
                   <div className="bg-[#FF8412] text-xs p-2 hover:bg-white hover:text-[#FF8412]">
                     Podcast Production
                   </div>
@@ -185,7 +207,11 @@ const Pauls = () => {
                 >
                   Content Production
                 </div>
-                <a href="https://www.behance.net/gallery/207211901/Puals">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.behance.net/gallery/207211901/Puals"
+                >
                   <div className="bg-[#FF8412] text-xs p-2 space hover:bg-white hover:text-[#FF8412] ">
                     Product Photoshoots
                   </div>
@@ -228,7 +254,41 @@ const Pauls = () => {
           Biryani maintains a dynamic and cohesive brand communication,
           strengthening its connection and relationship with customers.
         </p>
-        <div className="md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9">
+        <div className="hidden md:block">
+          <div
+            id="next-section"
+            className="  md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9"
+          >
+            <div
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1109px]"
+            >
+              <div
+                ref={marqueeRef}
+                className="flex space-x-4 animate-marquee  transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+              >
+                {videoUrls.slice(1).map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
+                    loop
+                    muted
+                    autoPlay
+                    ref={videoRefs[index + 1]}
+                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className=" md:hidden  md:mt-6  mt-0 flex items-center justify-center drop-shadow-xl relative py-9">
           <div
             onMouseOver={pauseMarquee}
             onMouseLeave={resumeMarquee}
@@ -236,18 +296,19 @@ const Pauls = () => {
           >
             <div
               ref={marqueeRef}
-              className="flex space-x-4 animate-marquee2  transition-transform duration-500"
+              className="flex space-x-4 overflow-x-auto  transition-transform duration-500"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
-              {videoUrls.slice(1).map((url, index) => (
+              {videoUrls.slice(1, 8).map((url, index) => (
                 <video
                   key={index}
                   className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
                   loop
+                  autoPlay
                   muted
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  ref={videoRefs[index]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.

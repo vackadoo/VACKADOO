@@ -1,9 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
 const HorizonStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
 
@@ -15,8 +19,6 @@ const HorizonStudy = () => {
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
 
-
-
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
@@ -24,8 +26,6 @@ const HorizonStudy = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
-
-
 
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
@@ -88,9 +88,12 @@ const HorizonStudy = () => {
           <h1 className="text-2xl md:px-0 px-1 md:text-5xl font-bold text-yellow-500">
             HORIZON STUDY CIRCLE
           </h1>
-
-          <div className="grid grid-cols-3 text-[9px] md:text-[8px]  gap-1 md:gap-4 mt-6 mx-2  md:mx-48">
-            <a href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <div className="grid grid-cols-3 text-[9px] md:text-[8px]  gap-1 md:gap-4 mt-6 mx-1  md:mx-48">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/hsc.aud?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
               <div className="grid-col-1 md:py-2 md:text-[15px]  py-1 hover:bg-white hover:text-yellow-500 bg-yellow-500">
                 Brand Managment
               </div>
@@ -98,7 +101,7 @@ const HorizonStudy = () => {
             <div
               cursor-pointer
               onClick={scrollToNextSection}
-              className="grid-col-1 md:py-2 md:text-[15px]   py-1 hover:bg-white hover:text-yellow-500   bg-yellow-500"
+              className="grid-col-1 md:py-2 md:text-[15px] md:mx   py-1 hover:bg-white hover:text-yellow-500   bg-yellow-500"
             >
               Campaign Managment
             </div>
@@ -110,16 +113,16 @@ const HorizonStudy = () => {
               Motion Graphic
             </div>
           </div>
-
           <div
             id="next-section"
-            className=" mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
+            className=" mt-6 md:mt-10 flex  justify-center rounded-xl drop-shadow-lg relative overflow-hidden"
           >
             <video
-              className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[300px] md:max-h-[500px]"
+              className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[300px] md:max-h-[500px]"
               muted
               loop
               playsInline
+              autoPlay
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -128,7 +131,6 @@ const HorizonStudy = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-
           <div className="mt-8 md:text-[15px] text-[14px] md:mt-12 h-auto flex justify-center mx-3 md:mx-32 text-black text-justify  ">
             <p>
               Vackadoo played a key role in supporting Horizon Study Circle
@@ -144,42 +146,81 @@ const HorizonStudy = () => {
               closer and more connected environment for HSC’s members.
             </p>
           </div>
-
-          <div
-            id="next-section2"
-            className="md:mt-0 mt-8 flex items-center justify-center drop-shadow-xl relative py-9"
-          >
+          <div className="md:block hidden">
             <div
-              onMouseOver={pauseMarquee}
-              onMouseLeave={resumeMarquee}
-              className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] "
+              id="next-section2"
+              className=" flex items-center justify-center drop-shadow-xl relative py-9"
             >
               <div
-                ref={marqueeRef}
-                className="flex space-x-4 animate-marquee  transition-transform duration-500"
-                style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+                onMouseOver={pauseMarquee}
+                onMouseLeave={resumeMarquee}
+                className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] "
               >
-                {videoUrls.slice(1).map((url, index) => (
-                  <video
-                    key={index}
-                    className="object-contain border-[1px] border-black rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
-                    loop
-                    muted
-                    playsInline
-                    ref={videoRefs[index + 1]}
-                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                  >
-                    <source src={url} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                ))}
+                <div
+                  ref={marqueeRef}
+                  className="flex space-x-4 animate-marquee   transition-transform duration-500"
+                  style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+                >
+                  {videoUrls.slice(1).map((url, index) => (
+                    <video
+                      key={index}
+                      className="object-contain border-[1px] border-black rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
+                      loop
+                      muted
+                      autoPlay
+                      playsInline
+                      ref={videoRefs[index + 1]}
+                      onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                      onMouseLeave={() =>
+                        handleMouseLeave(videoRefs[index + 1])
+                      }
+                    >
+                      <source src={url} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
+          <div className="md:hidden">
+            <div
+              id="next-section2"
+              className=" flex items-center justify-center drop-shadow-xl relative py-9"
+            >
+              <div
+                onMouseOver={pauseMarquee}
+                onMouseLeave={resumeMarquee}
+                className="relative overflow-hidden w-full max-w-[1100px] md:max-w-[1000px] "
+              >
+                <div
+                  ref={marqueeRef}
+                  className="flex space-x-4 overflow-x-auto  transition-transform duration-500"
+                  style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+                >
+                  {videoUrls.slice(0, 6).map((url, index) => (
+                    <video
+                      key={index}
+                      className="object-contain border-[1px] border-black rounded-xl max-h-[300px]  md:max-h-[300px]  drop-shadow-xl"
+                      loop
+                      muted
+                      autoPlay
+                      playsInline
+                      ref={videoRefs[index]}
+                      onMouseOver={() => handleMouseOver(videoRefs[index])}
+                      onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                    >
+                      <source src={url} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>{" "}
           <div className="flex justify-center md:mt-12 ">
             <img
-              src={horizontal}
+              src={horizontal2}
               alt="Footer Image"
               className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
             />

@@ -1,10 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import tedx1 from "../../assets/images/tedx/tedx1.png";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
 const TedxPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/102.MP4?alt=media&token=f4abdfee-06f0-4dbb-97a8-4c434870dcf5",
 
@@ -162,38 +166,74 @@ const TedxPage = () => {
           enhancing the event's visibility and appeal.
         </div>
 
-        <div
-          id="next-section2"
-          className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
-        >
+        <div className="md:block hidden">
           <div
-            onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee}
-            className="relative overflow-hidden w-full max-w-[1000px]"
+            id="next-section2"
+            className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
           >
             <div
-              ref={marqueeRef}
-              className="flex space-x-2  md:space-x-4 animate-marqueemobile hover:animate-none transition-transform duration-500"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1000px]"
             >
-              {videoUrls.slice(1).map((url, index) => (
-                <video
-                  key={index}
-                  className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
-                  loop
-                  muted
-                  playsInline
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                >
-                  <source src={url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ))}
+              <div
+                ref={marqueeRef}
+                className="flex space-x-2  md:space-x-4 animate-marquee  transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {videoUrls.slice(1).map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
+                    loop
+                    muted
+                    playsInline
+                    ref={videoRefs[index + 1]}
+                    onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                    onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+        <div className="md:hidden">
+          <div
+            id="next-section2"
+            className="mt-8 md:mt-12 flex items-center justify-center drop-shadow-xl relative"
+          >
+            <div
+              onMouseOver={pauseMarquee}
+              onMouseLeave={resumeMarquee}
+              className="relative overflow-hidden w-full max-w-[1000px]"
+            >
+              <div
+                ref={marqueeRef}
+                className="flex space-x-2  md:space-x-4 overflow-x-auto transition-transform duration-500"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {videoUrls.slice(1, 7).map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px]  border-black  rounded-xl max-h-[300px] md:max-h-[300px]"
+                    loop
+                    muted
+                    playsInline
+                    ref={videoRefs[index]}
+                    onMouseOver={() => handleMouseOver(videoRefs[index])}
+                    onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>  
         <div className="flex justify-center mt-12 ">
           <img
             src={horizontal2}

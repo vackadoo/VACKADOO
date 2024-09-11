@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import juris from "../../assets/images/juris/juris1.png";
 import horizontal from "../../assets/images/footer2.gif";
@@ -6,6 +6,10 @@ import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
 const JurisDomain = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
 
@@ -83,6 +87,11 @@ const JurisDomain = () => {
     marqueeRef.current.style.animationPlayState = "running";
   };
 
+  const scrollToNextSection = () => {
+    const nextSection2 = document.getElementById("next-section2");
+    nextSection2.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="bg-white pt-6  md:px-16 ">
       <div className="flex flex-col md:flex-row md:space-x-12 items-center justify-center">
@@ -101,20 +110,31 @@ const JurisDomain = () => {
           />
 
           <div className=" grid-cols-1 space-y-4 md:flex-row  mt-10">
-            <a href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+               href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
               <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
                 Campaign Managment
               </div>
             </a>
-            
-            <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
-              <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
 
-              Podcast Production
+            <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2 ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH"
+              >
+                Podcast Production
               </a>
             </div>
-            
-            <div className="bg-[#94866B]  hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2">
+
+            <div
+              cursor-pointer
+              onClick={scrollToNextSection}
+              className="bg-[#94866B]  hover:text-[#94866B] hover:bg-white text-center text-[10px] p-2"
+            >
               Event Production
             </div>
           </div>
@@ -139,15 +159,29 @@ const JurisDomain = () => {
           <div className="hidden md:flex md:ml-16  md:mt-7 ">
             <div class="grid grid-cols-2 gap-2 ">
               <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] py-2 col-span-2 text-center px-28">
-                Campaign Managment
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href=" https://www.instagram.com/juris.domain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                >
+                  Campaign Managment
+                </a>
               </div>
 
-              <a href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://youtu.be/cftAKPoPn9s?si=OxkYVmATbYYVphEH"
+              >
                 <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] text-center px-2  py-2 ">
                   Podcast Production
                 </div>
               </a>
-              <div className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] text-center px-2  py-2">
+              <div
+                cursor-pointer
+                onClick={scrollToNextSection}
+                className="bg-[#94866B] hover:text-[#94866B] hover:bg-white text-[14px] text-center px-2  py-2"
+              >
                 Event Production
               </div>
             </div>
@@ -168,31 +202,69 @@ const JurisDomain = () => {
         </div>
       </div>
 
-      <div className=" flex items-center justify-center drop-shadow-xl relative py-9">
+      <div className="md:block hidden">
         <div
-          onMouseOver={pauseMarquee}
-          onMouseLeave={resumeMarquee}
-          className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
+          id="next-section2"
+          className="  flex items-center justify-center drop-shadow-xl relative py-9"
         >
           <div
-            ref={marqueeRef}
-            className="flex space-x-4 animate-marquee   transition-transform duration-500"
-            style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
           >
-            {videoUrls.slice(1).map((url, index) => (
-              <video
-                key={index}
-                className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
-                loop
-                muted
-                ref={videoRefs[index + 1]}
-                onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-              >
-                <source src={url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ))}
+            <div
+              ref={marqueeRef}
+              className="flex space-x-4 animate-marquee    transition-transform duration-500"
+              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            >
+              {videoUrls.slice(1).map((url, index) => (
+                <video
+                  key={index}
+                  className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
+                  loop
+                  muted
+                  ref={videoRefs[index + 1]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                >
+                  <source src={url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="md:hidden  ">
+        <div
+          id="next-section2"
+          className=" flex items-center justify-center drop-shadow-xl relative py-9"
+        >
+          <div
+            onMouseOver={pauseMarquee}
+            onMouseLeave={resumeMarquee}
+            className="relative overflow-hidden w-full  md:max-w-[1000px] max-w-[350px]"
+          >
+            <div
+              ref={marqueeRef}
+              className="flex space-x-4 overflow-x-auto    transition-transform duration-500"
+              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            >
+              {videoUrls.slice(1, 11).map((url, index) => (
+                <video
+                  key={index}
+                  className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
+                  loop
+                  muted
+                  ref={videoRefs[index]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                >
+                  <source src={url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
+            </div>
           </div>
         </div>
       </div>

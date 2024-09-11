@@ -41,11 +41,10 @@ const Design = () => {
 
       <div>
         <div className="flex flex-wrap justify-start space-x-2 mt-0 pl-0 md:pl-56">
-          <a href="/HorzionStudy">
-            <div className="bg-white text-black font-semibold border-black border-[1px] text-[10px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-3 rounded-full">
-              MOTION GRAPHIC
-            </div>
-          </a>
+          <div className="bg-white text-black font-semibold border-black border-[1px] text-[10px] md:text-xs mt-3 py-1 px-2 md:py-2 md:px-3 rounded-full">
+            MOTION GRAPHIC
+          </div>
+
           <div className="bg-white text-black font-semibold border-black border-[1px] text-[10px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
             LOGO WITH BRANDING
           </div>
@@ -71,19 +70,27 @@ const Design = () => {
       </div>
 
       {/* Centering Frame1 */}
-      <div className="flex justify-center pt-8">
-        <img src={Frame1} alt="Frame1" className="max-w-full md:max-w-[1200px]" />
+      <div className="flex justify-center pt-4 md:pt-8">
+        <img
+          src={Frame1}
+          alt="Frame1"
+          className="max-w-full md:max-w-[1200px] border-[1px] border-black"
+        />
       </div>
 
       {/* Centering Frame2 */}
-      <div className="flex justify-center pt-8">
-        <img src={Frame2} alt="Frame2" className="max-w-full md:max-w-[1200px]" />
+      <div className="flex justify-center pt-4 md:pt-8">
+        <img
+          src={Frame2}
+          alt="Frame2"
+          className="max-w-full md:max-w-[1200px] border-[1px] border-black"
+        />
       </div>
 
       {/* First video */}
       <div className="mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
         <video
-          className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[250px] md:max-h-[500px]"
+          className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[250px] md:max-h-[500px]"
           muted
           loop
           playsInline
@@ -99,7 +106,7 @@ const Design = () => {
       {/* Second video */}
       <div className="mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
         <video
-          className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[250px] md:max-h-[500px]"
+          className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[500px]"
           muted
           loop
           playsInline
@@ -114,7 +121,7 @@ const Design = () => {
       <div className="flex justify-center pt-8 pr-2 gap-4 md:gap-28">
         <div>
           <video
-            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[250px] md:max-h-[400px]"
+            className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[400px]"
             muted
             loop
             playsInline
@@ -128,7 +135,7 @@ const Design = () => {
         </div>
         <div>
           <video
-            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[250px] md:max-h-[400px]"
+            className="object-contain border-[1px] border-black h-auto rounded-xl   max-h-[250px] md:max-h-[400px]"
             muted
             loop
             playsInline
@@ -142,7 +149,7 @@ const Design = () => {
         </div>
         <div>
           <video
-            className="object-contain border-[1px] border-black h-auto rounded-xl px-2 md:px-0 max-h-[250px] md:max-h-[400px]"
+            className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[400px]"
             muted
             loop
             playsInline
@@ -156,11 +163,11 @@ const Design = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:mt-12 mt-0 ">
+      <div className=" flex justify-center md:mt-12 mt-0 ">
         <img
           src={horizontal2}
           alt="Footer Image"
-          className="w-full max-w-[250px] md:max-w-[700px] h-full object-contain"
+          className="w-full md:hidden max-w-[250px] md:max-w-[700px] h-full object-contain"
         />
         <div className="hidden md:block">
           <Videofooter />
