@@ -130,7 +130,7 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[250px] md:max-h-[500px]"
           muted
           loop
-          autoPlay
+          
           playsInline
           ref={videoRefs[0]}
           onMouseOver={() => handleMouseOver(videoRefs[0])}

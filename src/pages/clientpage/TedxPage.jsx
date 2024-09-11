@@ -187,7 +187,7 @@ const TedxPage = () => {
                   className="object-contain border-[1px] border-black rounded-xl max-h-[300px] md:max-h-[300px]"
                   loop
                   muted
-                  autoPlay
+                  preload="auto"
                   playsInline
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}

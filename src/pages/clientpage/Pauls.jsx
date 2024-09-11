@@ -276,7 +276,7 @@ const Pauls = () => {
                   className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
-                  autoPlay
+                  preload="auto"
                   playsInline
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}

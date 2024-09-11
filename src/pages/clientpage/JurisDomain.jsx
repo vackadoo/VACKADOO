@@ -209,7 +209,7 @@ const JurisDomain = () => {
                 className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
                 loop
                 muted
-                autoPlay
+                preload="auto"
                 playsInline
                 ref={videoRefs[index + 1]}
                 onMouseOver={() => handleMouseOver(videoRefs[index + 1])}

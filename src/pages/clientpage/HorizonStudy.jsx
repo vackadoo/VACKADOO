@@ -122,7 +122,7 @@ const HorizonStudy = () => {
               muted
               loop
               playsInline
-              autoPlay
+              preload="auto"
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
