@@ -93,6 +93,7 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[250px] md:max-h-[500px]"
           muted
           loop
+          autoPlay
           playsInline
           ref={videoRefs[0]}
           onMouseOver={() => handleMouseOver(videoRefs[0])}
@@ -109,6 +110,7 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[500px]"
           muted
           loop
+          autoPlay
           playsInline
           ref={videoRefs[1]}
           onMouseOver={() => handleMouseOver(videoRefs[1])}
@@ -125,6 +127,7 @@ const Design = () => {
             muted
             loop
             playsInline
+            autoPlay
             ref={videoRefs[2]}
             onMouseOver={() => handleMouseOver(videoRefs[2])}
             onMouseLeave={() => handleMouseLeave(videoRefs[2])}
@@ -139,6 +142,7 @@ const Design = () => {
             muted
             loop
             playsInline
+            autoPlay
             ref={videoRefs[3]}
             onMouseOver={() => handleMouseOver(videoRefs[3])}
             onMouseLeave={() => handleMouseLeave(videoRefs[3])}
@@ -153,6 +157,7 @@ const Design = () => {
             muted
             loop
             playsInline
+            autoPlay
             ref={videoRefs[4]}
             onMouseOver={() => handleMouseOver(videoRefs[4])}
             onMouseLeave={() => handleMouseLeave(videoRefs[4])}
