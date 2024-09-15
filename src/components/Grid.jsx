@@ -247,94 +247,92 @@
 
 // export default LandingPage;
 
-import React, { useEffect, useRef } from "react";
-import HeroSection from "./HeroSection";
-import arrow from "../assets/images/downarraow.png";
+// import React, { useEffect, useRef } from "react";
+// import HeroSection from "./HeroSection";
+// import arrow from "../assets/images/downarraow.png";
 
-const LandingPage = () => {
-  // const intro =
-  //   "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+// const LandingPage = () => {
+//   // const intro =
+//   //   "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
 
-  const intro =
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
-  const videoRef = useRef(null);
+//   const intro =
+//     "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
+//   const videoRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const video = videoRef.current;
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollTop = window.scrollY;
+//       const video = videoRef.current;
 
-      if (video) {
-        // Pause the video if the scroll position is past the video height
-        if (scrollTop > video.offsetHeight) {
-          video.pause();
-        } else {
-          video.play();
-        }
+//       if (video) {
 
-        // Adjust the video opacity based on scroll position
-        video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
-      }
-    };
+//         if (scrollTop > video.offsetHeight) {
+//           video.pause();
+//         } else {
+//           video.play();
+//         }
 
-    window.addEventListener("scroll", handleScroll);
+//         video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
+//       }
+//     };
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+//     window.addEventListener("scroll", handleScroll);
 
-  const scrollToNextSection = () => {
-    const nextSection = document.getElementById("next-section");
-    nextSection.scrollIntoView({ behavior: "smooth" });
-  };
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
 
-  return (
-    <div>
-      {/* Video Background Section */}
-      <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
-        <a href="https://youtu.be/X5YmbXSpVoU">
-          <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
-            <video
-              ref={videoRef}
-              className="md:max-w-[1200px] md:h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-              controls={false} // Add this to disable the native iOS full-screen controls
-              preload="auto" // Ensure the video is preloaded
-            >
-              <source src={intro} type="video/mp4" />
-            </video>
-          </div>
-        </a>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-      </section>
+//   const scrollToNextSection = () => {
+//     const nextSection = document.getElementById("next-section");
+//     nextSection.scrollIntoView({ behavior: "smooth" });
+//   };
 
-      {/* Arrow Below the Video */}
-      <div className="flex justify-center md:mt-1 mt-2">
-        <button
-          onClick={scrollToNextSection}
-          className="hidden md:block text-white text-4xl animate-bounce mb-20"
-        >
-          <img src={arrow} alt="Scroll Down Arrow" />
-        </button>
-      </div>
+//   return (
+//     <div>
+//       {/* Video Background Section */}
+//       <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+//         <a href="https://youtu.be/X5YmbXSpVoU">
+//           <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+//             <video
+//               ref={videoRef}
+//               className="md:max-w-[1200px] md:h-full object-cover"
+//               autoPlay
+//               loop
+//               muted
+//               playsInline
+//               controls={false} // Add this to disable the native iOS full-screen controls
+//               preload="auto" // Ensure the video is preloaded
+//             >
+//               <source src={intro} type="video/mp4" />
+//             </video>
+//           </div>
+//         </a>
+//         <div className="absolute inset-0 bg-black opacity-20"></div>
+//       </section>
 
-      {/* Next Section */}
-      <section
-        id="next-section"
-        className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
-      >
-        <HeroSection />
-      </section>
-    </div>
-  );
-};
+//       {/* Arrow Below the Video */}
+//       <div className="flex justify-center md:mt-1 mt-2">
+//         <button
+//           onClick={scrollToNextSection}
+//           className="hidden md:block text-white text-4xl animate-bounce mb-20"
+//         >
+//           <img src={arrow} alt="Scroll Down Arrow" />
+//         </button>
+//       </div>
 
-export default LandingPage;
+//       {/* Next Section */}
+//       <section
+//         id="next-section"
+//         className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
+//       >
+//         <HeroSection />
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default LandingPage;
 
 // import React, { useEffect, useRef, useState } from "react";
 // import HeroSection from "./HeroSection";
@@ -502,3 +500,98 @@ export default LandingPage;
 // };
 
 // export default LandingPage;
+
+import React, { useEffect, useRef } from "react";
+import HeroSection from "./HeroSection";
+import arrow from "../assets/images/downarraow.png";
+
+const LandingPage = () => {
+  const intro =
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const video = videoRef.current;
+
+      if (video) {
+        if (scrollTop > video.offsetHeight) {
+          video.pause();
+        } else {
+          video.play();
+        }
+
+        video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Ensure the video plays automatically on iOS and other devices
+  useEffect(() => {
+    const playVideo = async () => {
+      try {
+        await videoRef.current.play(); // Try to play the video
+      } catch (err) {
+        console.error("Autoplay failed, possibly due to restrictions: ", err);
+      }
+    };
+
+    if (videoRef.current) {
+      playVideo();
+    }
+  }, []);
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("next-section");
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div>
+      {/* Video Background Section */}
+      <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+          <video
+            ref={videoRef}
+            className="md:max-w-[1200px] md:h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline // Required for iOS inline playback
+            preload="auto" // Ensure the video is preloaded
+          >
+            <source src={intro} type="video/mp4" />
+          </video>
+        </div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+      </section>
+
+      {/* Arrow Below the Video */}
+      <div className="flex justify-center md:mt-1 mt-2">
+        <button
+          onClick={scrollToNextSection}
+          className="hidden md:block text-white text-4xl animate-bounce mb-20"
+        >
+          <img src={arrow} alt="Scroll Down Arrow" />
+        </button>
+      </div>
+
+      {/* Next Section */}
+      <section
+        id="next-section"
+        className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
+      >
+        <HeroSection />
+      </section>
+    </div>
+  );
+};
+
+export default LandingPage;
