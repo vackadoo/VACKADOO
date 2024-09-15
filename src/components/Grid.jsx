@@ -247,16 +247,122 @@
 
 // export default LandingPage;
 
+// import React, { useEffect, useRef } from "react";
+// import HeroSection from "./HeroSection";
+// import arrow from "../assets/images/downarraow.png";
 
+// const LandingPage = () => {
+//   const intro =
+//     "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+//   const videoRef = useRef(null);
 
-import React, { useEffect, useRef } from "react";
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollTop = window.scrollY;
+//       const video = videoRef.current;
+
+//       if (video) {
+//         // Pause the video if the scroll position is past the video height
+//         if (scrollTop > video.offsetHeight) {
+//           video.pause();
+//         } else {
+//           video.play();
+//         }
+
+//         // Adjust the video opacity based on scroll position
+//         video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+
+//     // Cleanup the event listener on component unmount
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+//   const scrollToNextSection = () => {
+//     const nextSection = document.getElementById("next-section");
+//     nextSection.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <div>
+//       {/* Video Background Section */}
+//       <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+//         <a href="https://youtu.be/X5YmbXSpVoU">
+//           <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+//             <video
+//               ref={videoRef}
+//               className="md:max-w-[1200px] md:h-full object-cover"
+//               autoPlay
+//               loop
+//               muted
+//               playsInline
+//               controls={false} // Add this to disable the native iOS full-screen controls
+//               preload="auto"   // Ensure the video is preloaded
+//             >
+//               <source src={intro} type="video/mp4" />
+//             </video>
+//           </div>
+//         </a>
+//         <div className="absolute inset-0 bg-black opacity-20"></div>
+//       </section>
+
+//       {/* Arrow Below the Video */}
+//       <div className="flex justify-center md:mt-1 mt-2">
+//         <button
+//           onClick={scrollToNextSection}
+//           className="hidden md:block text-white text-4xl animate-bounce mb-20"
+//         >
+//           <img src={arrow} alt="Scroll Down Arrow" />
+//         </button>
+//       </div>
+
+//       {/* Next Section */}
+//       <section
+//         id="next-section"
+//         className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
+//       >
+//         <HeroSection />
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default LandingPage;
+
+import React, { useEffect, useRef, useState } from "react";
 import HeroSection from "./HeroSection";
 import arrow from "../assets/images/downarraow.png";
 
 const LandingPage = () => {
-  const intro =
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+  const [videoUrl, setVideoUrl] = useState("");
   const videoRef = useRef(null);
+
+  useEffect(() => {
+    const fetchYouTubeVideo = async () => {
+      const apiKey = "AIzaSyD8v2dEVujXuN9jESTE0DTGPKZgEvrnw94"; // Replace with your actual YouTube API key
+      const channelId = "UCoe-fi5V1y4laZOSjMDSGDA"; // Replace with your actual channel ID
+      const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${apiKey}`;
+
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        if (data.items && data.items.length > 0) {
+          const videoId = data.items[0].id.videoId;
+          setVideoUrl(
+            `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1`
+          );
+        }
+      } catch (error) {
+        console.error("Error fetching YouTube video:", error);
+      }
+    };
+
+    fetchYouTubeVideo();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -264,21 +370,18 @@ const LandingPage = () => {
       const video = videoRef.current;
 
       if (video) {
-        // Pause the video if the scroll position is past the video height
         if (scrollTop > video.offsetHeight) {
           video.pause();
         } else {
           video.play();
         }
 
-        // Adjust the video opacity based on scroll position
         video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -293,22 +396,23 @@ const LandingPage = () => {
     <div>
       {/* Video Background Section */}
       <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
-        <a href="https://youtu.be/X5YmbXSpVoU">
-          <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
-            <video
+        <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+          {videoUrl && (
+            <iframe
               ref={videoRef}
-              className="md:max-w-[1200px] md:h-full object-cover"
-              autoPlay
-              loop
+              className="w-full h-[50vh] md:h-[80vh] object-cover"
+              src={videoUrl}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
               muted
+              loop
+              controls
               playsInline
-              controls={false} // Add this to disable the native iOS full-screen controls
-              preload="auto"   // Ensure the video is preloaded
-            >
-              <source src={intro} type="video/mp4" />
-            </video>
-          </div>
-        </a>
+              title="YouTube Video"
+            ></iframe>
+          )}
+        </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
       </section>
 
