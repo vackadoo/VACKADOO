@@ -506,8 +506,10 @@ import HeroSection from "./HeroSection";
 import arrow from "../assets/images/downarraow.png";
 
 const LandingPage = () => {
+  // const intro =
+  //   "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
   const intro =
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -556,7 +558,7 @@ const LandingPage = () => {
   return (
     <div>
       {/* Video Background Section */}
-      <section className="relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+      <section className="  hidden relative h-[50vh] md:h-[80vh] md:flex justify-center items-center overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
           <video
             ref={videoRef}
@@ -568,6 +570,29 @@ const LandingPage = () => {
             preload="auto" // Ensure the video is preloaded
           >
             <source src={intro} type="video/mp4" />
+          </video>
+        </div>
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+      </section>
+
+      {/* mobile */}
+
+      <section className="  md:hidden relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+          <video
+            className="md:max-w-[1200px] md:h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline // Required for iOS inline playback
+            // Ensure the video is preloaded
+          >
+            <source
+              src={
+                "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789842/Savishkar_showreel_fc8ypd.mov"
+              }
+              type="video/mp4"
+            />
           </video>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
