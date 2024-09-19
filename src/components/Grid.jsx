@@ -701,14 +701,7 @@ const LandingPage = () => {
           </video>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        <a
-          href="https://youtu.be/X5YmbXSpVoU"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute bottom-4 bg-white text-black px-4 py-2 rounded-lg font-semibold"
-        >
-          Watch on YouTube
-        </a>
+        
       </section>
 
       {/* mobile */}
@@ -737,7 +730,7 @@ const LandingPage = () => {
         </a>
       </section> */}
 
-      <div>
+      <div className="md:hidden pt-12">
         <video
           className="md:max-w-[1200px] md:h-full "
           autoPlay
