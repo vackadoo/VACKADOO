@@ -501,6 +501,135 @@
 
 // export default LandingPage;
 
+// import React, { useEffect, useRef } from "react";
+// import HeroSection from "./HeroSection";
+// import arrow from "../assets/images/downarraow.png";
+
+// const LandingPage = () => {
+//   // const intro =
+//   //   "https://res.cloudinary.com/dlanlvnce/video/upload/v1724910824/samples/dance-2.mp4";
+//   const intro =
+//     "https://res.cloudinary.com/dlanlvnce/video/upload/v1724911066/qvhrpnxhsaowtzraeoe9.mov";
+//   const videoRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollTop = window.scrollY;
+//       const video = videoRef.current;
+
+//       if (video) {
+//         if (scrollTop > video.offsetHeight) {
+//           video.pause();
+//         } else {
+//           video.play();
+//         }
+
+//         video.style.opacity = Math.max(0.2, 1 - scrollTop / 900);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, []);
+
+//   useEffect(() => {
+//     const playVideo = async () => {
+//       try {
+//         await videoRef.current.play();
+//       } catch (err) {
+//         console.error("Autoplay failed, possibly due to restrictions: ", err);
+//       }
+//     };
+
+//     if (videoRef.current) {
+//       playVideo();
+//     }
+//   }, []);
+
+//   const scrollToNextSection = () => {
+//     const nextSection = document.getElementById("next-section");
+//     nextSection.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <div>
+//       {/* Video Background Section */}
+//       <section className="  hidden relative h-[50vh] md:h-[80vh] md:flex justify-center items-center overflow-hidden">
+//         <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+//           <video
+//             ref={videoRef}
+//             className="md:max-w-[1200px] md:h-full object-cover"
+//             autoPlay
+//             loop
+//             muted
+//             playsInline // Required for iOS inline playback
+//             preload="auto" // Ensure the video is preloaded
+//           >
+//             <source src={intro} type="video/mp4" />
+//           </video>
+//         </div>
+//         <div className="absolute inset-0 bg-black opacity-20"></div>
+//         <a
+//           href="https://youtu.be/X5YmbXSpVoU"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="absolute bottom-4 bg-white text-black px-4 py-2 rounded-lg font-semibold"
+//         >
+//           Watch on YouTube
+//         </a>
+//       </section>
+
+//       {/* mobile */}
+
+//       <section className="  md:hidden relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+//         <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
+//           <video
+//             className="md:max-w-[1200px] md:h-full object-cover"
+//             autoPlay
+//             loop
+//             muted
+//             playsInline // Required for iOS inline playback
+//             // Ensure the video is preloaded
+//           >
+//             <source src={intro} type="video/mp4" />
+//           </video>
+//         </div>
+//         <div className="absolute inset-0 bg-black opacity-20"></div>
+//         <a
+//           href="https://www.youtube.com/watch?v=Ro3DWrhQzcA"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="absolute bottom-0   bg-white text-xs text-black px-3 py-2 rounded-3xl font-semibold"
+//         >
+//           Watch on YouTube
+//         </a>
+//       </section>
+
+//       {/* Arrow Below the Video */}
+//       <div className="flex justify-center md:mt-1 mt-2">
+//         <button
+//           onClick={scrollToNextSection}
+//           className="hidden md:block text-white text-4xl animate-bounce mb-20"
+//         >
+//           <img src={arrow} alt="Scroll Down Arrow" />
+//         </button>
+//       </div>
+
+//       {/* Next Section */}
+//       <section
+//         id="next-section"
+//         className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
+//       >
+//         <HeroSection />
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default LandingPage;
 import React, { useEffect, useRef } from "react";
 import HeroSection from "./HeroSection";
 import arrow from "../assets/images/downarraow.png";
@@ -535,11 +664,10 @@ const LandingPage = () => {
     };
   }, []);
 
-  // Ensure the video plays automatically on iOS and other devices
   useEffect(() => {
     const playVideo = async () => {
       try {
-        await videoRef.current.play(); // Try to play the video
+        await videoRef.current.play();
       } catch (err) {
         console.error("Autoplay failed, possibly due to restrictions: ", err);
       }
@@ -573,11 +701,19 @@ const LandingPage = () => {
           </video>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
+        <a
+          href="https://youtu.be/X5YmbXSpVoU"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 bg-white text-black px-4 py-2 rounded-lg font-semibold"
+        >
+          Watch on YouTube
+        </a>
       </section>
 
       {/* mobile */}
 
-      <section className="  md:hidden relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
+      {/* <section className="  md:hidden relative h-[50vh] md:h-[80vh] flex justify-center items-center overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center md:pt-1 pt-8">
           <video
             className="md:max-w-[1200px] md:h-full object-cover"
@@ -587,16 +723,32 @@ const LandingPage = () => {
             playsInline // Required for iOS inline playback
             // Ensure the video is preloaded
           >
-            <source
-              src={
-                "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789842/Savishkar_showreel_fc8ypd.mov"
-              }
-              type="video/mp4"
-            />
+            <source src={intro} type="video/mp4" />
           </video>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
-      </section>
+        <a
+          href="https://www.youtube.com/watch?v=Ro3DWrhQzcA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-0   bg-white text-xs text-black px-3 py-2 rounded-3xl font-semibold"
+        >
+          Watch on YouTube
+        </a>
+      </section> */}
+
+      <div>
+        <video
+          className="md:max-w-[1200px] md:h-full "
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src={intro} type="video/mp4" />
+        </video>
+      </div>
 
       {/* Arrow Below the Video */}
       <div className="flex justify-center md:mt-1 mt-2">
