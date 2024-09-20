@@ -16,7 +16,7 @@ import img8 from "../assets/images/design/img8.png";
 const videoUrls = [
   "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
   "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789842/Savishkar_showreel_fc8ypd.mov",
-  "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789882/IMG_1555_fb4ppi.mp4",
+  "https://res.cloudinary.com/dlanlvnce/video/upload/v1726852669/IMG_1562_vkdf9s.mp4",
   "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789918/IMG_2376_lanwnm.mp4",
   "https://res.cloudinary.com/dlanlvnce/video/upload/v1725789929/IMG_1916_nw0nmm.mp4",
 ];
@@ -135,6 +135,9 @@ const Design = () => {
           ref={videoRefs[0]}
           onMouseOver={() => handleMouseOver(videoRefs[0])}
           onMouseLeave={() => handleMouseLeave(videoRefs[0])}
+          onClick={() => {
+            videoRefs[0].current.muted = !videoRefs[0].current.muted;
+          }}
         >
           <source src={videoUrls[0]} type="video/mp4" />
           Your browser does not support the video tag.
@@ -147,10 +150,14 @@ const Design = () => {
           className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[500px]"
           muted
           loop
+          autoPlay
           playsInline
           ref={videoRefs[1]}
           onMouseOver={() => handleMouseOver(videoRefs[1])}
           onMouseLeave={() => handleMouseLeave(videoRefs[1])}
+          onClick={() => {
+            videoRefs[1].current.muted = !videoRefs[1].current.muted;
+          }}
         >
           <source src={videoUrls[1]} type="video/mp4" />
           Your browser does not support the video tag.
@@ -167,6 +174,9 @@ const Design = () => {
             ref={videoRefs[2]}
             onMouseOver={() => handleMouseOver(videoRefs[2])}
             onMouseLeave={() => handleMouseLeave(videoRefs[2])}
+            onClick={() => {
+              videoRefs[2].current.muted = !videoRefs[2].current.muted;
+            }}
           >
             <source src={videoUrls[2]} type="video/mp4" />
             Your browser does not support the video tag.
@@ -182,6 +192,9 @@ const Design = () => {
             ref={videoRefs[3]}
             onMouseOver={() => handleMouseOver(videoRefs[3])}
             onMouseLeave={() => handleMouseLeave(videoRefs[3])}
+            onClick={() => {
+              videoRefs[3].current.muted = !videoRefs[3].current.muted;
+            }}
           >
             <source src={videoUrls[3]} type="video/mp4" />
             Your browser does not support the video tag.
@@ -197,6 +210,9 @@ const Design = () => {
             ref={videoRefs[4]}
             onMouseOver={() => handleMouseOver(videoRefs[4])}
             onMouseLeave={() => handleMouseLeave(videoRefs[4])}
+            onClick={() => {
+              videoRefs[4].current.muted = !videoRefs[4].current.muted;
+            }}
           >
             <source src={videoUrls[4]} type="video/mp4" />
             Your browser does not support the video tag.

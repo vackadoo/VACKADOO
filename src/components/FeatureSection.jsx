@@ -20,6 +20,14 @@ const items = [
   { name: "tedx", image: tedx },
 
 
+  { name: "Pauls", image: Pauls },
+  { name: "FiemFoundation", image: FiemFoundation },
+  { name: "HorzionStudy", image: HorzionStudy },
+  { name: "JurisDomain", image: JurisDomain },
+  { name: "Leather", image: Leather },
+  { name: "tedx", image: tedx },
+
+
 
   { name: "Pauls", image: Pauls },
   { name: "FiemFoundation", image: FiemFoundation },
@@ -27,6 +35,14 @@ const items = [
   { name: "JurisDomain", image: JurisDomain },
   { name: "Leather", image: Leather },
   { name: "tedx", image: tedx },
+
+  { name: "Pauls", image: Pauls },
+  { name: "FiemFoundation", image: FiemFoundation },
+  { name: "HorzionStudy", image: HorzionStudy },
+  { name: "JurisDomain", image: JurisDomain },
+  { name: "Leather", image: Leather },
+  { name: "tedx", image: tedx },
+
 
   { name: "Pauls", image: Pauls },
   { name: "FiemFoundation", image: FiemFoundation },
