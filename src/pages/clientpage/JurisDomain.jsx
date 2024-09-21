@@ -200,10 +200,13 @@ const JurisDomain = () => {
         <div className="relative overflow-x-auto md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px]">
           <div
             ref={marqueeRef}
-            className="flex space-x-4  transition-transform duration-500 md:animate-marquee"
+            className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            {videoUrls.slice(1).map((url, index) => (
+            {(window.innerWidth < 768
+              ? videoUrls.slice(1, 8)
+              : videoUrls.slice(1)
+            ).map((url, index) => (
               <video
                 key={index}
                 className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
@@ -228,15 +231,16 @@ const JurisDomain = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:space-x md:grid-cols-2 md:mx md:mt-8 ">
+      <div className="grid grid-cols-1 md:space-x md:grid-cols-2 md:mx md:mt-8  ">
         <div className="order-2 items-center md:order-1">
           <div className=" flex items-center  drop-shadow-xl relative ">
             <video
-              className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
+              className="object-contain mt-5 md:mt-0   md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
               autoPlay
               playsInline
+              preload="auto"
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}

@@ -165,7 +165,10 @@ const HorizonStudy = () => {
                 className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
-                {videoUrls.slice(1).map((url, index) => (
+                {(window.innerWidth < 768
+                  ? videoUrls.slice(1, 7)
+                  : videoUrls.slice(1)
+                ).map((url, index) => (
                   <video
                     key={index}
                     className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
@@ -173,6 +176,7 @@ const HorizonStudy = () => {
                     muted
                     autoPlay
                     playsInline
+                    preload="auto"
                     ref={videoRefs[index + 1]}
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                     onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}

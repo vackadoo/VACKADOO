@@ -185,26 +185,43 @@ const TedxPage = () => {
               className="flex space-x-2 md:space-x-4 transition-transform duration-500 md:animate-marquee"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-              {videoUrls.slice(1).map((url, index) => (
-                <video
-                  key={index}
-                  className="object-contain border-[1px] border-black rounded-xl max-h-[300px] md:max-h-[300px]"
-                  loop
-                  muted
-                  preload="auto"
-                  playsInline
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                  onClick={() => {
-                    videoRefs[index + 1].current.muted =
-                      !videoRefs[index + 1].current.muted;
-                  }}
-                >
-                  <source src={url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ))}
+              {videoUrls
+                .slice(
+                  window.innerWidth < 768 ? 1 : 0, // Slice from 1 on mobile, 0 on larger screens
+                  window.innerWidth < 768 ? 7 : videoUrls.length // Up to 7 on mobile, or the full length otherwise
+                )
+                .map((url, index) => (
+                  <video
+                    key={index}
+                    className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px]"
+                    loop
+                    muted
+                    autoPlay
+                    preload="auto"
+                    playsInline
+                    ref={videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]} // Adjust ref based on slicing
+                    onMouseOver={() =>
+                      handleMouseOver(
+                        videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]
+                      )
+                    }
+                    onMouseLeave={() =>
+                      handleMouseLeave(
+                        videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]
+                      )
+                    }
+                    onClick={() => {
+                      videoRefs[
+                        index + (window.innerWidth < 768 ? 1 : 0)
+                      ].current.muted =
+                        !videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]
+                          .current.muted;
+                    }}
+                  >
+                    <source src={url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ))}
             </div>
           </div>
         </div>

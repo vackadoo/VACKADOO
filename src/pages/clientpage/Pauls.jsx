@@ -266,28 +266,25 @@ const Pauls = () => {
         </p>
 
         <div
-          id="next-section"
-          className="md:mt-6 mt-0 flex items-center justify-center drop-shadow-xl relative py-9"
+          onMouseOver={pauseMarquee} // Pause marquee on hover
+          onMouseLeave={resumeMarquee} // Resume marquee on mouse leave
+          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px]"
         >
           <div
-            onMouseOver={pauseMarquee}
-            onMouseLeave={resumeMarquee}
-            className="relative overflow-x-auto md:overflow-hidden w-full max-w-[350px] md:max-w-[1109px]"
+            ref={marqueeRef}
+            className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
+            style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            <div
-              ref={marqueeRef}
-              className="flex space-x-4 md:space-x-4 transition-transform duration-500 md:animate-marquee"
-              style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
-            >
-              {videoUrls.slice(1).map((url, index) => (
+            {(window.innerWidth < 768 ? videoUrls.slice(1, 7) : videoUrls).map(
+              (url, index) => (
                 <video
                   key={index}
-                  className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[300px] drop-shadow-xl"
+                  className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
                   autoPlay
-                  preload="auto"
                   playsInline
+                  preload="auto"
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
@@ -299,8 +296,8 @@ const Pauls = () => {
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
-              ))}
-            </div>
+              )
+            )}
           </div>
         </div>
 
