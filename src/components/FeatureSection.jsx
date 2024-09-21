@@ -80,7 +80,7 @@ const FeatureSection = () => {
   }, [isScrolled, isMarqueeVisible]);
 
   return (
-    <div className="relative h-[30vh] md:mb-0 mb-16 md:h-[60vh]  flex items-center justify-center">
+    <div className="relative h-[40vh] md:mb-0 mb-16 md:h-[60vh]  flex items-center justify-center overflow-hidden">
       {/* Background Images */}
       <img
         src={horizontal}

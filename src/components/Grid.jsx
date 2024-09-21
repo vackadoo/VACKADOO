@@ -756,12 +756,12 @@ const LandingPage = () => {
       {/* Next Section */}
       <section
         id="next-section"
-        className="md:h-[70vh] h-screen bg-black flex items-center justify-center"
+        className="md:h-[70vh] h-[90vh]  flex items-center justify-center"
       >
         <HeroSection />
       </section>
     </div>
   );
-};
+};  
 
 export default LandingPage;
