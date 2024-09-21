@@ -1,9 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
 const FiemFoundation = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
@@ -135,6 +138,10 @@ const FiemFoundation = () => {
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  onClick={() => {
+                    videoRefs[index + 1].current.muted =
+                      !videoRefs[index + 1].current.muted;
+                  }}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.

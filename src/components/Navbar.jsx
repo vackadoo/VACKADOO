@@ -123,7 +123,7 @@ const Navbar = () => {
                 Schedule a Call
               </a>
               <button onClick={togglenavbar}>
-                {mobileDrawerOpen ? <X/> : <Menu />}
+                {mobileDrawerOpen ? <X /> : <Menu />}
               </button>
             </div>
           </div>
@@ -138,15 +138,16 @@ const Navbar = () => {
               onClick={togglenavbar}
             ></div>
 
-            <div className=" border-2 border-black fixed right-9 left-9 top-12 z-40 bg-white text-black p-4 pt-2 flex flex-col justify-center items-center lg:hidden rounded-xl transform transition-transform duration-300 ease-out translate-x-0">
-              
-              <ul className="flex flex-col items-center">
-                {navItems.map((item, index) => (
-                  <li key={index} className="py-4">
-                    <a href={item.href}>{item.label}</a>
-                  </li>
-                ))}
-              </ul>
+            <div className="  fixed right-9 left-9 top-12 z-40 bg-white text-black p-4 pt-2 flex flex-col justify-center items-center lg:hidden rounded-xl transform transition-transform duration-300 ease-out translate-x-0">
+              <div className=" border-black py-3 rounded-xl mt-2  border-2 px-16">
+                <ul className="flex flex-col items-center">
+                  {navItems.map((item, index) => (
+                    <li key={index} className="py-4">
+                      <a href={item.href}>{item.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </>
         )}

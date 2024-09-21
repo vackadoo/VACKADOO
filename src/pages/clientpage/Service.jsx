@@ -176,7 +176,7 @@
 
 //   return (
 //     <div className="relative bg-white">
-      
+
 //       <div className="flex flex-col justify-center  items-center h-screen  bg-transparent">
 //         <div className="relative z-20 md:w-full md:max-w-4xl max-w-xl">
 //           {showVertical ? (
@@ -198,7 +198,6 @@
 // };
 
 // export default Service;
-
 
 import React, { useEffect, useState, useRef } from "react";
 import vertical from "../../assets/images/servic/vertical.png";
@@ -331,36 +330,23 @@ const Service = () => {
           <div className="relative z-20 w-full max-w-xl bg-white">
             {showVertical ? (
               <div className="h-[83vh]">
-              <h1 className="text-black mt-40 text-4xl font-bold text-center transition-all duration-[1000ms] ease-in">
-                SERVICES
-              </h1>
+                <h1 className="text-black mt-40 text-4xl font-bold text-center transition-all duration-[4000ms] ease-in">
+                  SERVICES
+                </h1>
               </div>
             ) : (
               <section
                 id="next-section"
-                className="h-[83vh] flex items-center justify-center bg-white duration-[1000ms] ease-in-out"
+                className="h-[83vh] flex items-center justify-center bg-white duration-[4000ms] ease-in-out"
               >
                 <ServicesOffer />
               </section>
             )}
           </div>
-         
-          
-          
-
-
         </div>
-      
-      
-      
-      
-<Videofooter/>
-        
-        
-       
+
+        <Videofooter />
       </div>
-      
-      
     </div>
   );
 };

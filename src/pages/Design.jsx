@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
 import Paulsmarquee from "../components/paulsmarquee";
-import Frame1 from "../assets/images/design/Frame1.png";
-import Frame2 from "../assets/images/design/Frame2.png";
 import Videofooter from "../components/Videofooter";
 import horizontal2 from "../assets/images/halffooter.gif";
 import img1 from "../assets/images/design/img1.png";
@@ -116,15 +114,7 @@ const Design = () => {
           <img src={img8} />
         </div>
       </div>
-      {/* <div className="flex justify-center pt-4 md:pt-8">
-        <img
-          src={Frame2}
-          alt="Frame2"
-          className="max-w-full md:max-w-[1200px] border-[1px] border-black"
-        />
-      </div> */}
 
-      {/* First video */}
       <div className="mt-6 md:mt-10 flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
         <video
           className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[250px] md:max-h-[500px]"

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import vertical from "../assets/images/vertical.png";
 import vertical1 from "../assets/images/vertical1.png";
@@ -19,16 +18,6 @@ const items = [
   { name: "Leather", image: Leather },
   { name: "tedx", image: tedx },
 
-
-  { name: "Pauls", image: Pauls },
-  { name: "FiemFoundation", image: FiemFoundation },
-  { name: "HorzionStudy", image: HorzionStudy },
-  { name: "JurisDomain", image: JurisDomain },
-  { name: "Leather", image: Leather },
-  { name: "tedx", image: tedx },
-
-
-
   { name: "Pauls", image: Pauls },
   { name: "FiemFoundation", image: FiemFoundation },
   { name: "HorzionStudy", image: HorzionStudy },
@@ -43,6 +32,12 @@ const items = [
   { name: "Leather", image: Leather },
   { name: "tedx", image: tedx },
 
+  { name: "Pauls", image: Pauls },
+  { name: "FiemFoundation", image: FiemFoundation },
+  { name: "HorzionStudy", image: HorzionStudy },
+  { name: "JurisDomain", image: JurisDomain },
+  { name: "Leather", image: Leather },
+  { name: "tedx", image: tedx },
 
   { name: "Pauls", image: Pauls },
   { name: "FiemFoundation", image: FiemFoundation },
@@ -85,7 +80,7 @@ const FeatureSection = () => {
   }, [isScrolled, isMarqueeVisible]);
 
   return (
-    <div className="relative h-[40vh] md:mb-0 mb-6 md:h-[60vh] overflow-hidden flex items-center justify-center">
+    <div className="relative h-[30vh] md:mb-0 mb-16 md:h-[60vh]  flex items-center justify-center">
       {/* Background Images */}
       <img
         src={horizontal}
@@ -104,7 +99,7 @@ const FeatureSection = () => {
             : "translate-x-[20vw] opacity-0"
         }`}
         alt="Vertical"
-      />  
+      />
 
       {/* Marquee Section */}
       {isMarqueeVisible && (
@@ -128,7 +123,9 @@ const FeatureSection = () => {
           </div>
 
           <div className="md:hidden max-w-[600px] text-center mb-36  ">
-            <h1 className="text-white text-xl font-bold md:mb-0  mb-10">Projects</h1>
+            <h1 className="text-white text-xl font-bold md:mb-0  mb-10">
+              Projects
+            </h1>
 
             <div className="absolute flex animate-marqueeMobile overflow-auto md:mb-8  mb-14">
               {[...items, ...items].map((item, index) => (

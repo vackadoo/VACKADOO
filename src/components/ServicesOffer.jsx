@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Videofooter  from "./Videofooter";
-
 
 const ServicesOffer = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -37,27 +35,27 @@ const ServicesOffer = () => {
           >
             <div className="flex flex-wrap justify-center space-x-2 pb-3 mb-2">
               <a href="/tedx">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 md:py-2 px-1 md:pt-2 md:px-3 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs mt-3 py-2 md:py-2 px-2 md:pt-2 md:px-3 rounded-full">
                   CONTENT PRODUCTION
                 </div>
               </a>
               <a href="/JurisDomain">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs py-1 md:py-2 px-2 mt-3 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs py-2 md:py-2 px-2 mt-3 md:px-6 rounded-full">
                   PODCAST PRODUCTION
                 </div>
               </a>
               <a href="/FiemFoundation">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                   EVENT COVERAGE
                 </div>
               </a>
               <a href="/JurisDomain">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                   CAMPAIGN MANAGEMENT
                 </div>
               </a>
-              <a href="/Leather">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs mt-3 py-1 px-1 md:py-2 md:px-6 rounded-full">
+              <a href="https://www.behance.net/gallery/207412733/Photoshoot-Videoshoots">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                   PHOTOSHOOTS & VIDEOSHOOTS
                 </div>
               </a>
@@ -90,12 +88,12 @@ const ServicesOffer = () => {
           >
             <div className="flex flex-wrap justify-center space-x-2 p-4">
               <a href="/Pauls">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs md:mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                   BRAND
                 </div>
               </a>
               <a href="/HorzionStudy">
-                <div className="bg-white text-black font-semibold text-[10px] md:text-xs md:mt-3 py-1 px-2 md:py-2 md:px-6 rounded-full">
+                <div className="bg-white text-black font-semibold text-[12px] md:text-xs md:mt-3 py-2 px-2 md:py-2 md:px-6 rounded-full">
                   SOCIAL PLATFORM
                 </div>
               </a>
@@ -123,8 +121,6 @@ const ServicesOffer = () => {
           </div>
         </a>
       </div>
-      
-      
     </div>
   );
 };

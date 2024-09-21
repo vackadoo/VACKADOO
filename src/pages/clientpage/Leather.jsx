@@ -108,11 +108,16 @@ const AdroitLeathersSection = () => {
                   className="object-contain border-[1px] border-black rounded-xl max-h-[200px] md:max-h-[400px] drop-shadow-2xl"
                   loop
                   muted
+                  autoPlay
                   preload="auto"
                   playsInline
                   ref={videoRefs[index]}
                   onMouseOver={() => handleMouseOver(videoRefs[index])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index])}
+                  onClick={() => {
+                    videoRefs[index].current.muted =
+                      !videoRefs[index].current.muted;
+                  }}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.

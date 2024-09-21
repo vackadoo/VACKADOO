@@ -174,7 +174,7 @@ module.exports = {
           // Default speed for larger screens
           marquee: 'marquee 15s linear infinite',
           // Faster speed for mobile screens
-          marqueeMobile: 'marqueeMobile 80s linear infinite',
+          marqueeMobile: 'marqueeMobile 70s linear infinite',
         },
         keyframes: {
           marquee: {

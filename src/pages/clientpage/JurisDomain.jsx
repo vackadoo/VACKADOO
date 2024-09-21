@@ -209,11 +209,16 @@ const JurisDomain = () => {
                 className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
                 loop
                 muted
+                autoPlay
                 preload="auto"
                 playsInline
                 ref={videoRefs[index + 1]}
                 onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                onClick={() => {
+                  videoRefs[index + 1].current.muted =
+                    !videoRefs[index + 1].current.muted;
+                }}
               >
                 <source src={url} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -230,9 +235,14 @@ const JurisDomain = () => {
               className="object-contain  md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
+              autoPlay
+              playsInline
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
+              onClick={() => {
+                videoRefs[0].current.muted = !videoRefs[0].current.muted;
+              }}
             >
               <source src={videoUrls[0]} type="video/mp4" />
               Your browser does not support the video tag.

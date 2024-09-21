@@ -147,10 +147,14 @@ const TedxPage = () => {
             loop
             muted
             autoPlay
+            preload="auto"
             playsInline
             ref={videoRefs[0]}
             onMouseOver={() => handleMouseOver(videoRefs[0])}
             onMouseLeave={() => handleMouseLeave(videoRefs[0])}
+            onClick={() => {
+              videoRefs[0].current.muted = !videoRefs[0].current.muted;
+            }}
           >
             <source src={videoUrls[0]} type="video/mp4" />
             Your browser does not support the video tag.
@@ -192,6 +196,10 @@ const TedxPage = () => {
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  onClick={() => {
+                    videoRefs[index + 1].current.muted =
+                      !videoRefs[index + 1].current.muted;
+                  }}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.
