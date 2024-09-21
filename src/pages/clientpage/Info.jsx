@@ -42,7 +42,7 @@ const Info = () => {
           </p>
         </div>
         <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8 md:mb-0 mb-20 ">
-          <div className="flex justify-center items-center  mr-2  md:mr-8">
+          <div className="flex justify-center items-center mt-1  mr-2  md:mr-6">
             <a
               target="_blank"
               rel="noopener noreferrer"
