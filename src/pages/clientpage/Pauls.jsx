@@ -101,6 +101,7 @@ const Pauls = () => {
                 loop
                 preload="auto"
                 playsInline
+                autoPlay
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -163,6 +164,7 @@ const Pauls = () => {
                 loop
                 preload="auto"
                 playsInline
+                autoPlay
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -277,6 +279,7 @@ const Pauls = () => {
                   muted
                   preload="auto"
                   playsInline
+                  autoPlay
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
