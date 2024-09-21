@@ -1,4 +1,4 @@
-import React, { useRef, useState,useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
@@ -39,7 +39,22 @@ const FiemFoundation = () => {
 
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const marqueeRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Detect mobile screens
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const displayedVideos = isMobile ? videoUrls.slice(0, 6) : videoUrls; // Show 1-4 videos on mobile
+
   const pauseMarquee = () => {
     marqueeRef.current.style.animationPlayState = "paused";
   };
@@ -63,7 +78,7 @@ const FiemFoundation = () => {
   };
 
   const handleNext = () => {
-    if (currentIndex < videoUrls.length - 3) {
+    if (currentIndex < displayedVideos.length - 3) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -116,7 +131,8 @@ const FiemFoundation = () => {
           values.
         </div>
 
-        <div className="order-1 md:order-2 flex items-center justify-center drop-shadow-xl relative py-9">
+        {/* Video Marquee Section */}
+        <div className="order-1 md:order-2 md:px-0 px-1  flex items-center justify-center drop-shadow-xl relative py-9">
           <div
             onMouseOver={pauseMarquee}
             onMouseLeave={resumeMarquee}
@@ -127,20 +143,21 @@ const FiemFoundation = () => {
               className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
               style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
             >
-              {videoUrls.slice(1).map((url, index) => (
+              {displayedVideos.map((url, index) => (
                 <video
                   key={index}
                   className="object-contain rounded-xl border-[1px] border-black md:max-h-[300px] max-h-[250px] drop-shadow-xl"
                   loop
                   muted
+                  autoPlay
                   preload="auto"
-                  playsInline // Added playsInline attribute
-                  ref={videoRefs[index + 1]}
-                  onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
-                  onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
+                  playsInline
+                  ref={videoRefs[index]}
+                  onMouseOver={() => handleMouseOver(videoRefs[index])}
+                  onMouseLeave={() => handleMouseLeave(videoRefs[index])}
                   onClick={() => {
-                    videoRefs[index + 1].current.muted =
-                      !videoRefs[index + 1].current.muted;
+                    videoRefs[index].current.muted =
+                      !videoRefs[index].current.muted;
                   }}
                 >
                   <source src={url} type="video/mp4" />

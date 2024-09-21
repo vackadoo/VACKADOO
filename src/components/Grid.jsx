@@ -701,7 +701,6 @@ const LandingPage = () => {
           </video>
         </div>
         <div className="absolute inset-0 bg-black opacity-20"></div>
-        
       </section>
 
       {/* mobile */}
@@ -762,6 +761,6 @@ const LandingPage = () => {
       </section>
     </div>
   );
-};  
+};
 
 export default LandingPage;
