@@ -99,9 +99,8 @@ const Pauls = () => {
                 className="object-contain h-auto border-[1px] border-black  drop-shadow-xl rounded-xl max-h-[400px] md:max-h-[700px]"
                 muted
                 loop
-                autoPlay
-                playsInline
                 preload="auto"
+                playsInline
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -157,17 +156,11 @@ const Pauls = () => {
           </div>
 
           <div className="md:order-1 mt-4 md:w-1/3 hidden md:block">
-            {/* <img
-            src={juris}
-            alt="Juris Domain Instagram"
-            className="rounded-lg shadow-lg h-72 md:h-auto   "
-          /> */}
             <div className=" flex justify-center rounded-xl drop-shadow-lg relative overflow-hidden">
               <video
                 className="object-contain border-[1px] border-black h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
                 loop
-                autoPlay
                 preload="auto"
                 playsInline
                 ref={videoRefs[0]}
@@ -268,23 +261,22 @@ const Pauls = () => {
         <div
           onMouseOver={pauseMarquee} // Pause marquee on hover
           onMouseLeave={resumeMarquee} // Resume marquee on mouse leave
-          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px]"
+          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px] mx-auto"
         >
           <div
             ref={marqueeRef}
             className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            {(window.innerWidth < 768 ? videoUrls.slice(1, 7) : videoUrls).map(
+            {(window.innerWidth < 768 ? videoUrls.slice(1, 3) : videoUrls).map(
               (url, index) => (
                 <video
                   key={index}
                   className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
-                  autoPlay
-                  playsInline
                   preload="auto"
+                  playsInline
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
