@@ -120,7 +120,7 @@ const Navbar = () => {
                 href="/ScheduleCall"
                 className="text-[12px]  rounded-full text-white hover:bg-[#242424] py-1 px-3 bg-[#252525]"
               >
-                Schedule a Call
+                Sche dule a Call
               </a>
               <button onClick={togglenavbar}>
                 {mobileDrawerOpen ? <X /> : <Menu />}
@@ -138,15 +138,19 @@ const Navbar = () => {
               onClick={togglenavbar}
             ></div>
 
-            <div className="  fixed right-9 left-9 top-12 z-40 bg-white text-black p-4 pt-2 flex flex-col justify-center items-center lg:hidden rounded-xl transform transition-transform duration-300 ease-out translate-x-0">
-              <div className=" border-black  rounded-xl mt-2 my-1  border-2 px-12">
-                <ul className="flex flex-col items-center">
-                  {navItems.map((item, index) => (
-                    <li key={index} className="py-4">
-                      <a href={item.href}>{item.label}</a>
-                    </li>
-                  ))}
-                </ul>
+            <div className="fixed right-9 left-9 top-12 z-40 bg-white text-black p-0 pt-0 flex flex-col justify-center items-center lg:hidden rounded-xl transform transition-transform duration-300 ease-out translate-x-0">
+              {/* Outer Border */}
+              <div className="border-black rounded-xl border-2 w-full p-2">
+                {/* Inner Border */}
+                <div className="border-black rounded-lg border-2 w-full p-4">
+                  <ul className="flex flex-col items-center">
+                    {navItems.map((item, index) => (
+                      <li key={index} className="py-4">
+                        <a href={item.href}>{item.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </>

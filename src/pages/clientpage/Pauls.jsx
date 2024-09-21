@@ -3,6 +3,7 @@ import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Paulsmarquee from "../../components/paulsmarquee";
 import Videofooter from "../../components/Videofooter";
+import post1 from "../../assets/brand/Pauls/reelspost/post1.png";
 
 const Pauls = () => {
   useEffect(() => {
@@ -112,7 +113,6 @@ const Pauls = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-         
 
             <div className=" grid-cols-1  md:flex-row mt-10">
               <a
@@ -257,7 +257,7 @@ const Pauls = () => {
         <div
           onMouseOver={pauseMarquee} // Pause marquee on hover
           onMouseLeave={resumeMarquee} // Resume marquee on mouse leave
-          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1000px] mx-auto"
+          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1100px] mx-auto"
         >
           <div
             ref={marqueeRef}
@@ -274,6 +274,7 @@ const Pauls = () => {
                   controls
                   playsInline
                   ref={videoRefs[index + 1]}
+                  poster={post1}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
                   onClick={() => {
