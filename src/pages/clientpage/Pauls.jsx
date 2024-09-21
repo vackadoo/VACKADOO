@@ -99,9 +99,8 @@ const Pauls = () => {
                 className="object-contain h-auto border-[1px] border-black  drop-shadow-xl rounded-xl max-h-[400px] md:max-h-[700px]"
                 muted
                 loop
-                preload="auto"
                 playsInline
-                autoPlay
+                controls
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -113,11 +112,7 @@ const Pauls = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-            {/* <img
-            src={juris}
-            alt="Juris Domain Instagram"
-            className="rounded-lg shadow-lg h-72 md:h-auto grid-cols-1 "
-          /> */}
+         
 
             <div className=" grid-cols-1  md:flex-row mt-10">
               <a
@@ -162,9 +157,8 @@ const Pauls = () => {
                 className="object-contain border-[1px] border-black h-auto  drop-shadow-xl rounded-xl max-h-[300px] md:max-h-[450px]"
                 muted
                 loop
-                preload="auto"
+                controls
                 playsInline
-                autoPlay
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -270,16 +264,15 @@ const Pauls = () => {
             className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            {(window.innerWidth < 768 ? videoUrls.slice(1, 3) : videoUrls).map(
+            {(window.innerWidth < 768 ? videoUrls.slice(1, 7) : videoUrls).map(
               (url, index) => (
                 <video
                   key={index}
                   className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
                   loop
                   muted
-                  preload="auto"
+                  controls
                   playsInline
-                  autoPlay
                   ref={videoRefs[index + 1]}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
