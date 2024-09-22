@@ -3,7 +3,16 @@ import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
+import poster1 from "../../assets/brand/fiem/poster1.jpg";
+import poster2 from "../../assets/brand/fiem/poster2.jpg";
+import poster3 from "../../assets/brand/fiem/poster3.jpg";
+import poster4 from "../../assets/brand/fiem/poster4.jpg";
+import poster5 from "../../assets/brand/fiem/poster5.jpg";
+import poster6 from "../../assets/brand/fiem/poster6.jpg";
+
 const FiemFoundation = () => {
+  const posterUrls = [poster1, poster2, poster3, poster4, poster5, poster6];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -149,8 +158,8 @@ const FiemFoundation = () => {
                   className="object-contain rounded-xl border-[1px] border-black md:max-h-[300px] max-h-[250px] drop-shadow-xl"
                   loop
                   muted
-                  autoPlay
-                  preload="auto"
+                  constrols
+                  poster={posterUrls[index % posterUrls.length]}
                   playsInline
                   ref={videoRefs[index]}
                   onMouseOver={() => handleMouseOver(videoRefs[index])}
