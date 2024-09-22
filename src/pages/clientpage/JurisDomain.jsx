@@ -5,49 +5,74 @@ import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
+import poster0 from "../../assets/brand/juris/poster0.jpg";
+
+import poster1 from "../../assets/brand/juris/poster1.jpg";
+import poster2 from "../../assets/brand/juris/poster2.jpg";
+import poster3 from "../../assets/brand/juris/poster3.jpg";
+import poster4 from "../../assets/brand/juris/poster4.jpg";
+import poster5 from "../../assets/brand/juris/poster5.jpg";
+import poster6 from "../../assets/brand/juris/poster6.jpg";
+import poster7 from "../../assets/brand/juris/poster7.jpg";
+
 const JurisDomain = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const posterUrls = [
+    poster1,
+    poster2,
+    poster3,
+    poster4,
+    poster5,
+    poster6,
+    poster7,
+  ];
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Frishi%20podcast%20teaser%20f.mp4?alt=media&token=bd79fa1d-e5ae-4a7f-a61d-b48aead891b7",
 
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
 
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
 
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792069/WhatsApp_Video_2024-07-16_at_5.05.28_PM_kyy3qw.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792109/IMG_8724_fx24lq.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
+
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792335/IMG_8243_vjqwuv.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8588.MOV?alt=media&token=5316551d-7672-4480-8d75-625a5670db96",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792104/IMG_8638_dxg4b7.mp4",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_8802.MP4?alt=media&token=881f5f7c-c6ed-4fe3-beb2-049298c3c16e",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FIMG_9039.MOV?alt=media&token=b42770cb-10f4-4426-a230-e4eff766b576",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.20.58%20PM.mp4?alt=media&token=ef4000b7-cad3-4a03-aa49-89afa075fab6",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2FWhatsApp%20Video%202024-07-16%20at%205.21.08%20PM.mp4?alt=media&token=7668c2df-dbcf-4bd1-b4b0-0006339af920",
+    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/juris%2Fw%20captions.mp4?alt=media&token=716da8d2-e58d-4c68-a37e-9e37e76917b2",
+    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792063/WhatsApp_Video_2024-07-17_at_3.06.03_PM_yjqztp.mp4",
+
+    ,
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -212,8 +237,8 @@ const JurisDomain = () => {
                 className="object-contain rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl border-[1px] border-black"
                 loop
                 muted
-                autoPlay
-                preload="auto"
+                controls
+                poster={posterUrls[index % posterUrls.length]}
                 playsInline
                 ref={videoRefs[index + 1]}
                 onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
@@ -238,9 +263,9 @@ const JurisDomain = () => {
               className="object-contain mt-5 md:mt-0   md:ml-24 ml-2 rounded-xl max-h-[200px] border-[1px] border-black  md:max-h-[250px] drop-shadow-xl"
               loop
               muted
-              autoPlay
               playsInline
-              preload="auto"
+              controls
+              poster={poster0}
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}

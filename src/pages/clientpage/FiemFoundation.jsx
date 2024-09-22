@@ -158,7 +158,7 @@ const FiemFoundation = () => {
                   className="object-contain rounded-xl border-[1px] border-black md:max-h-[300px] max-h-[250px] drop-shadow-xl"
                   loop
                   muted
-                  constrols
+                  controls
                   poster={posterUrls[index % posterUrls.length]}
                   playsInline
                   ref={videoRefs[index]}
