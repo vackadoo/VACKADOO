@@ -112,7 +112,7 @@ const AdroitLeathersSection = () => {
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {(window.innerWidth < 768
-                ? videoUrls.slice(0, 5)
+                ? videoUrls.slice(0, 4)
                 : videoUrls
               ).map((url, index) => (
                 <video
