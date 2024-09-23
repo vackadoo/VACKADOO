@@ -5,6 +5,16 @@ import Paulsmarquee from "../../components/paulsmarquee";
 import Videofooter from "../../components/Videofooter";
 import post1 from "../../assets/brand/Pauls/reelspost/post1.png";
 
+import poster0 from "../../assets/brand/Pauls/paulss/poster0.jpg";
+
+import poster1 from "../../assets/brand/Pauls/paulss/poster1.jpg";
+import poster2 from "../../assets/brand/Pauls/paulss/poster2.jpg";
+import poster3 from "../../assets/brand/Pauls/paulss/poster3.jpg";
+import poster4 from "../../assets/brand/Pauls/paulss/poster4.jpg";
+import poster5 from "../../assets/brand/Pauls/paulss/poster5.jpg";
+import poster6 from "../../assets/brand/Pauls/paulss/poster6.jpg";
+import poster7 from "../../assets/brand/Pauls/paulss/poster7.jpg";
+
 const Pauls = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +30,6 @@ const Pauls = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792707/IMG_1272_1_pfegun.mp4",
@@ -29,7 +38,6 @@ const Pauls = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_0010.MP4?alt=media&token=72513e4b-110c-429c-8168-f0764031fc14",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792707/IMG_1272_1_pfegun.mp4",
@@ -38,9 +46,17 @@ const Pauls = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FIMG_9636.MOV?alt=media&token=2b35f330-b6eb-4e68-a781-529113ed7477",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FPaul's%20biryani%20offer.mp4?alt=media&token=a525c52e-0d61-4e8e-980c-c6ac67dd93b3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Pauls%2FTimeline%201%20(3).mov?alt=media&token=6685e78f-70ab-4a8d-8a1d-36e14c157724",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725792639/1718652608022865_ftlerg.mp4",
   ];
 
+  const posterUrls = [
+    poster1,
+    poster2,
+    poster3,
+    poster4,
+    poster5,
+    poster6,
+    poster7,
+  ];
   const videoRefs = videoUrls.map(() => useRef(null));
   const [currentIndex, setCurrentIndex] = useState(0);
   const marqueeRef = useRef(null);
@@ -102,6 +118,7 @@ const Pauls = () => {
                 loop
                 playsInline
                 controls
+                poster={poster0}
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -159,6 +176,7 @@ const Pauls = () => {
                 loop
                 controls
                 playsInline
+                poster={poster0}
                 ref={videoRefs[0]}
                 onMouseOver={() => handleMouseOver(videoRefs[0])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -257,14 +275,14 @@ const Pauls = () => {
         <div
           onMouseOver={pauseMarquee} // Pause marquee on hover
           onMouseLeave={resumeMarquee} // Resume marquee on mouse leave
-          className="relative overflow-x-auto md:py-0 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1100px] mx-auto"
+          className="relative overflow-x-auto md:py-8 py-6 md:overflow-hidden w-full max-w-[350px] md:max-w-[1100px] mx-auto"
         >
           <div
             ref={marqueeRef}
             className="flex space-x-4 transition-transform duration-500 md:animate-marquee"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
-            {(window.innerWidth < 768 ? videoUrls.slice(1, 7) : videoUrls).map(
+            {(window.innerWidth < 768 ? videoUrls.slice(1, 8) : videoUrls).map(
               (url, index) => (
                 <video
                   key={index}
@@ -273,8 +291,8 @@ const Pauls = () => {
                   muted
                   controls
                   playsInline
+                  poster={posterUrls[index % posterUrls.length]}
                   ref={videoRefs[index + 1]}
-                  poster={post1}
                   onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
                   onClick={() => {

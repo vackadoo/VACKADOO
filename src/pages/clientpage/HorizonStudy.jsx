@@ -3,10 +3,30 @@ import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
+import poster0 from "../../assets/brand/hsc/poster0.jpg";
+
+import poster1 from "../../assets/brand/hsc/poster1.jpg";
+import poster2 from "../../assets/brand/hsc/poster2.jpg";
+import poster3 from "../../assets/brand/hsc/poster3.jpg";
+import poster4 from "../../assets/brand/hsc/poster4.jpg";
+import poster5 from "../../assets/brand/hsc/poster5.jpg";
+import poster6 from "../../assets/brand/hsc/poster6.jpg";
+import poster7 from "../../assets/brand/hsc/poster7.jpg";
+
 const HorizonStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const posterUrls = [
+    poster1,
+    poster2,
+    poster3,
+    poster4,
+    poster5,
+    poster6,
+    poster7,
+  ];
 
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
@@ -121,9 +141,9 @@ const HorizonStudy = () => {
               className="object-contain border-[1px] border-black h-auto rounded-xl  max-h-[300px] md:max-h-[500px]"
               muted
               loop
-              autoPlay
+              controls
               playsInline
-              preload="auto"
+              poster={poster0}
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -166,7 +186,7 @@ const HorizonStudy = () => {
                 style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
               >
                 {(window.innerWidth < 768
-                  ? videoUrls.slice(1, 7)
+                  ? videoUrls.slice(1, 8)
                   : videoUrls.slice(1)
                 ).map((url, index) => (
                   <video
@@ -174,9 +194,9 @@ const HorizonStudy = () => {
                     className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px] drop-shadow-xl"
                     loop
                     muted
-                    autoPlay
                     playsInline
-                    preload="auto"
+                    controls
+                    poster={posterUrls[index % posterUrls.length]}
                     ref={videoRefs[index + 1]}
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                     onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}

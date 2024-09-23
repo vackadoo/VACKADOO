@@ -4,29 +4,36 @@ import horizontal from "../../assets/images/footer2.gif";
 import horizontal2 from "../../assets/images/halffooter.gif";
 import Videofooter from "../../components/Videofooter";
 
+import poster0 from "../../assets/brand/tedx/poster0.jpg";
+
+import poster1 from "../../assets/brand/tedx/poster1.jpg";
+import poster2 from "../../assets/brand/tedx/poster2.jpg";
+import poster3 from "../../assets/brand/tedx/poster3.jpg";
+import poster4 from "../../assets/brand/tedx/poster4.jpg";
+import poster5 from "../../assets/brand/tedx/poster5.jpg";
+
 const TedxPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const posterUrls = [poster1, poster2, poster3, poster4, poster5];
+
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/102.MP4?alt=media&token=f4abdfee-06f0-4dbb-97a8-4c434870dcf5",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794078/IMG_5288_jfrvjx.mov",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794078/IMG_5288_jfrvjx.mov",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794078/IMG_5288_jfrvjx.mov",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
@@ -146,9 +153,9 @@ const TedxPage = () => {
             className="object-contain border-[1px] border-black  rounded-xl h-auto max-h-[400px] md:max-h-[500px]"
             loop
             muted
-            autoPlay
-            preload="auto"
             playsInline
+            controls
+            poster={poster0}
             ref={videoRefs[0]}
             onMouseOver={() => handleMouseOver(videoRefs[0])}
             onMouseLeave={() => handleMouseLeave(videoRefs[0])}
@@ -196,9 +203,9 @@ const TedxPage = () => {
                     className="object-contain border-[1px] border-black rounded-xl max-h-[250px] md:max-h-[300px]"
                     loop
                     muted
-                    autoPlay
-                    preload="auto"
+                    controls
                     playsInline
+                    poster={posterUrls[index % posterUrls.length]}
                     ref={videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]} // Adjust ref based on slicing
                     onMouseOver={() =>
                       handleMouseOver(
