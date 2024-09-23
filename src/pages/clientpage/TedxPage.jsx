@@ -195,7 +195,7 @@ const TedxPage = () => {
               {videoUrls
                 .slice(
                   window.innerWidth < 768 ? 1 : 0, // Slice from 1 on mobile, 0 on larger screens
-                  window.innerWidth < 768 ? 7 : videoUrls.length // Up to 7 on mobile, or the full length otherwise
+                  window.innerWidth < 768 ? 6 : videoUrls.length // Up to 7 on mobile, or the full length otherwise
                 )
                 .map((url, index) => (
                   <video
