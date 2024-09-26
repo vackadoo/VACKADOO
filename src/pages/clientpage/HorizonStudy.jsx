@@ -31,29 +31,45 @@ const HorizonStudy = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159247/IMG_2005_jtdizq.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159247/IMG_2005_jtdizq.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159247/IMG_2005_jtdizq.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
+
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159247/IMG_2005_jtdizq.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
+
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791770/IMG_1999_scibcx.mp4",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2001.MP4?alt=media&token=00ec301c-b42d-402e-8025-01c9d0f9bb7b",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791751/IMG_2002_sqwtql.mp4",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2003.MP4?alt=media&token=7f0890d2-3b3e-4962-81d7-a59082d5dc04",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2004.MP4?alt=media&token=4e805696-bf86-4749-9505-f854ae6052b1",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725791768/IMG_2005_dnitqi.mp4",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2FIMG_2006.MP4?alt=media&token=e1d92962-f0b4-4b18-ad9f-f6f9254b8e88",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -74,17 +90,6 @@ const HorizonStudy = () => {
     }
   };
 
-  const handleNext = () => {
-    if (currentIndex < videoUrls.length - 3) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
   const scrollToNextSection = () => {
     const nextSection2 = document.getElementById("next-section2");
     nextSection2.scrollIntoView({ behavior: "smooth" });
@@ -147,9 +152,10 @@ const HorizonStudy = () => {
               ref={videoRefs[0]}
               onMouseOver={() => handleMouseOver(videoRefs[0])}
               onMouseLeave={() => handleMouseLeave(videoRefs[0])}
-              onClick={() => {
-                videoRefs[0].current.muted = !videoRefs[0].current.muted;
-              }}
+              alt="hsc"
+              // onClick={() => {
+              //   videoRefs[0].current.muted = !videoRefs[0].current.muted;
+              // }}
             >
               <source src={videoUrls[0]} type="video/mp4" />
               Your browser does not support the video tag.
@@ -198,12 +204,9 @@ const HorizonStudy = () => {
                     controls
                     poster={posterUrls[index % posterUrls.length]}
                     ref={videoRefs[index + 1]}
+                    alt="horizonstudycircle"
                     onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                     onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                    onClick={() => {
-                      videoRefs[index + 1].current.muted =
-                        !videoRefs[index + 1].current.muted;
-                    }}
                   >
                     <source src={url} type="video/mp4" />
                     Your browser does not support the video tag.

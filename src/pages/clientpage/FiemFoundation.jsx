@@ -22,28 +22,28 @@ const FiemFoundation = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158999/Shehzad_Poonawalla_gy62e1.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158999/Shehzad_Poonawalla_gy62e1.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
     "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158999/Shehzad_Poonawalla_gy62e1.mp4",
 
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FDr.%20Jitendra%20Singh%20Reel.mp4?alt=media&token=0073e579-9167-43c2-86b4-5158b0f9a265",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FSanjay%20Mayukh%20ji%20REEL.mp4?alt=media&token=96c9fdfb-656b-48a7-bfbf-f9d7e779e6e3",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2Fashok%20shrivastav%20jiREEL.mp4?alt=media&token=686e7726-02c3-4a8c-a349-0ca643d14189",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Fiem%2FbasuriREEL.mp4?alt=media&token=4ef7418e-1b89-493a-b2b7-be44f3c7cbbe",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519175/Pramila_Dixit_ji_nd8ibi.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725519081/Shehzad_Poonawalla_szkz1i.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -83,18 +83,6 @@ const FiemFoundation = () => {
     if (videoRef.current) {
       videoRef.current.muted = true;
       videoRef.current.pause();
-    }
-  };
-
-  const handleNext = () => {
-    if (currentIndex < displayedVideos.length - 3) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -161,13 +149,10 @@ const FiemFoundation = () => {
                   controls
                   poster={posterUrls[index % posterUrls.length]}
                   playsInline
+                  alt="fiemvideo"
                   ref={videoRefs[index]}
                   onMouseOver={() => handleMouseOver(videoRefs[index])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index])}
-                  onClick={() => {
-                    videoRefs[index].current.muted =
-                      !videoRefs[index].current.muted;
-                  }}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.

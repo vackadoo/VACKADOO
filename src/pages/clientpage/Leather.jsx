@@ -20,23 +20,23 @@ const AdroitLeathersSection = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158560/fld_12_with_branding_nej0au.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158583/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_teebqf.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158560/fld_12_with_branding_nej0au.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158583/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_teebqf.mp4",
 
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158560/fld_12_with_branding_nej0au.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727158583/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_teebqf.mp4",
 
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
-    "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FFLD%2022.mp4?alt=media&token=ef85973a-302d-4cff-a8f6-d2babfd24051",
+    // "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/Al%2FSET%201553.mp4?alt=media&token=584fce4e-e9fb-49f9-9455-304a55eb4045",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725526960/fld_12_with_branding_bc1cef.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725527007/MULTIPURPOSE_DOCUMENT_FOLDER_WIH_LOGO_2_pgdw7h.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));
@@ -61,18 +61,6 @@ const AdroitLeathersSection = () => {
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.muted = true;
-    }
-  };
-
-  const handleNext = () => {
-    if (currentIndex < videoUrls.length - 3) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
     }
   };
 
@@ -122,14 +110,15 @@ const AdroitLeathersSection = () => {
                   muted
                   playsInline
                   controls
+                  alt="adroit"
                   poster={posterUrls[index % posterUrls.length]}
                   ref={videoRefs[index]}
                   onMouseOver={() => handleMouseOver(videoRefs[index])}
                   onMouseLeave={() => handleMouseLeave(videoRefs[index])}
-                  onClick={() => {
-                    videoRefs[index].current.muted =
-                      !videoRefs[index].current.muted;
-                  }}
+                  // onClick={() => {
+                  //   videoRefs[index].current.muted =
+                  //     !videoRefs[index].current.muted;
+                  // }}
                 >
                   <source src={url} type="video/mp4" />
                   Your browser does not support the video tag.
@@ -178,13 +167,13 @@ const AdroitLeathersSection = () => {
         <img
           src={alposter}
           className="object-contain h-auto rounded-xl max-h-[350px] md:max-h-[400px]"
-          alt="Adroit Leathers Poster"
+          alt="AdroitLeatherr"
         />
       </div>
       <div className="flex justify-center mt-6 md:mt-0 ">
         <img
           src={horizontal2}
-          alt="Footer Image"
+          alt="vackadoo"
           className="w-full max-w-[700px] h-full md:max-w-[700px] object-contain md:hidden"
         />
         <div className="hidden md:block mt-8">

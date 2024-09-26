@@ -22,23 +22,29 @@ const TedxPage = () => {
   const videoUrls = [
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/102.MP4?alt=media&token=f4abdfee-06f0-4dbb-97a8-4c434870dcf5",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/1709699757377963_efv7tv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159040/WhatsApp_Video_2024-07-17_at_1.31.32_PM_mfcujg.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159037/WhatsApp_Video_2024-07-17_at_1.27.48_PM_vu2zd8.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159038/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_dfl92j.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/WhatsApp_Video_2024-07-17_at_1.20.00_PM_h2m8kw.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/1709699757377963_efv7tv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159040/WhatsApp_Video_2024-07-17_at_1.31.32_PM_mfcujg.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159037/WhatsApp_Video_2024-07-17_at_1.27.48_PM_vu2zd8.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159038/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_dfl92j.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/WhatsApp_Video_2024-07-17_at_1.20.00_PM_h2m8kw.mp4",
 
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
-    "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/1709699757377963_efv7tv.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159040/WhatsApp_Video_2024-07-17_at_1.31.32_PM_mfcujg.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159037/WhatsApp_Video_2024-07-17_at_1.27.48_PM_vu2zd8.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159038/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_dfl92j.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159036/WhatsApp_Video_2024-07-17_at_1.20.00_PM_h2m8kw.mp4",
+
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794070/1709699757377963_agdc3d.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794067/WhatsApp_Video_2024-07-17_at_1.31.32_PM_a3ouup.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794063/WhatsApp_Video_2024-07-17_at_1.27.48_PM_bnfoo5.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794061/WhatsApp_Video_2024-07-17_at_1.30.00_PM_1_guozss.mp4",
+    // "https://res.cloudinary.com/dlanlvnce/video/upload/v1725794056/WhatsApp_Video_2024-07-17_at_1.20.00_PM_augobp.mp4",
   ];
 
   const videoRefs = videoUrls.map(() => useRef(null));

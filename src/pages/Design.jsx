@@ -75,15 +75,6 @@ const Design = () => {
         <Paulsmarquee className="justify-center" />
       </div>
 
-      {/* Centering Frame1 */}
-      {/* <div className="flex justify-center pt-4 md:pt-8">
-        <img
-          src={Frame1}
-          alt="Frame1"
-          className="max-w-full md:max-w-[1200px] border-[1px] border-black"
-        />
-      </div> */}
-
       <div className="flex justify-center md:mx-48 mx-1  border-[1px] border-black  ">
         <div>
           <img src={img1} />

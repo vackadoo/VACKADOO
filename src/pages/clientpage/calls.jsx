@@ -18,7 +18,7 @@ const Calls = () => {
         }
       };
     }
-  }, []); // Empty dependency array ensures this effect runs once when the component mounts.
+  }, []); 
 
   return (
     <div className="bg-white h-screen">
