@@ -24,6 +24,7 @@ const ImageGrid = React.lazy(() => import("../components/Grid"));
 const FeatureSection = React.lazy(() => import("../components/FeatureSection"));
 const Marquee = React.lazy(() => import("../components/Marquee"));
 const Footer = React.lazy(() => import("../components/Footer"));
+const OurBlog = React.lazy(() => import("../components/OurBlog"));
 
 const Home = () => {
   return (
@@ -40,6 +41,10 @@ const Home = () => {
       <Suspense fallback={<div>Loading Marquee...</div>}>
         <Marquee />
       </Suspense>
+      {/* 
+      <Suspense fallback={<div>Loading Marquee...</div>}>
+        <OurBlog />
+      </Suspense> */}
 
       <Suspense fallback={<div>Loading Footer...</div>}>
         <Footer />

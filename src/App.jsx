@@ -19,6 +19,7 @@ import Leather from "./pages/clientpage/Leather";
 import ScheduleCall from "./pages/ScheduleCall";
 import Calls from "./pages/clientpage/calls";
 import Design from "./pages/Design";
+import OurBlog from "./components/OurBlog";
 
 const App = () => {
   const location = useLocation();
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/ScheduleCall" element={<ScheduleCall />} />
         <Route path="/calls" element={<Calls />} />
         <Route path="/Design" element={<Design />} />
+        <Route path="/OurBlog" element={<OurBlog />} />
       </Routes>
     </div>
   );
