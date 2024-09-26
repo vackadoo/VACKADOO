@@ -242,10 +242,7 @@ const JurisDomain = () => {
                 ref={videoRefs[index + 1]}
                 onMouseOver={() => handleMouseOver(videoRefs[index + 1])}
                 onMouseLeave={() => handleMouseLeave(videoRefs[index + 1])}
-                // onClick={() => {
-                //   videoRefs[index + 1].current.muted =
-                //     !videoRefs[index + 1].current.muted;
-                // }}
+           
               >
                 <source src={url} type="video/mp4" />
                 Your browser does not support the video tag.

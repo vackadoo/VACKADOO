@@ -18,7 +18,7 @@ const Calls = () => {
         }
       };
     }
-  }, []); 
+  }, []);
 
   return (
     <div className="bg-white h-screen">
