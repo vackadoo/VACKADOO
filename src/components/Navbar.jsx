@@ -120,7 +120,7 @@ const Navbar = () => {
                 href="/ScheduleCall"
                 className="text-[12px]  rounded-full text-white hover:bg-[#242424] py-1 px-3 bg-[#252525]"
               >
-                Sche dule a Call
+                Schedule a Call
               </a>
               <button onClick={togglenavbar}>
                 {mobileDrawerOpen ? <X /> : <Menu />}
@@ -138,7 +138,16 @@ const Navbar = () => {
               onClick={togglenavbar}
             ></div>
 
+            {/* Drawer */}
             <div className="fixed right-9 left-9 top-12 z-40 bg-white text-black p-0 pt-0 flex flex-col justify-center items-center lg:hidden rounded-xl transform transition-transform duration-300 ease-out translate-x-0">
+              {/* Close Button */}
+              <button
+                className="absolute top-2 right-2 text-black bg-transparent p-2 text-xl font-bold"
+                onClick={togglenavbar}
+              >
+                &times;
+              </button>
+
               {/* Outer Border */}
               <div className="border-black rounded-xl border-2 w-full p-2">
                 {/* Inner Border */}

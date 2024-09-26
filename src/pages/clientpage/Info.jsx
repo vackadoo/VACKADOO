@@ -42,7 +42,7 @@ const Info = () => {
           </p>
         </div>
         <div className="flex justify-center items-center md:mx-9 md:mt-4 mt-8 md:mb-0 mb-20 ">
-          <div className="flex justify-center items-center mt-1  mr-2  md:mr-6">
+          <div className="flex justify-center items-center md:mt-1  mr-2  md:mr-6">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -200,7 +200,7 @@ const Info = () => {
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
               <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p className=" md:pl-2 ml-9 md:ml-10">+91 7827683757</p>
+              <p className=" md:pl-2 ml-9 md:ml-10">+91 11-35734196</p>
             </div>
           </div>
         </footer>
