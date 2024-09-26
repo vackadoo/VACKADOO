@@ -161,13 +161,11 @@ const TedxPage = () => {
             muted
             playsInline
             controls
+            alt="tedx"
             poster={poster0}
             ref={videoRefs[0]}
             onMouseOver={() => handleMouseOver(videoRefs[0])}
             onMouseLeave={() => handleMouseLeave(videoRefs[0])}
-            onClick={() => {
-              videoRefs[0].current.muted = !videoRefs[0].current.muted;
-            }}
           >
             <source src={videoUrls[0]} type="video/mp4" />
             Your browser does not support the video tag.
@@ -200,7 +198,7 @@ const TedxPage = () => {
             >
               {videoUrls
                 .slice(
-                  window.innerWidth < 768 ? 1 : 0, // Slice from 1 on mobile, 0 on larger screens
+                  window.innerWidth < 768 ? 1 : 1, // Slice from 1 on mobile, 0 on larger screens
                   window.innerWidth < 768 ? 6 : videoUrls.length // Up to 7 on mobile, or the full length otherwise
                 )
                 .map((url, index) => (
@@ -211,6 +209,7 @@ const TedxPage = () => {
                     muted
                     controls
                     playsInline
+                    alt="tedx"
                     poster={posterUrls[index % posterUrls.length]}
                     ref={videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]} // Adjust ref based on slicing
                     onMouseOver={() =>
@@ -223,13 +222,6 @@ const TedxPage = () => {
                         videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]
                       )
                     }
-                    onClick={() => {
-                      videoRefs[
-                        index + (window.innerWidth < 768 ? 1 : 0)
-                      ].current.muted =
-                        !videoRefs[index + (window.innerWidth < 768 ? 1 : 0)]
-                          .current.muted;
-                    }}
                   >
                     <source src={url} type="video/mp4" />
                     Your browser does not support the video tag.
