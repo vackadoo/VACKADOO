@@ -148,7 +148,7 @@ const Design = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="flex justify-center pt-8 pr-2 gap-4 md:gap-28">
+      <div className="flex justify-center pt-8  items-center gap-4 md:gap-28">
         <div>
           <video
             className="object-contain border-[1px] border-black h-auto rounded-xl max-h-[250px] md:max-h-[400px]"
