@@ -270,6 +270,7 @@ import { Menu } from "lucide-react";
 import rat2 from "../assets/images/rat2.png";
 import React from "react";
 import cross from "../assets/images/cross.png";
+import Close from "../assets/images/Close.png";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -334,7 +335,7 @@ const Navbar = () => {
                 onClick={togglenavbar}
               >
                 {/* &times; */}
-                <img src={cross} alt="close" className="w-3 h-4 pt-0 " />
+                <img src={Close} alt="close" className="w-5 h-6 pt-0 " />
               </button>
 
               {/* Outer Border */}
