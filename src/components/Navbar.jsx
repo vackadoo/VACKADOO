@@ -21,7 +21,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex md:py-2 md:px-3 flex-shrink-0">
             <a href="./">
-              <img src={rat2} className="h-12 pl-2 py-1 md:hidden" alt="vackadoologo" />
+              <img
+                src={rat2}
+                className="h-12 pl-2 py-1 md:hidden"
+                alt="vackadoologo"
+              />
               <h1 className="md:block ml-12 hidden text-black text-xl font-extrabold">
                 VACKADOO
               </h1>
@@ -72,7 +76,7 @@ const Navbar = () => {
                 className="absolute top-1 right-2 text-black bg-transparent p-2 text-2xl font-bold "
                 onClick={togglenavbar}
               >
-              <img src={cross} alt="close" className="w-4 h-8 pt-2 " /> 
+                <img src={cross} alt="close" className="w-3 h-5 pt-1 " />
               </button>
 
               {/* Outer Border */}

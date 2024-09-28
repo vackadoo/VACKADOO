@@ -334,7 +334,7 @@ const Navbar = () => {
                 onClick={togglenavbar}
               >
                 {/* &times; */}
-                <img src={cross} alt="close" className="w-4 h-8 pt-2 " />
+                <img src={cross} alt="close" className="w-3 h-4 pt-0 " />
               </button>
 
               {/* Outer Border */}
