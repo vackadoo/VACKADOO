@@ -202,9 +202,12 @@ const Info = () => {
               <a href="mailto:vackadoo@gmail.com" className="z-50 relative">
                 vackadoo@gmail.com
               </a>
-              <p className=" md:pl-2 ml-9 md:ml-10 mt-1 z-50 relative">
-                +91 11-35734196
-              </p>
+              <a
+                href="tel:+911135734196"
+                className=" md:pl-2 ml-9 md:ml-10 mt-1 z-50 relative"
+              >
+                +91 1135734196
+              </a>
             </div>
           </div>
         </footer>
