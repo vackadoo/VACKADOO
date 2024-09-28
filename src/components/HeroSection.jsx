@@ -41,7 +41,7 @@ const HeroSection = () => {
           <div className="hidden md:block">
             <div className="text-2xl text-center">Tap to bring the</div>
             <div className="text-8xl text-center font-extrabold spotlight">
-              <a href="/service">SPOLIGHT</a>
+              <a href="/service">SPOTLIGHT</a>
             </div>
             <div className="text-2xl text-center">On your Brand</div>
           </div>
