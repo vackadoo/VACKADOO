@@ -111,7 +111,7 @@ export default function Marquee() {
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
+          {/* <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center">
                 <img
@@ -121,7 +121,7 @@ export default function Marquee() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="flex-shrink-0 h-full md:w-[10rem] w-[6rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center gap-2">
@@ -225,7 +225,7 @@ export default function Marquee() {
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
+          {/* <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center">
                 <img
@@ -235,7 +235,7 @@ export default function Marquee() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="flex-shrink-0 h-full md:w-[7rem] w-[6rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center gap-2">
@@ -341,7 +341,7 @@ export default function Marquee() {
               </div>
             </div>
           </div>
-          <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
+          {/* <div className="flex-shrink-0 h-full w-[4rem] md:w-[10rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center">
                 <img
@@ -351,7 +351,7 @@ export default function Marquee() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="flex-shrink-0 h-full md:w-[7rem] w-[6rem] flex items-center justify-center">
             <div className="relative h-full transform transition-transform duration-150">
               <div className="flex flex-col items-center gap-2">
