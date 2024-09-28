@@ -32,7 +32,7 @@ const HorizonStudy = () => {
     "https://firebasestorage.googleapis.com/v0/b/check-app-c2959.appspot.com/o/horizonstudy%2F106.mp4?alt=media&token=df1be766-6664-4321-a429-dab57f56b5d5",
 
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
-    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727491437/IMG_2972_modhnz.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
@@ -40,7 +40,7 @@ const HorizonStudy = () => {
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
 
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
-    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727491437/IMG_2972_modhnz.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
@@ -48,7 +48,7 @@ const HorizonStudy = () => {
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
 
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
-    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727491437/IMG_2972_modhnz.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",
@@ -56,7 +56,7 @@ const HorizonStudy = () => {
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159242/IMG_2006_cnanln.mp4",
 
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159266/IMG_1999_xfrdvv.mp4",
-    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159279/IMG_2001_dm255o.mp4",
+    "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727491437/IMG_2972_modhnz.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159272/IMG_2002_pujjfv.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159250/IMG_2003_quuhwj.mp4",
     "https://res.cloudinary.com/dcvxotvg8/video/upload/v1727159257/IMG_2004_qymfwd.mp4",

@@ -199,8 +199,12 @@ const Info = () => {
               </a>
             </div>
             <div className="text-[14px] text-left md:text-xs md:grid-cols-1 grid-cols-0  md:ml-52">
-              <a href="mailto:vackadoo@gmail.com">vackadoo@gmail.com</a>
-              <p className=" md:pl-2 ml-9 md:ml-10">+91 11-35734196</p>
+              <a href="mailto:vackadoo@gmail.com" className="z-50 relative">
+                vackadoo@gmail.com
+              </a>
+              <p className=" md:pl-2 ml-9 md:ml-10 mt-1 z-50 relative">
+                +91 11-35734196
+              </p>
             </div>
           </div>
         </footer>

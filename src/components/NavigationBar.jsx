@@ -269,6 +269,7 @@ import { navItems } from "../constants/index";
 import { Menu } from "lucide-react";
 import rat2 from "../assets/images/rat2.png";
 import React from "react";
+import cross from "../assets/images/cross.png";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -332,7 +333,8 @@ const Navbar = () => {
                 className="absolute top-2 right-2 text-black bg-transparent p-2 text-xl font-bold"
                 onClick={togglenavbar}
               >
-                &times;
+                {/* &times; */}
+                <img src={cross} alt="close" className="w-4 h-8 pt-2 " />
               </button>
 
               {/* Outer Border */}

@@ -3,6 +3,8 @@ import { navItems } from "../constants/index";
 import { Menu } from "lucide-react";
 import { X } from "lucide-react";
 import rat2 from "../assets/images/rat2.png";
+import cross from "../assets/images/cross.png";
+
 import React from "react";
 
 const Navbar = () => {
@@ -70,7 +72,7 @@ const Navbar = () => {
                 className="absolute top-1 right-2 text-black bg-transparent p-2 text-2xl font-bold "
                 onClick={togglenavbar}
               >
-                &times;
+              <img src={cross} alt="close" className="w-4 h-8 pt-2 " /> 
               </button>
 
               {/* Outer Border */}
