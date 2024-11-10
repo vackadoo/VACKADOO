@@ -192,7 +192,7 @@ const Info = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 cursor
-                href="https://forms.gle/JX56Tu8CeSJwj1oP9"
+                href="https://forms.gle/VoQRhKHp5swbwFe97"
                 className="z-50 relative"
               >
                 work with us
