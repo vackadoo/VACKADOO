@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
+
 import picture1 from "../assets/brand/Picture1.png";
 import picture2 from "../assets/brand/Picture2.png";
 import picture3 from "../assets/brand/Picture3.png";
@@ -10,12 +11,21 @@ import picture7 from "../assets/brand/Picture7.png";
 import picture8 from "../assets/brand/Picture8.png";
 import picture9 from "../assets/brand/Picture9.png";
 import picture10 from "../assets/brand/Picture10.png";
+import Vodcastemove from "./Vodcastemove";
 
 export default function Marquee() {
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate("/tedx");
+  };
+
+  const [isSliding, setIsSliding] = useState(false);
+
+  // Function to toggle sliding effect
+  const handleSlide = () => {
+    setIsSliding(true);
+    setTimeout(() => setIsSliding(false), 1000); // Reset after animation
   };
 
   return (
@@ -366,14 +376,17 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center md:mb-12 md:mt-0">
-        <a
+      <div className="hidden md:block"> <Vodcastemove/></div>
+       
+        {/* <a
           href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
         >
           OUR SERVICES
-        </a>
-      </div>
+        </a> */}
+
+
+     
     </div>
   );
 }

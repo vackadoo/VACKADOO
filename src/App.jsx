@@ -20,6 +20,7 @@ import ScheduleCall from "./pages/ScheduleCall";
 import Calls from "./pages/clientpage/calls";
 import Design from "./pages/Design";
 import OurBlog from "./components/OurBlog";
+import Vodcaste from "./pages/Vodcaste";
 
 const App = () => {
   const location = useLocation();
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/calls" element={<Calls />} />
         <Route path="/Design" element={<Design />} />
         <Route path="/OurBlog" element={<OurBlog />} />
+        <Route path="/Vodcaste" element={<Vodcaste/>}/>
       </Routes>
     </div>
   );
