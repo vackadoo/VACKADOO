@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import picture1 from "../assets/brand/Pauls/picture1.png";

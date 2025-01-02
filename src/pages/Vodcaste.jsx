@@ -156,7 +156,6 @@ const VodcastLayout = ({ speed = 40 }) => {
 
   return (
     <div className="min-h-screen bg-white ">
-      
       {/* Header Section */}
       <header className="relative  text-white py-4 px-6 hidden md:block">
         <div className="absolute left-0 top-1/2 transform w-1/5 h-36 bg-black rounded-r-full flex items-center">
@@ -299,56 +298,59 @@ const VodcastLayout = ({ speed = 40 }) => {
         </p>
 
         {/* Vodcast Clips Section */}
-       
-  <div className="w-full overflow-x-auto p-2 sm:p-4">
-    <div
-      className="relative flex gap-2 sm:gap-4 md:gap-6 scrollbar-hidden"
-      style={{
-        transform: `translateX(${position}px)`,
-      }}
-      ref={(el) => {
-        if (el) {
-          setContentWidth(el.offsetWidth);
-          setContainerWidth(el?.parentElement?.offsetWidth || 0);
-        }
-      }}
-    >
-      {videos.map((video) => (
-        <div
-          key={video.id}
-          className="inline-block"
-          onMouseEnter={() => handleVideoHover(video.id)}
-          onMouseLeave={() => handleVideoLeave(video.id)}
-        >
+
+        <div className="w-full overflow-x-auto p-2 sm:p-4">
           <div
-            className={`transition-all duration-300 w-24 sm:w-32 md:w-40 lg:w-48 rounded-lg overflow-hidden ${
-              activeVideo === video.id ? 'scale-110 shadow-xl z-10' : ''
-            }`}
+            className="relative flex gap-2 sm:gap-4 md:gap-6 scrollbar-hidden"
+            style={{
+              transform: `translateX(${position}px)`,
+            }}
+            ref={(el) => {
+              if (el) {
+                setContentWidth(el.offsetWidth);
+                setContainerWidth(el?.parentElement?.offsetWidth || 0);
+              }
+            }}
           >
-            {activeVideo === video.id ? (
-              <video
-                ref={(el) => (videoRefs.current[video.id] = el)}
-                className="w-full aspect-[9/16] object-cover"
-                src={video.videoUrl}
-                muted
-                controls
-                playsInline
-              />
-            ) : (
-              <div className="relative">
-                <video className="w-full aspect-[9/16] object-cover" src={video.videoUrl}>
-                  <source src={video.videoUrl} type="video/mp4" />
-                </video>
+            {videos.map((video) => (
+              <div
+                key={video.id}
+                className="inline-block"
+                onMouseEnter={() => handleVideoHover(video.id)}
+                onMouseLeave={() => handleVideoLeave(video.id)}
+              >
+                <div
+                  className={`transition-all duration-300 w-24 sm:w-32 md:w-40 lg:w-48 rounded-lg overflow-hidden ${
+                    activeVideo === video.id ? "scale-110 shadow-xl z-10" : ""
+                  }`}
+                >
+                  {activeVideo === video.id ? (
+                    <video
+                      ref={(el) => (videoRefs.current[video.id] = el)}
+                      className="w-full aspect-[9/16] object-cover"
+                      src={video.videoUrl}
+                      muted
+                      controls
+                      playsInline
+                    />
+                  ) : (
+                    <div className="relative">
+                      <video
+                        className="w-full aspect-[9/16] object-cover"
+                        src={video.videoUrl}
+                      >
+                        <source src={video.videoUrl} type="video/mp4" />
+                      </video>
+                    </div>
+                  )}
+                </div>
+                <h3 className="text-white mt-2 text-xs sm:text-sm font-medium truncate w-24 sm:w-32 md:w-40 lg:w-48">
+                  {video.title}
+                </h3>
               </div>
-            )}
+            ))}
           </div>
-          <h3 className="text-white mt-2 text-xs sm:text-sm font-medium truncate w-24 sm:w-32 md:w-40 lg:w-48">
-            {video.title}
-          </h3>
         </div>
-      ))}
-    </div>
-  </div>
       </main>
 
       {/* Studio Services Section */}
@@ -409,10 +411,8 @@ const VodcastLayout = ({ speed = 40 }) => {
         </div>
       </div>
 
-
-
       <style>
-    {`
+        {`
       /* Hide the marquee on mobile devices */
       @media (max-width: 640px) {
         .scrollbar-hidden {
@@ -430,8 +430,7 @@ const VodcastLayout = ({ speed = 40 }) => {
         scrollbar-width: none;  /* Firefox */
       }
     `}
-  </style>
-      
+      </style>
     </div>
   );
 };

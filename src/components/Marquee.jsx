@@ -376,17 +376,17 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="hidden md:block"> <Vodcastemove/></div>
-       
-        {/* <a
+      <div className="hidden md:block">
+        {" "}
+        <Vodcastemove />
+      </div>
+
+      {/* <a
           href="/service"
           className="hidden md:block py-2 px-6 rounded-full text-black bg-white hover:bg-[#242424] transform transition-transform duration-300 hover:scale-110"
         >
           OUR SERVICES
         </a> */}
-
-
-     
     </div>
   );
 }
