@@ -25,6 +25,7 @@ const FeatureSection = React.lazy(() => import("../components/FeatureSection"));
 const Marquee = React.lazy(() => import("../components/Marquee"));
 const Footer = React.lazy(() => import("../components/Footer"));
 const OurBlog = React.lazy(() => import("../components/OurBlog"));
+const Vodcastemove = React.lazy(() => import("../components/Vodcastemove"));
 
 const Home = () => {
   return (
@@ -40,6 +41,10 @@ const Home = () => {
 
       <Suspense fallback={<div>Loading Marquee...</div>}>
         <Marquee />
+      </Suspense>
+      <Suspense fallback={<div>Loading Vodcaste...</div>}>
+      <Vodcastemove/>
+        
       </Suspense>
       {/* 
       <Suspense fallback={<div>Loading Marquee...</div>}>

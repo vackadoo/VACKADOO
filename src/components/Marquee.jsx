@@ -376,10 +376,10 @@ export default function Marquee() {
         </div>
       </div>
 
-      <div className="hidden md:block">
+      {/* <div className="">
         {" "}
         <Vodcastemove />
-      </div>
+      </div> */}
 
       {/* <a
           href="/service"
