@@ -289,7 +289,7 @@ const Vodcaste = () => {
       </section>
 
       <div className="fixed bottom-4 sm:bottom-8 md:bottom-16 left-4 sm:left-8 md:left-12 z-50">
-        <a href="tel:+91 8851700306 ">
+        <a href="http://wa.me/918851700306">
           <button className="bg-gray-400 text-black text-xs sm:text-sm md:text-base py-1.5 sm:py-2 px-4 sm:px-6 rounded-full hover:bg-gray-600 hover:text-white shadow-lg transition-colors">
             call us
           </button>
