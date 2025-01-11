@@ -45,8 +45,11 @@ const App = () => {
         <Route path="/OurBlog" element={<OurBlog />} />
         <Route path="/Vodcaste" element={<Vodcaste />} />
       </Routes>
+      
     </div>
+    
   );
+  
 };
 
 const AppWrapper = () => (

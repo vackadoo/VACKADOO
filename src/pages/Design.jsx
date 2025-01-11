@@ -209,7 +209,9 @@ const Design = () => {
           <Videofooter />
         </div>
       </div>
+      
     </div>
+    
   );
 };
 
