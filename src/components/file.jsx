@@ -347,7 +347,7 @@ const VodcastLayout = ({ speed = 40 }) => {
 
       <div className="fixed bottom-4 sm:bottom-8 md:bottom-16 left-4 sm:left-8 md:left-12 z-50">
         <button className="bg-gray-400 text-black text-xs sm:text-sm md:text-base py-1.5 sm:py-2 px-4 sm:px-6 rounded-full hover:bg-gray-600 hover:text-white shadow-lg transition-colors">
-          call us
+          contact us
         </button>
       </div>
 

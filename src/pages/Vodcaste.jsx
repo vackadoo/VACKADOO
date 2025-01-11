@@ -13,36 +13,46 @@ import podcaste6 from "../assets/images/Podcaste/podcaste6.png";
 import podcaste7 from "../assets/images/Podcaste/podcaste7.png";
 import podcaste8 from "../assets/images/Podcaste/podcaste8.png";
 import podcaste9 from "../assets/images/Podcaste/podcaste9.png";
+import reel1 from "../assets/images/Podcaste/reel1.png";
+import reel2 from "../assets/images/Podcaste/reel2.png";
+import reel3 from "../assets/images/Podcaste/reel3.png";
+import reel4 from "../assets/images/Podcaste/reel4.png";
+import reel5 from "../assets/images/Podcaste/reel5.png";
 
 const Vodcaste = () => {
   const [videos] = useState([
     {
       id: 1,
       title: "Early Intervention Reel",
+      poster:  reel1 ,
       videoUrl:
         "https://res.cloudinary.com/dcvxotvg8/video/upload/v1735747589/The_Role_of_Early_Intervention_Reel_1.compressed_i68ddx.mp4",
     },
     {
       id: 2,
       title: "WhatsApp Video 2024-07-17",
+      poster:  reel2 ,
       videoUrl:
         "https://res.cloudinary.com/dcvxotvg8/video/upload/v1735747504/WhatsApp_Video_2024-07-17_at_3.06.04_PM_hqce6s.mp4",
     },
     {
       id: 3,
       title: "WhatsApp Video 2024-07-16",
+      poster:  reel3 ,
       videoUrl:
         "https://res.cloudinary.com/dcvxotvg8/video/upload/v1735747498/WhatsApp_Video_2024-07-16_at_5.20.58_PM_yfd2xo.mp4",
     },
     {
       id: 4,
       title: "75 Hard Challenge",
+      poster: reel4 ,
       videoUrl:
         "https://res.cloudinary.com/dcvxotvg8/video/upload/v1735747486/75_hard_challenge_reel_5.compressed_vcrzv7.mp4",
     },
     {
       id: 5,
       title: "Vodcast",
+      poster:  reel5 ,
       videoUrl:
         "https://res.cloudinary.com/dcvxotvg8/video/upload/v1735746448/Vodcaste/iyfcq1umk4razehcshpj.mp4",
     },
@@ -232,8 +242,9 @@ const Vodcaste = () => {
                   className="w-full aspect-[9/16] object-cover"
                   src={video.videoUrl}
                   muted
-                  playsInline
+                  playsInlines
                   loop
+                  poster={video.poster}
                   controls
                   onPlay={() => !isMobile && setIsPlaying(true)}
                   onPause={() => !isMobile && setIsPlaying(false)}
@@ -290,8 +301,8 @@ const Vodcaste = () => {
 
       <div className="fixed bottom-4 sm:bottom-8 md:bottom-16 left-4 sm:left-8 md:left-12 z-50">
         <a href="http://wa.me/918851700306">
-          <button className="bg-gray-400 text-black text-xs sm:text-sm md:text-base py-1.5 sm:py-2 px-4 sm:px-6 rounded-full hover:bg-gray-600 hover:text-white shadow-lg transition-colors">
-            call us
+          <button className="bg-gray-400 text-black text-xs sm:text-sm md:text-base py-1.5 sm:py-2 px-4 sm:px-4 rounded-full hover:bg-gray-600 hover:text-white shadow-lg transition-colors">
+            Contact us
           </button>
         </a>
       </div>
@@ -308,7 +319,6 @@ const Vodcaste = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
