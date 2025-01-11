@@ -204,7 +204,7 @@ const Vodcaste = () => {
       </main>
 
       {/* Description */}
-      <p className="text-[14px] pt-4 md:px-36 px-3 text-black text-justify">
+      <p className="text-[14px] pt-4 pb-4 md:px-36 px-3 text-black text-justify">
         In a contemporary world where podcasts are the voice of today,
         connecting stories with ears everywhere, starting one has become a must
         - but let us face it, it often comes with an expensive price tag. At
